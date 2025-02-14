@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="17038800000fs"></ZoomStartTime>
+      <ZoomEndTime time="17262800001fs"></ZoomEndTime>
+      <Cursor1Time time="17305000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="189"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="group" fp_name="group7">
+      <obj_property name="label">tb sigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/testbench/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/rstn">
+         <obj_property name="ElementShortName">rstn</obj_property>
+         <obj_property name="ObjectShortName">rstn</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/error">
+         <obj_property name="ElementShortName">error</obj_property>
+         <obj_property name="ObjectShortName">error</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group8">
+      <obj_property name="label">axi_master_m00</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="divider23" type="divider">
+         <obj_property name="label">write </obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider23" type="divider">
+         <obj_property name="label">read</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/vector_base_addr">
+         <obj_property name="ElementShortName">vector_base_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_base_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/M_AXI_AWADDR">
+         <obj_property name="ElementShortName">M_AXI_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/axi_awaddr">
+         <obj_property name="ElementShortName">axi_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/M_AXI_AWADDR">
+         <obj_property name="ElementShortName">M_AXI_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/M_AXI_ARADDR">
+         <obj_property name="ElementShortName">M_AXI_ARADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_ARADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/uut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/rnext">
+         <obj_property name="ElementShortName">rnext</obj_property>
+         <obj_property name="ObjectShortName">rnext</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/M_AXI_RDATA">
+         <obj_property name="ElementShortName">M_AXI_RDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_RDATA[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group143">
+      <obj_property name="label">axi_master_m01</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/vector_base_addr">
+         <obj_property name="ElementShortName">vector_base_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_base_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/M_AXI_AWADDR">
+         <obj_property name="ElementShortName">M_AXI_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/zi">
+         <obj_property name="ElementShortName">zi</obj_property>
+         <obj_property name="ObjectShortName">zi</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/cntr_i">
+         <obj_property name="ElementShortName">cntr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cntr_i[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/vector_len">
+         <obj_property name="ElementShortName">vector_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_len[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/uut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/rnext">
+         <obj_property name="ElementShortName">rnext</obj_property>
+         <obj_property name="ObjectShortName">rnext</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/M_AXI_RDATA">
+         <obj_property name="ElementShortName">M_AXI_RDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_RDATA[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group84">
+      <obj_property name="label">axi bram ctrl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group100">
+      <obj_property name="label">misc</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group183">
+      <obj_property name="label">dot_prod</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_controller/state">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/vector_len">
+         <obj_property name="ElementShortName">vector_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_len[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/cntr_i">
+         <obj_property name="ElementShortName">cntr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cntr_i[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/zi">
+         <obj_property name="ElementShortName">zi</obj_property>
+         <obj_property name="ObjectShortName">zi</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_controller/compute">
+         <obj_property name="ElementShortName">compute</obj_property>
+         <obj_property name="ObjectShortName">compute</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_controller/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group192">
+      <obj_property name="label">datapath</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/vector_a_in">
+         <obj_property name="ElementShortName">vector_a_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_a_in[7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/vector_b_in">
+         <obj_property name="ElementShortName">vector_b_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_b_in[7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/product">
+         <obj_property name="ElementShortName">product[15:0]</obj_property>
+         <obj_property name="ObjectShortName">product[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/sum_out">
+         <obj_property name="ElementShortName">sum_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sum_out[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/sum_in">
+         <obj_property name="ElementShortName">sum_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sum_in[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/result">
+         <obj_property name="ElementShortName">result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_dot_product_accel/sum_in">
+         <obj_property name="ElementShortName">sum_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sum_in[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/uut/design_1_i/dot_prod_0/inst/u_controller/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
