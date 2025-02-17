@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="830333333fs"></ZoomStartTime>
+      <ZoomEndTime time="1033933334fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="233"></NameColumnWidth>
+      <ValueColumnWidth column_width="94"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject type="group" fp_name="group7">
+      <obj_property name="label">tb sigs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/testbench/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/rstn">
+         <obj_property name="ElementShortName">rstn</obj_property>
+         <obj_property name="ObjectShortName">rstn</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/error">
+         <obj_property name="ElementShortName">error</obj_property>
+         <obj_property name="ObjectShortName">error</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_arvalid">
+         <obj_property name="ElementShortName">s00_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_arready">
+         <obj_property name="ElementShortName">s00_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/S00_AXI_araddr">
+         <obj_property name="ElementShortName">S00_AXI_araddr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_araddr[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_araddr">
+         <obj_property name="ElementShortName">s00_axi_araddr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_araddr[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/slv_reg4">
+         <obj_property name="ElementShortName">slv_reg4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">slv_reg4[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/slv_reg_rden">
+         <obj_property name="ElementShortName">slv_reg_rden</obj_property>
+         <obj_property name="ObjectShortName">slv_reg_rden</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/slv_reg_rden_ff">
+         <obj_property name="ElementShortName">slv_reg_rden_ff</obj_property>
+         <obj_property name="ObjectShortName">slv_reg_rden_ff</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/slv_reg_rden_pulse">
+         <obj_property name="ElementShortName">slv_reg_rden_pulse</obj_property>
+         <obj_property name="ObjectShortName">slv_reg_rden_pulse</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/reg_data_out">
+         <obj_property name="ElementShortName">reg_data_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">reg_data_out[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/axi_rdata">
+         <obj_property name="ElementShortName">axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_rdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/S_AXI_RDATA">
+         <obj_property name="ElementShortName">S_AXI_RDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_RDATA[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/S00_AXI_rdata">
+         <obj_property name="ElementShortName">S00_AXI_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_rdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/S00_AXI_rdata">
+         <obj_property name="ElementShortName">S00_AXI_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">S00_AXI_rdata[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/result">
+         <obj_property name="ElementShortName">result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/axi_arready">
+         <obj_property name="ElementShortName">axi_arready</obj_property>
+         <obj_property name="ObjectShortName">axi_arready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/S_AXI_ARVALID">
+         <obj_property name="ElementShortName">S_AXI_ARVALID</obj_property>
+         <obj_property name="ObjectShortName">S_AXI_ARVALID</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group8">
+      <obj_property name="label">axi_master_m00</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/axi_awaddr">
+         <obj_property name="ElementShortName">axi_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awaddr[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/burst_size_bytes">
+         <obj_property name="ElementShortName">burst_size_bytes[6:0]</obj_property>
+         <obj_property name="ObjectShortName">burst_size_bytes[6:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/vector_base_addr">
+         <obj_property name="ElementShortName">vector_base_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_base_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/M_AXI_AWADDR">
+         <obj_property name="ElementShortName">M_AXI_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/vector_base_addr">
+         <obj_property name="ElementShortName">vector_base_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_base_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/vector_len">
+         <obj_property name="ElementShortName">vector_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_len[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/INIT_AXI_TXN">
+         <obj_property name="ElementShortName">INIT_AXI_TXN</obj_property>
+         <obj_property name="ObjectShortName">INIT_AXI_TXN</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/init_txn_pulse">
+         <obj_property name="ElementShortName">init_txn_pulse</obj_property>
+         <obj_property name="ObjectShortName">init_txn_pulse</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/mst_exec_state">
+         <obj_property name="ElementShortName">mst_exec_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">mst_exec_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_master_m_0/reads_done">
+         <obj_property name="ElementShortName">reads_done</obj_property>
+         <obj_property name="ObjectShortName">reads_done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/writes_done">
+         <obj_property name="ElementShortName">writes_done</obj_property>
+         <obj_property name="ObjectShortName">writes_done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/wnext">
+         <obj_property name="ElementShortName">wnext</obj_property>
+         <obj_property name="ObjectShortName">wnext</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/write_index">
+         <obj_property name="ElementShortName">write_index[4:0]</obj_property>
+         <obj_property name="ObjectShortName">write_index[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/axi_wdata">
+         <obj_property name="ElementShortName">axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_wdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/en_writes_done">
+         <obj_property name="ElementShortName">en_writes_done</obj_property>
+         <obj_property name="ObjectShortName">en_writes_done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/writes_done">
+         <obj_property name="ElementShortName">writes_done</obj_property>
+         <obj_property name="ObjectShortName">writes_done</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group143">
+      <obj_property name="label">axi_master_m01</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/axi_awaddr">
+         <obj_property name="ElementShortName">axi_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awaddr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/burst_size_bytes">
+         <obj_property name="ElementShortName">burst_size_bytes[6:0]</obj_property>
+         <obj_property name="ObjectShortName">burst_size_bytes[6:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/vector_base_addr">
+         <obj_property name="ElementShortName">vector_base_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_base_addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/M_AXI_AWADDR">
+         <obj_property name="ElementShortName">M_AXI_AWADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_AWADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/axi_wdata">
+         <obj_property name="ElementShortName">axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_wdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/wnext">
+         <obj_property name="ElementShortName">wnext</obj_property>
+         <obj_property name="ObjectShortName">wnext</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/write_index">
+         <obj_property name="ElementShortName">write_index[4:0]</obj_property>
+         <obj_property name="ObjectShortName">write_index[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_master_m_v1_2_0/inst/axi_master_m_v1_2_M01_AXI_inst/writes_done">
+         <obj_property name="ElementShortName">writes_done</obj_property>
+         <obj_property name="ObjectShortName">writes_done</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group84">
+      <obj_property name="label">axi bram ctrl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group100">
+      <obj_property name="label">axi lite</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_aclk">
+         <obj_property name="ElementShortName">s00_axi_aclk</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_aclk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_aresetn">
+         <obj_property name="ElementShortName">s00_axi_aresetn</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_aresetn</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_awaddr">
+         <obj_property name="ElementShortName">s00_axi_awaddr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awaddr[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_awvalid">
+         <obj_property name="ElementShortName">s00_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awvalid</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_wvalid">
+         <obj_property name="ElementShortName">s00_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_awready">
+         <obj_property name="ElementShortName">s00_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awready</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_wready">
+         <obj_property name="ElementShortName">s00_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_wready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/s00_axi_wdata">
+         <obj_property name="ElementShortName">s00_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_wdata[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider306" type="divider">
+         <obj_property name="label">.</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/slv_reg0">
+         <obj_property name="ElementShortName">slv_reg0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">slv_reg0[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/slv_reg1">
+         <obj_property name="ElementShortName">slv_reg1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">slv_reg1[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/slv_reg2">
+         <obj_property name="ElementShortName">slv_reg2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">slv_reg2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/slv_reg3">
+         <obj_property name="ElementShortName">slv_reg3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">slv_reg3[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/slv_reg4">
+         <obj_property name="ElementShortName">slv_reg4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">slv_reg4[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/inst/axi_lite_v1_0_S00_AXI_inst/slv_reg5">
+         <obj_property name="ElementShortName">slv_reg5[31:0]</obj_property>
+         <obj_property name="ObjectShortName">slv_reg5[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_lite_0/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/vec_a_addr">
+         <obj_property name="ElementShortName">vec_a_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vec_a_addr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/vec_b_addr">
+         <obj_property name="ElementShortName">vec_b_addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vec_b_addr[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/vector_len">
+         <obj_property name="ElementShortName">vector_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_len[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_lite_0/result_in">
+         <obj_property name="ElementShortName">result_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result_in[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDMAGRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group183">
+      <obj_property name="label">dot_prod</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/state">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group192">
+      <obj_property name="label">datapath</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/ldi">
+         <obj_property name="ElementShortName">ldi</obj_property>
+         <obj_property name="ObjectShortName">ldi</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/compute">
+         <obj_property name="ElementShortName">compute</obj_property>
+         <obj_property name="ObjectShortName">compute</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/en_sum">
+         <obj_property name="ElementShortName">en_sum</obj_property>
+         <obj_property name="ObjectShortName">en_sum</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/vector_a_in">
+         <obj_property name="ElementShortName">vector_a_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_a_in[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/vector_b_in">
+         <obj_property name="ElementShortName">vector_b_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_b_in[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/vector_len">
+         <obj_property name="ElementShortName">vector_len[31:0]</obj_property>
+         <obj_property name="ObjectShortName">vector_len[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/zi">
+         <obj_property name="ElementShortName">zi</obj_property>
+         <obj_property name="ObjectShortName">zi</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/cntr_i">
+         <obj_property name="ElementShortName">cntr_i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cntr_i[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/product">
+         <obj_property name="ElementShortName">product[15:0]</obj_property>
+         <obj_property name="ObjectShortName">product[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/sum_out">
+         <obj_property name="ElementShortName">sum_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sum_out[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/sum_in">
+         <obj_property name="ElementShortName">sum_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sum_in[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/result">
+         <obj_property name="ElementShortName">result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result[31:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_dot_product_accel/result">
+         <obj_property name="ElementShortName">result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group127">
+      <obj_property name="label">controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/reset">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/M_AXI_RDATA">
+         <obj_property name="ElementShortName">M_AXI_RDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_AXI_RDATA[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/axi_master_m_0/reads_done">
+         <obj_property name="ElementShortName">reads_done</obj_property>
+         <obj_property name="ObjectShortName">reads_done</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/read_index">
+         <obj_property name="ElementShortName">read_index[4:0]</obj_property>
+         <obj_property name="ObjectShortName">read_index[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/read_burst_counter">
+         <obj_property name="ElementShortName">read_burst_counter[6:0]</obj_property>
+         <obj_property name="ObjectShortName">read_burst_counter[6:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/axi_master_m_0/inst/axi_master_m_v1_1_M00_AXI_inst/mst_exec_state">
+         <obj_property name="ElementShortName">mst_exec_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">mst_exec_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/state">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/ldi">
+         <obj_property name="ElementShortName">ldi</obj_property>
+         <obj_property name="ObjectShortName">ldi</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/zi">
+         <obj_property name="ElementShortName">zi</obj_property>
+         <obj_property name="ObjectShortName">zi</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/vector_valid">
+         <obj_property name="ElementShortName">vector_valid</obj_property>
+         <obj_property name="ObjectShortName">vector_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/en_sum">
+         <obj_property name="ElementShortName">en_sum</obj_property>
+         <obj_property name="ObjectShortName">en_sum</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/compute">
+         <obj_property name="ElementShortName">compute</obj_property>
+         <obj_property name="ObjectShortName">compute</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/busy">
+         <obj_property name="ElementShortName">busy</obj_property>
+         <obj_property name="ObjectShortName">busy</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/testbench/dut/design_1_i/dot_prod_0/inst/u_controller/done">
+         <obj_property name="ElementShortName">done</obj_property>
+         <obj_property name="ObjectShortName">done</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
