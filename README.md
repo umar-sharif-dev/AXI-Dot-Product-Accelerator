@@ -87,63 +87,39 @@ Vivado Simulator
 
 ---
 
-## Project Heirarchy
+---
 
-AXI-Dot-Product-Accelerator - No AXI Lite/
+## Project Hierarchy
+
+```
+AXI-Dot-Product-Accelerator/
 │── diagrams/
-​​
-# Block diagrams and testbench simulation results
-│ ├── Block Diagram.pdf
-​
-# Architectural overview of the design
-│ ├── testbench_sim results.png ​ # Screenshot of simulation results
+│   ├── Block_Diagram.pdf  # Block diagrams and testbench simulation results
+│   ├── testbench_sim_results.png  # Screenshot of simulation results
 │
-│── documentation/
-​
-# Contains design documentation
+│── documentation/  # Contains design documentation
 │
-│── python_code/
-​
-# Python scripts related to verification
-│ ├── accum.py
-​​
-# Python script for computing dot product
-│ ├── dot_product_output.txt ​ # Output file of computed dot product
+│── python_code/  # Python scripts related to verification
+│   ├── accum.py  # Python script for computing dot product
+│   ├── dot_product_output.txt  # Output file of computed dot product
 │
-│── src_code/
-​​
-# Source files for the hardware implementation
-│ ├── controller.sv
-​​
-# Control logic for the accelerator
-│ ├── counter.sv
-​ ​
-# Counter module for iterations
-│ ├── design_1.v
-​​
-# Main design implementation
-│ ├── design_1_wrapper.v
-​ # Wrapper for top-level module
-│ ├── dot_product_accel.sv ​ # Core computation module for dot product
-│ ├── regn.sv
-​ ​
-# Register handling module
-│ ├── top_level.sv
-​​
-# Top-level module integrating components
-│ ├── ip_repo/
-​ ​
+│── src_code/  # Source files for the hardware implementation
+│   ├── controller.sv  # Control logic for the accelerator
+│   ├── counter.sv  # Counter module for iterations
+│   ├── design_1.v  # Main design implementation
+│   ├── design_1_wrapper.v  # Wrapper for top-level module
+│   ├── dot_product_accel.sv  # Core computation module for dot product
+│   ├── regn.sv  # Register handling module
+│   ├── top_level.sv  # Top-level module integrating components
+│   ├── ip_repo/  # IP repository
 │
-│── testbench/
-​​
-# Testbench and related simulation files
-│ ├── testbench.sv
-​
-# SystemVerilog testbench for verification
-│ ├── testbench_behav.wcfg
-​ # Waveform configuration file
-│ ├── testbench_sim results.png ​ # Screenshot of simulation results
+│── testbench/  # Testbench and related simulation files
+│   ├── testbench.sv  # SystemVerilog testbench for verification
+│   ├── testbench_behav.wcfg  # Waveform configuration file
+│   ├── testbench_sim_results.png  # Screenshot of simulation results
 │
-└── The_Zynq_Book_ebook.pdf
-# Reference book on Zynq architecture
+└── The_Zynq_Book_ebook.pdf  # Reference book on Zynq architecture
+```
+
+---
 
