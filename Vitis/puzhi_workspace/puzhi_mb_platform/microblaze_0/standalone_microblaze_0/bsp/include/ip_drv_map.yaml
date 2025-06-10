@@ -1,0 +1,12 @@
+axi_dpe_0:
+- axi_dpe
+- None
+axi_timer_0:
+- axi_timer
+- tmrctr
+axi_uartlite_0:
+- axi_uartlite
+- uartlite
+sd_controller_wrapper_0:
+- sd_controller_wrapper
+- None

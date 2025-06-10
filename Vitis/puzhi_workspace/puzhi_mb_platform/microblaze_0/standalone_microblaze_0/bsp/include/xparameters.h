@@ -1,0 +1,70 @@
+#ifndef XPARAMETERS_H   /* prevent circular inclusions */
+#define XPARAMETERS_H   /* by using protection macros */
+
+#define XPAR_XTMRCTR_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_TIMER_0 */
+#define XPAR_AXI_TIMER_0_COMPATIBLE "xlnx,axi-timer-2.0"
+#define XPAR_AXI_TIMER_0_BASEADDR 0x41c00000
+#define XPAR_AXI_TIMER_0_HIGHADDR 0x41c0ffff
+#define XPAR_AXI_TIMER_0_CLOCK_FREQUENCY 0x13dcfdd0
+
+/* Canonical definitions for peripheral AXI_TIMER_0 */
+#define XPAR_XTMRCTR_0_BASEADDR 0x41c00000
+#define XPAR_XTMRCTR_0_HIGHADDR 0x41c0ffff
+#define XPAR_XTMRCTR_0_COMPATIBLE "xlnx,axi-timer-2.0"
+#define XPAR_XTMRCTR_0_CLOCK_FREQUENCY 0x13dcfdd0
+
+#define XPAR_XUARTLITE_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_UARTLITE_0 */
+#define XPAR_AXI_UARTLITE_0_COMPATIBLE "xlnx,axi-uartlite-2.0"
+#define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+#define XPAR_AXI_UARTLITE_0_HIGHADDR 0x4060ffff
+#define XPAR_AXI_UARTLITE_0_BAUDRATE 0x2580
+#define XPAR_AXI_UARTLITE_0_USE_PARITY 0x0
+#define XPAR_AXI_UARTLITE_0_ODD_PARITY 0x0
+#define XPAR_AXI_UARTLITE_0_DATA_BITS 0x8
+
+/* Canonical definitions for peripheral AXI_UARTLITE_0 */
+#define XPAR_XUARTLITE_0_BASEADDR 0x40600000
+#define XPAR_XUARTLITE_0_HIGHADDR 0x4060ffff
+#define XPAR_XUARTLITE_0_BAUDRATE 0x2580
+#define XPAR_XUARTLITE_0_COMPATIBLE "xlnx,axi-uartlite-2.0"
+#define XPAR_XUARTLITE_0_DATA_BITS 0x8
+#define XPAR_XUARTLITE_0_ODD_PARITY 0x0
+#define XPAR_XUARTLITE_0_USE_PARITY 0x0
+
+/* Definitions for peripheral AXI_DPE_0 */
+#define XPAR_AXI_DPE_0_BASEADDR 0x30000
+#define XPAR_AXI_DPE_0_HIGHADDR 0x3ffff
+
+/* Canonical definitions for peripheral AXI_DPE_0 */
+#define XPAR_AXI_DPE_0_BASEADDR 0x30000
+#define XPAR_AXI_DPE_0_HIGHADDR 0x3ffff
+
+/* Definitions for peripheral SD_CONTROLLER_WRAPPER_0 */
+#define XPAR_SD_CONTROLLER_WRAPPER_0_BASEADDR 0x20000
+#define XPAR_SD_CONTROLLER_WRAPPER_0_HIGHADDR 0x20fff
+
+/* Canonical definitions for peripheral SD_CONTROLLER_WRAPPER_0 */
+#define XPAR_SD_CONTROLLER_WRAPPER_0_BASEADDR 0x20000
+#define XPAR_SD_CONTROLLER_WRAPPER_0_HIGHADDR 0x20fff
+
+#define XPAR_DDR4_0_BASEADDRESS 0x80000000
+#define XPAR_DDR4_0_HIGHADDRESS 0xffffffff
+#define XPAR_LMB_BRAM_0_BASEADDRESS 0x0
+#define XPAR_LMB_BRAM_0_HIGHADDRESS 0x1ffff
+#define XPAR_CPU_CORE_CLOCK_FREQ_HZ 333250000
+
+#define XPAR_MICROBLAZE_ADDR_SIZE 32
+
+#define XPAR_MICROBLAZE_USE_STACK_PROTECTION 0
+
+/* Number of SLRs */
+#define NUMBER_OF_SLRS 0x1
+
+/* Device ID */
+#define XPAR_DEVICE_ID "xcku5p"
+
+#endif  /* end of protection macro */

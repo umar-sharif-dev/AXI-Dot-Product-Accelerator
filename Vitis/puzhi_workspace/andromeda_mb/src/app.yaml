@@ -1,0 +1,4 @@
+domain_path: /home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/export/puzhi_mb_platform/sw/standalone_microblaze_0
+app_src_dir: /opt/tools/Xilinx/Vitis/2024.2/data/embeddedsw/lib/sw_apps/empty_application
+template: empty_application
+lang: c
