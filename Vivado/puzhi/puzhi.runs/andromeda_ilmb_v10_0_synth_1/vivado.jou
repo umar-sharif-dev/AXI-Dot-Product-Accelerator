@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jun 10 02:56:43 2025
+# Process ID         : 4151839
+# Current directory  : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_ilmb_v10_0_synth_1
+# Command line       : vivado -log andromeda_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source andromeda_ilmb_v10_0.tcl
+# Log file           : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_ilmb_v10_0_synth_1/andromeda_ilmb_v10_0.vds
+# Journal file       : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_ilmb_v10_0_synth_1/vivado.jou
+# Running On         : dust2
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285K
+# CPU Frequency      : 5233.697 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 100557 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 109147 MB
+# Available Virtual  : 41363 MB
+#-----------------------------------------------------------
+source andromeda_ilmb_v10_0.tcl -notrace

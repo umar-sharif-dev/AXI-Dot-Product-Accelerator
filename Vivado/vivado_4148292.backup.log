@@ -1,0 +1,279 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jun 10 02:52:45 2025
+# Process ID         : 4148292
+# Current directory  : /home/malik/andromeda_ila/andromeda/Vivado
+# Command line       : vivado ./puzhi/puzhi.xpr
+# Log file           : /home/malik/andromeda_ila/andromeda/Vivado/vivado.log
+# Journal file       : /home/malik/andromeda_ila/andromeda/Vivado/vivado.jou
+# Running On         : dust2
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285K
+# CPU Frequency      : 800.000 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 100557 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 109147 MB
+# Available Virtual  : 47028 MB
+#-----------------------------------------------------------
+start_gui
+open_project ./puzhi/puzhi.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory '/home/malik/.Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/andromeda.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/tools/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 8093.852 ; gain = 486.336 ; free physical = 24192 ; free virtual = 43686
+update_compile_order -fileset sources_1
+open_bd_design {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+Reading block design file </home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd>...
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: AMD recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:module_ref:sd_controller_wrapper:1.0 - sd_controller_wrapper_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_333M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_100M
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:module_ref:axi_dpe:1.0 - axi_dpe_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /axi_dpe_0/m_axi.
+Successfully read diagram <andromeda> from block design file </home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd>
+startgroup
+connect_bd_net -net read_request_debug [get_bd_pins axi_dpe_0/read_request_debug]
+connect_bd_net -net read_data_index_debug [get_bd_pins axi_dpe_0/read_data_index_debug]
+connect_bd_net -net dma_start_debug [get_bd_pins axi_dpe_0/dma_start_debug]
+connect_bd_net -net dma_busy_debug [get_bd_pins axi_dpe_0/dma_busy_debug]
+connect_bd_net -net rvalid_debug [get_bd_pins axi_dpe_0/rvalid_debug]
+connect_bd_net -net dma_status_debug [get_bd_pins axi_dpe_0/dma_status_debug]
+connect_bd_net -net wvalid_debug [get_bd_pins axi_dpe_0/wvalid_debug]
+connect_bd_net -net master_state_debug [get_bd_pins axi_dpe_0/master_state_debug]
+connect_bd_net -net rx_data_out_ila [get_bd_pins axi_dpe_0/rx_data_out_ila]
+connect_bd_net -net ctrl_state_debug [get_bd_pins axi_dpe_0/ctrl_state_debug]
+connect_bd_net -net write_state_debug [get_bd_pins axi_dpe_0/write_state_debug]
+connect_bd_net -net read_data_valid_debug [get_bd_pins axi_dpe_0/read_data_valid_debug]
+connect_bd_net -net read_state_debug [get_bd_pins axi_dpe_0/read_state_debug]
+connect_bd_net -net dpe_state_debug [get_bd_pins axi_dpe_0/dpe_state_debug]
+connect_bd_net -net dpe_en_debug [get_bd_pins axi_dpe_0/dpe_en_debug]
+connect_bd_net -net write_grant_debug [get_bd_pins axi_dpe_0/write_grant_debug]
+connect_bd_net -net read_grant_debug [get_bd_pins axi_dpe_0/read_grant_debug]
+connect_bd_net -net dpe_start_debug [get_bd_pins axi_dpe_0/dpe_start_debug]
+connect_bd_net -net read_data_buffer_debug [get_bd_pins axi_dpe_0/read_data_buffer_debug]
+connect_bd_net -net write_request_debug [get_bd_pins axi_dpe_0/write_request_debug]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {read_request_debug read_data_index_debug dma_start_debug dma_busy_debug rvalid_debug dma_status_debug wvalid_debug master_state_debug rx_data_out_ila ctrl_state_debug write_state_debug read_data_valid_debug read_state_debug dpe_state_debug dpe_en_debug write_grant_debug read_grant_debug dpe_start_debug read_data_buffer_debug write_request_debug }]
+true
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets ctrl_state_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets dma_busy_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets dma_start_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets dma_status_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets dpe_en_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets dpe_start_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets dpe_state_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets master_state_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets read_data_buffer_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets read_data_index_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets read_data_valid_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets read_grant_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets read_request_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets read_state_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets rvalid_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets rx_data_out_ila] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets write_grant_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets write_request_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets write_state_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets wvalid_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                         ]
+WARNING: [BD 5-1069] Please specify '-mon_dir' argument when interface mode is 'Monitor'. Using 'in' as default.
+WARNING: [BD 5-1069] Please specify '-mon_dir' argument when interface mode is 'Monitor'. Using 'in' as default.
+WARNING: [BD 5-1069] Please specify '-mon_dir' argument when interface mode is 'Monitor'. Using 'in' as default.
+Debug Automation : Re-customizing System ILA block '/system_ila_0' to mode MIX, with 0 new slot interface pins and 20 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting net /ctrl_state_debug, to System ILA probe pin /system_ila_0/probe0 for debug.
+Debug Automation : Connecting net /dma_busy_debug, to System ILA probe pin /system_ila_0/probe1 for debug.
+Debug Automation : Connecting net /dma_start_debug, to System ILA probe pin /system_ila_0/probe2 for debug.
+Debug Automation : Connecting net /dma_status_debug, to System ILA probe pin /system_ila_0/probe3 for debug.
+Debug Automation : Connecting net /dpe_en_debug, to System ILA probe pin /system_ila_0/probe4 for debug.
+Debug Automation : Connecting net /dpe_start_debug, to System ILA probe pin /system_ila_0/probe5 for debug.
+Debug Automation : Connecting net /dpe_state_debug, to System ILA probe pin /system_ila_0/probe6 for debug.
+Debug Automation : Connecting net /master_state_debug, to System ILA probe pin /system_ila_0/probe7 for debug.
+Debug Automation : Connecting net /read_data_buffer_debug, to System ILA probe pin /system_ila_0/probe8 for debug.
+Debug Automation : Connecting net /read_data_index_debug, to System ILA probe pin /system_ila_0/probe9 for debug.
+Debug Automation : Connecting net /read_data_valid_debug, to System ILA probe pin /system_ila_0/probe10 for debug.
+Debug Automation : Connecting net /read_grant_debug, to System ILA probe pin /system_ila_0/probe11 for debug.
+Debug Automation : Connecting net /read_request_debug, to System ILA probe pin /system_ila_0/probe12 for debug.
+Debug Automation : Connecting net /read_state_debug, to System ILA probe pin /system_ila_0/probe13 for debug.
+Debug Automation : Connecting net /rvalid_debug, to System ILA probe pin /system_ila_0/probe14 for debug.
+Debug Automation : Connecting net /rx_data_out_ila, to System ILA probe pin /system_ila_0/probe15 for debug.
+Debug Automation : Connecting net /write_grant_debug, to System ILA probe pin /system_ila_0/probe16 for debug.
+Debug Automation : Connecting net /write_request_debug, to System ILA probe pin /system_ila_0/probe17 for debug.
+Debug Automation : Connecting net /write_state_debug, to System ILA probe pin /system_ila_0/probe18 for debug.
+Debug Automation : Connecting net /wvalid_debug, to System ILA probe pin /system_ila_0/probe19 for debug.
+endgroup
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
+INFO: [BD 5-943] Reserving offset range <0x41C0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0002_0000 [ 4K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0003_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S02_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] andromeda_axi_smc_0: SmartConnect andromeda_axi_smc_0 is in High-performance Mode.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:microblaze:11.0-9] /microblaze_0: Setting C_BASE_VECTORS to 0x00000000.
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 9639.281 ; gain = 1010.613 ; free physical = 22742 ; free virtual = 42221
+export_ip_user_files -of_objects  [get_files /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v] -no_script -reset -force -quiet
+remove_files  /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+file delete -force /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -top
+INFO: [BD 41-1662] The design 'andromeda.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Wrote  : </home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd> 
+Wrote  : </home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/ui/bd_9d7d77c9.ui> 
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARLOCK as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARQOS as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWQOS as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWLOCK as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_request_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_index_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_start_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_busy_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net rvalid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_status_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net wvalid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net master_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net rx_data_out_ila as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net ctrl_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net write_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_valid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_en_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net write_grant_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_grant_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_start_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_buffer_debug as it is marked for debug
+INFO: [Common 17-14] Message 'BD 41-3257' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Verilog Output written to : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v
+Verilog Output written to : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/sim/andromeda.v
+Verilog Output written to : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+add_files -norecurse /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 10 02:55:50 2025...

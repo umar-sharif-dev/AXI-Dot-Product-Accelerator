@@ -1,0 +1,419 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jun 10 02:57:27 2025
+# Process ID         : 4155514
+# Current directory  : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1
+# Command line       : vivado -log andromeda_axi_dpe_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source andromeda_axi_dpe_0_0.tcl
+# Log file           : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/andromeda_axi_dpe_0_0.vds
+# Journal file       : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/vivado.jou
+# Running On         : dust2
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285K
+# CPU Frequency      : 5400.054 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 100557 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 109147 MB
+# Available Virtual  : 19653 MB
+#-----------------------------------------------------------
+source andromeda_axi_dpe_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/tools/Xilinx/Vivado/2024.2/data/ip'.
+Command: synth_design -top andromeda_axi_dpe_0_0 -part xcku5p-ffvb676-2-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4156310
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2744.070 ; gain = 156.859 ; free physical = 2013 ; free virtual = 13436
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_dpe_0_0' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_dpe_0_0/synth/andromeda_axi_dpe_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_dpe' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:1]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sdp_w4096x2_r4096x2' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-4155514-dust2/realtime/sdp_w4096x2_r4096x2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sdp_w4096x2_r4096x2' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-4155514-dust2/realtime/sdp_w4096x2_r4096x2_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:353]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:440]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:770]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:837]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:964]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:1036]
+INFO: [Synth 8-6155] done synthesizing module 'axi_dpe' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_axi_dpe_0_0' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_dpe_0_0/synth/andromeda_axi_dpe_0_0.v:53]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'bram_sdp_x_vector'. This will prevent further optimization [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:270]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst'. This will prevent further optimization [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_dpe_0_0/synth/andromeda_axi_dpe_0_0.v:286]
+WARNING: [Synth 8-6014] Unused sequential element bram_re_reg was removed.  [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:436]
+WARNING: [Synth 8-6014] Unused sequential element burst_count_reg was removed.  [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:823]
+WARNING: [Synth 8-6014] Unused sequential element beats_reg_reg was removed.  [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:868]
+WARNING: [Synth 8-6014] Unused sequential element write_beats_reg was removed.  [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:1033]
+WARNING: [Synth 8-3848] Net master_state in module/entity axi_dpe does not have driver. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:171]
+WARNING: [Synth 8-3848] Net dpe_done in module/entity axi_dpe does not have driver. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:124]
+WARNING: [Synth 8-3848] Net dpe_y_out in module/entity axi_dpe does not have driver. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:289]
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[1] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[0] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[1] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[0] in module axi_dpe is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2852.242 ; gain = 265.031 ; free physical = 336 ; free virtual = 10778
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2864.117 ; gain = 276.906 ; free physical = 328 ; free virtual = 10770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2864.117 ; gain = 276.906 ; free physical = 328 ; free virtual = 10770
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2864.117 ; gain = 0.000 ; free physical = 374 ; free virtual = 10603
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2_in_context.xdc] for cell 'inst/bram_sdp_x_vector'
+Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2_in_context.xdc] for cell 'inst/bram_sdp_x_vector'
+Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_dpe_0_0/andromeda_axi_dpe_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_dpe_0_0/andromeda_axi_dpe_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2967.887 ; gain = 0.000 ; free physical = 381 ; free virtual = 10324
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2967.887 ; gain = 0.000 ; free physical = 377 ; free virtual = 10321
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2967.887 ; gain = 380.676 ; free physical = 3941 ; free virtual = 13892
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku5p-ffvb676-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2975.891 ; gain = 388.680 ; free physical = 3941 ; free virtual = 13892
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/dont_touch.xdc, line 12).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/bram_sdp_x_vector. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2975.891 ; gain = 388.680 ; free physical = 3941 ; free virtual = 13892
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'axil_write_state_reg' in module 'axi_dpe'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'axi_dpe'
+INFO: [Synth 8-802] inferred FSM for state register 'read_state_reg' in module 'axi_dpe'
+INFO: [Synth 8-802] inferred FSM for state register 'dpe_state_reg' in module 'axi_dpe'
+INFO: [Synth 8-802] inferred FSM for state register 'write_state_reg' in module 'axi_dpe'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         AXIL_WRITE_IDLE |                              001 |                               00
+         AXIL_WRITE_DATA |                              010 |                               01
+         AXIL_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axil_write_state_reg' using encoding 'one-hot' in module 'axi_dpe'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                DPE_IDLE |                              001 |                               00
+              DPE_ACTIVE |                              010 |                               01
+                DPE_DONE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dpe_state_reg' using encoding 'one-hot' in module 'axi_dpe'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              WRITE_IDLE |                           000001 |                              000
+             WRITE_SETUP |                           000010 |                              001
+                WRITE_AW |                           000100 |                              010
+              WRITE_DATA |                           001000 |                              011
+              WRITE_RESP |                           010000 |                              100
+              WRITE_DONE |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'write_state_reg' using encoding 'one-hot' in module 'axi_dpe'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               READ_IDLE |                            00001 |                              000
+              READ_SETUP |                            00010 |                              001
+                 READ_AR |                            00100 |                              010
+               READ_DATA |                            01000 |                              011
+               READ_DONE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_state_reg' using encoding 'one-hot' in module 'axi_dpe'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               CTRL_IDLE |                              001 |                               00
+             CTRL_ACTIVE |                              010 |                               01
+           CTRL_COMPLETE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'axi_dpe'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2975.891 ; gain = 388.680 ; free physical = 5434 ; free virtual = 15390
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   3 Input    6 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	             4096 Bit    Registers := 2     
+	              256 Bit    Registers := 5     
+	               32 Bit    Registers := 11    
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 26    
++---RAMs : 
+	              32K Bit	(128 X 256 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input 4096 Bit        Muxes := 1     
+	   2 Input  256 Bit        Muxes := 2     
+	   6 Input  256 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   6 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 41    
+	   6 Input    1 Bit        Muxes := 22    
+	   3 Input    1 Bit        Muxes := 25    
+	   5 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1824 (col length:96)
+BRAMs: 960 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[1] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rresp[0] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[1] in module axi_dpe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bresp[0] in module axi_dpe is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3119.062 ; gain = 531.852 ; free physical = 8729 ; free virtual = 18702
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------+-----------+----------------------+-------------------------------+
+|Module Name | RTL Object           | Inference | Size (Depth x Width) | Primitives                    | 
++------------+----------------------+-----------+----------------------+-------------------------------+
+|inst        | read_data_buffer_reg | Implied   | 128 x 256            | RAM128X1D x 256 RAM64M8 x 74  | 
++------------+----------------------+-----------+----------------------+-------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3526.090 ; gain = 938.879 ; free physical = 7702 ; free virtual = 17883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 3819.980 ; gain = 1232.770 ; free physical = 13051 ; free virtual = 23099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------+-----------+----------------------+-------------------------------+
+|Module Name | RTL Object           | Inference | Size (Depth x Width) | Primitives                    | 
++------------+----------------------+-----------+----------------------+-------------------------------+
+|inst        | read_data_buffer_reg | Implied   | 128 x 256            | RAM128X1D x 256 RAM64M8 x 74  | 
++------------+----------------------+-----------+----------------------+-------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 3830.863 ; gain = 1243.652 ; free physical = 12993 ; free virtual = 23036
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 3830.863 ; gain = 1243.652 ; free physical = 15797 ; free virtual = 25840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 3830.863 ; gain = 1243.652 ; free physical = 15797 ; free virtual = 25840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 3830.863 ; gain = 1243.652 ; free physical = 15805 ; free virtual = 25848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 3830.863 ; gain = 1243.652 ; free physical = 15805 ; free virtual = 25848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 3830.863 ; gain = 1243.652 ; free physical = 15805 ; free virtual = 25848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 3830.863 ; gain = 1243.652 ; free physical = 15805 ; free virtual = 25848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |sdp_w4096x2_r4096x2 |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |sdp_w4096x2_r4096x2 |     1|
+|2     |CARRY8              |    40|
+|3     |LUT1                |     6|
+|4     |LUT2                |   533|
+|5     |LUT3                |    82|
+|6     |LUT4                |   201|
+|7     |LUT5                |  4232|
+|8     |LUT6                | 10058|
+|9     |MUXF7               |   184|
+|10    |MUXF8               |    12|
+|11    |RAM128X1D           |   256|
+|12    |RAM64M8             |    74|
+|13    |FDRE                |  9453|
+|14    |FDSE                |    37|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 3830.863 ; gain = 1243.652 ; free physical = 15805 ; free virtual = 25848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 3830.863 ; gain = 1139.883 ; free physical = 15805 ; free virtual = 25848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 3830.863 ; gain = 1243.652 ; free physical = 15805 ; free virtual = 25848
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3830.863 ; gain = 0.000 ; free physical = 15931 ; free virtual = 25974
+INFO: [Netlist 29-17] Analyzing 566 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'andromeda_axi_dpe_0_0' is not ideal for floorplanning, since the cellview 'axi_dpe' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3830.863 ; gain = 0.000 ; free physical = 18033 ; free virtual = 28049
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 330 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 256 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 74 instances
+
+Synth Design complete | Checksum: dea53cf
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:01 . Memory (MB): peak = 3830.863 ; gain = 2298.402 ; free physical = 18033 ; free virtual = 28049
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2889.634; main = 2729.355; forked = 172.649
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4728.379; main = 3819.984; forked = 908.395
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 3831.992 ; gain = 0.000 ; free physical = 18033 ; free virtual = 28049
+INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/andromeda_axi_dpe_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file andromeda_axi_dpe_0_0_utilization_synth.rpt -pb andromeda_axi_dpe_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 10 02:58:34 2025...
