@@ -2008,7 +2008,7 @@
           "dpe_done": {
             "direction": "O"
           },
-          "A_fp32_debug": {
+          "A_debug": {
             "direction": "O",
             "left": "31",
             "right": "0"
@@ -2016,7 +2016,7 @@
           "A_valid_debug": {
             "direction": "O"
           },
-          "prod_fp32_debug": {
+          "prod_debug": {
             "direction": "O",
             "left": "31",
             "right": "0"
@@ -2111,7 +2111,7 @@
             "value": "3"
           },
           "C_NUM_OF_PROBES": {
-            "value": "39"
+            "value": "42"
           },
           "C_PROBE0_TYPE": {
             "value": "0"
@@ -2209,7 +2209,16 @@
           "C_PROBE38_TYPE": {
             "value": "0"
           },
+          "C_PROBE39_TYPE": {
+            "value": "0"
+          },
           "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE40_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE41_TYPE": {
             "value": "0"
           },
           "C_PROBE4_TYPE": {
@@ -2469,10 +2478,10 @@
       }
     },
     "nets": {
-      "A_fp32_debug": {
+      "A_debug": {
         "ports": [
-          "axi_dpe_0/A_fp32_debug",
-          "system_ila_0/probe20"
+          "axi_dpe_0/A_debug",
+          "system_ila_0/probe39"
         ],
         "hdl_attributes": {
           "DEBUG": {
@@ -2687,10 +2696,10 @@
           "axi_dpe_0/aclk"
         ]
       },
-      "prod_fp32_debug": {
+      "prod_debug": {
         "ports": [
-          "axi_dpe_0/prod_fp32_debug",
-          "system_ila_0/probe22"
+          "axi_dpe_0/prod_debug",
+          "system_ila_0/probe40"
         ],
         "hdl_attributes": {
           "DEBUG": {
@@ -3126,6 +3135,20 @@
         "ports": [
           "axi_dpe_0/write_state_debug",
           "system_ila_0/probe18"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "write_valid": {
+        "ports": [
+          "axi_dpe_0/write_valid",
+          "system_ila_0/probe41"
         ],
         "hdl_attributes": {
           "DEBUG": {

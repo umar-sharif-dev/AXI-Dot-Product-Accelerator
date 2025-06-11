@@ -7,7 +7,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Tue Jun 10 02:57:15 2025
+  **** Start of session at: Wed Jun 11 19:48:50 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -19,11 +19,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4155010
+INFO: [Synth 8-7075] Helper process launched with PID 98385
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2718.730 ; gain = 156.859 ; free physical = 3762 ; free virtual = 16767
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2719.668 ; gain = 156.859 ; free physical = 49090 ; free virtual = 60492
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'andromeda_rst_ddr4_0_333M_0' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/synth/andromeda_rst_ddr4_0_333M_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'andromeda_rst_ddr4_0_333M_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/synth/andromeda_rst_ddr4_0_333M_0.vhd:74]
 	Parameter C_FAMILY bound to: kintexuplus - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -33,89 +33,89 @@ INFO: [Synth 8-638] synthesizing module 'andromeda_rst_ddr4_0_333M_0' [/home/mal
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/synth/andromeda_rst_ddr4_0_333M_0.vhd:139]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/synth/andromeda_rst_ddr4_0_333M_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
-INFO: [Synth 8-638] synthesizing module 'lpf' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
-INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029]
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
-INFO: [Synth 8-256] done synthesizing module 'andromeda_rst_ddr4_0_333M_0' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/synth/andromeda_rst_ddr4_0_333M_0.vhd:74]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'andromeda_rst_ddr4_0_333M_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/synth/andromeda_rst_ddr4_0_333M_0.vhd:74]
 WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
 WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2796.699 ; gain = 234.828 ; free physical = 2728 ; free virtual = 15734
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2796.637 ; gain = 233.828 ; free physical = 47533 ; free virtual = 58937
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2802.637 ; gain = 240.766 ; free physical = 2708 ; free virtual = 15713
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2802.574 ; gain = 239.766 ; free physical = 47438 ; free virtual = 58842
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2802.637 ; gain = 240.766 ; free physical = 2708 ; free virtual = 15713
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2802.574 ; gain = 239.766 ; free physical = 47438 ; free virtual = 58842
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2813.605 ; gain = 0.000 ; free physical = 2659 ; free virtual = 15664
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2813.543 ; gain = 0.000 ; free physical = 47218 ; free virtual = 58622
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_board.xdc] for cell 'U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_rst_ddr4_0_333M_0_propImpl.xdc].
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_board.xdc] for cell 'U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_rst_ddr4_0_333M_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/andromeda_rst_ddr4_0_333M_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_rst_ddr4_0_333M_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_rst_ddr4_0_333M_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_rst_ddr4_0_333M_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_rst_ddr4_0_333M_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2945.480 ; gain = 0.000 ; free physical = 2178 ; free virtual = 15194
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2935.387 ; gain = 0.000 ; free physical = 45231 ; free virtual = 56645
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2945.480 ; gain = 0.000 ; free physical = 2178 ; free virtual = 15194
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2935.387 ; gain = 0.000 ; free physical = 45231 ; free virtual = 56645
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2945.480 ; gain = 383.609 ; free physical = 5149 ; free virtual = 18192
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2935.387 ; gain = 372.578 ; free physical = 43797 ; free virtual = 55232
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -123,17 +123,17 @@ Start Loading Part and Timing Information
 Loading part: xcku5p-ffvb676-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2953.484 ; gain = 391.613 ; free physical = 5145 ; free virtual = 18188
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2943.391 ; gain = 380.582 ; free physical = 43797 ; free virtual = 55232
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_rst_ddr4_0_333M_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_rst_ddr4_0_333M_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2953.484 ; gain = 391.613 ; free physical = 5121 ; free virtual = 18165
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2943.391 ; gain = 380.582 ; free physical = 43797 ; free virtual = 55232
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2953.484 ; gain = 391.613 ; free physical = 4873 ; free virtual = 17919
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2943.391 ; gain = 380.582 ; free physical = 43734 ; free virtual = 55170
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -169,25 +169,25 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/G
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2953.484 ; gain = 391.613 ; free physical = 4355 ; free virtual = 17405
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2943.391 ; gain = 380.582 ; free physical = 43298 ; free virtual = 54735
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3435.332 ; gain = 873.461 ; free physical = 577 ; free virtual = 13628
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3436.270 ; gain = 873.461 ; free physical = 38551 ; free virtual = 49991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3435.332 ; gain = 873.461 ; free physical = 577 ; free virtual = 13628
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3436.270 ; gain = 873.461 ; free physical = 38543 ; free virtual = 49983
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3464.379 ; gain = 902.508 ; free physical = 556 ; free virtual = 13607
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3465.316 ; gain = 902.508 ; free physical = 38614 ; free virtual = 50053
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -205,37 +205,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3607.191 ; gain = 1045.320 ; free physical = 438 ; free virtual = 13497
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3608.129 ; gain = 1045.320 ; free physical = 38105 ; free virtual = 49550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3607.191 ; gain = 1045.320 ; free physical = 438 ; free virtual = 13497
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3608.129 ; gain = 1045.320 ; free physical = 38105 ; free virtual = 49550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3607.191 ; gain = 1045.320 ; free physical = 438 ; free virtual = 13497
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3608.129 ; gain = 1045.320 ; free physical = 38105 ; free virtual = 49550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3607.191 ; gain = 1045.320 ; free physical = 430 ; free virtual = 13489
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3608.129 ; gain = 1045.320 ; free physical = 38105 ; free virtual = 49550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3607.191 ; gain = 1045.320 ; free physical = 430 ; free virtual = 13489
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3608.129 ; gain = 1045.320 ; free physical = 38105 ; free virtual = 49550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3607.191 ; gain = 1045.320 ; free physical = 430 ; free virtual = 13489
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3608.129 ; gain = 1045.320 ; free physical = 38105 ; free virtual = 49550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -263,18 +263,18 @@ Report Cell Usage:
 |10    |FDSE  |     4|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3607.191 ; gain = 1045.320 ; free physical = 430 ; free virtual = 13489
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3608.129 ; gain = 1045.320 ; free physical = 38105 ; free virtual = 49550
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3607.191 ; gain = 902.477 ; free physical = 328 ; free virtual = 13387
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3607.191 ; gain = 1045.320 ; free physical = 328 ; free virtual = 13387
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3608.129 ; gain = 912.508 ; free physical = 38019 ; free virtual = 49464
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3608.129 ; gain = 1045.320 ; free physical = 38019 ; free virtual = 49464
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3607.191 ; gain = 0.000 ; free physical = 328 ; free virtual = 13387
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3608.129 ; gain = 0.000 ; free physical = 38011 ; free virtual = 49456
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3607.191 ; gain = 0.000 ; free physical = 204 ; free virtual = 13263
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3608.129 ; gain = 0.000 ; free physical = 37929 ; free virtual = 49374
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 9 instances were transformed.
   FDR => FDRE: 8 instances
@@ -284,11 +284,11 @@ Synth Design complete | Checksum: c186c552
 INFO: [Common 17-83] Releasing license: Synthesis
 46 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3607.191 ; gain = 2077.027 ; free physical = 1314 ; free virtual = 13717
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2480.845; main = 2480.845; forked = 170.331
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4243.078; main = 3584.312; forked = 908.398
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 3608.129 ; gain = 2078.027 ; free physical = 37885 ; free virtual = 49330
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2485.979; main = 2485.979; forked = 171.611
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3851.789; main = 3585.250; forked = 908.395
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3608.320 ; gain = 0.000 ; free physical = 1240 ; free virtual = 13642
-INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_rst_ddr4_0_333M_0_synth_1/andromeda_rst_ddr4_0_333M_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3609.258 ; gain = 0.000 ; free physical = 37885 ; free virtual = 49329
+INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_rst_ddr4_0_333M_0_synth_1/andromeda_rst_ddr4_0_333M_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file andromeda_rst_ddr4_0_333M_0_utilization_synth.rpt -pb andromeda_rst_ddr4_0_333M_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 10 02:57:34 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 11 19:49:14 2025...

@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.tcl"
+  variable script "/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,6 +97,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 
@@ -106,28 +107,33 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param bd.open.in_stealth_mode 3
   set_param chipscope.maxJobs 6
-  set_param runs.launchOptions { -jobs 10  }
+  set_param runs.launchOptions { -jobs 24  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xcku5p-ffvb676-2-i
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.cache/wt [current_project]
-  set_property parent.project_path /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.xpr [current_project]
+  set_property webtalk.parent_dir /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/wt [current_project]
+  set_property parent.project_path /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.xpr [current_project]
   set_property ip_cache_permissions disable [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/synth_1/andromeda_wrapper.dcp
+  add_files -quiet /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/andromeda_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd
-  read_ip -quiet /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci
+  add_files /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd
+  read_ip -quiet /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci
+  read_ip -quiet /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_2/floating_point_2.xci
+  read_ip -quiet /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_1/floating_point_1.xci
+  read_ip -quiet /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_3/floating_point_3.xci
+  read_ip -quiet /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_0/floating_point_0.xci
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/malik/andromeda_ila/andromeda/Vivado/board_xdc/puzhi.xdc
+  read_xdc /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/board_xdc/puzhi.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

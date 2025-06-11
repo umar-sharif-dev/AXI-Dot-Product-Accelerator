@@ -2,8 +2,8 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-//Date        : Wed Jun 11 09:09:20 2025
-//Host        : hp running 64-bit Ubuntu 20.04.6 LTS
+//Date        : Wed Jun 11 19:48:37 2025
+//Host        : dust2 running 64-bit Ubuntu 24.04.2 LTS
 //Command     : generate_target andromeda.bd
 //Design      : andromeda
 //Purpose     : IP block netlist
@@ -57,7 +57,7 @@ module andromeda
   input uart_rx;
   output uart_tx;
 
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]A_fp32_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]A_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire A_valid_debug;
   (* CONN_BUS_INFO = "axi_dpe_0_m_axi xilinx.com:interface:aximm:1.0 AXI4 ARADDR" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]axi_dpe_0_m_axi_ARADDR;
   (* CONN_BUS_INFO = "axi_dpe_0_m_axi xilinx.com:interface:aximm:1.0 AXI4 ARBURST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_dpe_0_m_axi_ARBURST;
@@ -272,7 +272,7 @@ module andromeda
   wire microblaze_0_ilmb_1_READY;
   wire microblaze_0_ilmb_1_UE;
   wire microblaze_0_ilmb_1_WAIT;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]prod_fp32_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]prod_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire prod_valid_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]read_data_buffer_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [7:0]read_data_index_debug;
@@ -327,10 +327,11 @@ module andromeda
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire write_grant_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire write_request_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]write_state_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire write_valid;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire wvalid_debug;
 
   andromeda_axi_dpe_0_0 axi_dpe_0
-       (.A_fp32_debug(A_fp32_debug),
+       (.A_debug(A_debug),
         .A_valid_debug(A_valid_debug),
         .aclk(microblaze_0_Clk),
         .aresetn(rst_ddr4_0_333M_peripheral_aresetn),
@@ -372,7 +373,7 @@ module andromeda
         .m_axi_wstrb(axi_dpe_0_m_axi_WSTRB),
         .m_axi_wvalid(axi_dpe_0_m_axi_WVALID),
         .master_state_debug(master_state_debug),
-        .prod_fp32_debug(prod_fp32_debug),
+        .prod_debug(prod_debug),
         .prod_valid_debug(prod_valid_debug),
         .read_data_buffer_debug(read_data_buffer_debug),
         .read_data_index_debug(read_data_index_debug),
@@ -418,6 +419,7 @@ module andromeda
         .write_grant_debug(write_grant_debug),
         .write_request_debug(write_request_debug),
         .write_state_debug(write_state_debug),
+        .write_valid(write_valid),
         .wvalid_debug(wvalid_debug));
   andromeda_axi_smc_0 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
@@ -950,9 +952,9 @@ module andromeda
         .probe18(write_state_debug),
         .probe19(wvalid_debug),
         .probe2(dma_start_debug),
-        .probe20(A_fp32_debug),
+        .probe20(1'b0),
         .probe21(A_valid_debug),
-        .probe22(prod_fp32_debug),
+        .probe22(1'b0),
         .probe23(prod_valid_debug),
         .probe24(sum_stage0_debug),
         .probe25(sum_stage1_debug),
@@ -970,7 +972,10 @@ module andromeda
         .probe36(valid_stage5_debug),
         .probe37(valid_stage6_debug),
         .probe38(dpe_done),
+        .probe39(A_debug),
         .probe4(dpe_en_debug),
+        .probe40(prod_debug),
+        .probe41(write_valid),
         .probe5(dpe_start_debug),
         .probe6(dpe_state_debug),
         .probe7(master_state_debug),

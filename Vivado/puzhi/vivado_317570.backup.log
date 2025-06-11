@@ -1,0 +1,456 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jun 11 08:03:22 2025
+# Process ID         : 317570
+# Current directory  : /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi
+# Command line       : vivado puzhi.xpr
+# Log file           : /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.log
+# Journal file       : /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.jou
+# Running On         : hp
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 20.04.6 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
+# CPU Frequency      : 3444.692 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16650 MB
+# Swap memory        : 26843 MB
+# Total Virtual      : 43494 MB
+# Available Virtual  : 29005 MB
+#-----------------------------------------------------------
+start_gui
+open_project puzhi.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from '/home/malik/andromeda_ila/andromeda/Vivado/puzhi' since last save.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:51 ; elapsed = 00:00:33 . Memory (MB): peak = 8588.660 ; gain = 1031.836 ; free physical = 162 ; free virtual = 26458
+update_compile_order -fileset sources_1
+open_bd_design {/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+Reading block design file </home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd>...
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: AMD recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:module_ref:sd_controller_wrapper:1.0 - sd_controller_wrapper_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_333M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_100M
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:module_ref:axi_dpe:1.0 - axi_dpe_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /axi_dpe_0/m_axi.
+Successfully read diagram <andromeda> from block design file </home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd>
+open_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 9027.668 ; gain = 0.000 ; free physical = 657 ; free virtual = 26325
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+Upgrading '/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd'
+INFO: [IP_Flow 19-3420] Updated andromeda_axi_dpe_0_0 to use current project options
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'A_fp32_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'A_valid_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'prod_fp32_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'prod_valid_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'sum_stage0_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'sum_stage1_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'sum_stage2_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'sum_stage3_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'sum_stage4_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'sum_stage5_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'sum_stage6_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'valid_stage0_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'valid_stage1_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'valid_stage2_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'valid_stage3_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'valid_stage4_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'valid_stage5_debug'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'valid_stage6_debug'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'andromeda_axi_dpe_0_0'. These changes may impact your design.
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /axi_dpe_0/m_axi.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'andromeda_axi_dpe_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : </home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd> 
+Wrote  : </home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/ui/bd_9d7d77c9.ui> 
+report_ip_status -name ip_status 
+startgroup
+connect_bd_net -net A_valid_debug [get_bd_pins axi_dpe_0/A_valid_debug]
+connect_bd_net -net sum_stage5_debug [get_bd_pins axi_dpe_0/sum_stage5_debug]
+connect_bd_net -net sum_stage4_debug [get_bd_pins axi_dpe_0/sum_stage4_debug]
+connect_bd_net -net valid_stage0_debug [get_bd_pins axi_dpe_0/valid_stage0_debug]
+connect_bd_net -net sum_stage6_debug [get_bd_pins axi_dpe_0/sum_stage6_debug]
+connect_bd_net -net valid_stage2_debug [get_bd_pins axi_dpe_0/valid_stage2_debug]
+connect_bd_net -net prod_fp32_debug [get_bd_pins axi_dpe_0/prod_fp32_debug]
+connect_bd_net -net prod_valid_debug [get_bd_pins axi_dpe_0/prod_valid_debug]
+connect_bd_net -net valid_stage1_debug [get_bd_pins axi_dpe_0/valid_stage1_debug]
+connect_bd_net -net valid_stage4_debug [get_bd_pins axi_dpe_0/valid_stage4_debug]
+connect_bd_net -net sum_stage1_debug [get_bd_pins axi_dpe_0/sum_stage1_debug]
+connect_bd_net -net valid_stage6_debug [get_bd_pins axi_dpe_0/valid_stage6_debug]
+connect_bd_net -net sum_stage3_debug [get_bd_pins axi_dpe_0/sum_stage3_debug]
+connect_bd_net -net valid_stage3_debug [get_bd_pins axi_dpe_0/valid_stage3_debug]
+connect_bd_net -net sum_stage0_debug [get_bd_pins axi_dpe_0/sum_stage0_debug]
+connect_bd_net -net valid_stage5_debug [get_bd_pins axi_dpe_0/valid_stage5_debug]
+connect_bd_net -net sum_stage2_debug [get_bd_pins axi_dpe_0/sum_stage2_debug]
+connect_bd_net -net A_fp32_debug [get_bd_pins axi_dpe_0/A_fp32_debug]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {A_valid_debug sum_stage5_debug sum_stage4_debug valid_stage0_debug sum_stage6_debug valid_stage2_debug prod_fp32_debug prod_valid_debug valid_stage1_debug valid_stage4_debug sum_stage1_debug valid_stage6_debug sum_stage3_debug valid_stage3_debug sum_stage0_debug valid_stage5_debug sum_stage2_debug A_fp32_debug }]
+true
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets A_fp32_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets A_valid_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets prod_fp32_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets prod_valid_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage0_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage1_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage2_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage3_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage4_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage5_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage6_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage0_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage1_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage2_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage3_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage4_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage5_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage6_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                         ]
+WARNING: [BD 5-1069] Please specify '-mon_dir' argument when interface mode is 'Monitor'. Using 'in' as default.
+WARNING: [BD 5-1069] Please specify '-mon_dir' argument when interface mode is 'Monitor'. Using 'in' as default.
+WARNING: [BD 5-1069] Please specify '-mon_dir' argument when interface mode is 'Monitor'. Using 'in' as default.
+Debug Automation : Re-customizing System ILA block '/system_ila_0' to mode MIX, with 0 new slot interface pins and 18 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting net /A_fp32_debug, to System ILA probe pin /system_ila_0/probe20 for debug.
+Debug Automation : Connecting net /A_valid_debug, to System ILA probe pin /system_ila_0/probe21 for debug.
+Debug Automation : Connecting net /prod_fp32_debug, to System ILA probe pin /system_ila_0/probe22 for debug.
+Debug Automation : Connecting net /prod_valid_debug, to System ILA probe pin /system_ila_0/probe23 for debug.
+Debug Automation : Connecting net /sum_stage0_debug, to System ILA probe pin /system_ila_0/probe24 for debug.
+Debug Automation : Connecting net /sum_stage1_debug, to System ILA probe pin /system_ila_0/probe25 for debug.
+Debug Automation : Connecting net /sum_stage2_debug, to System ILA probe pin /system_ila_0/probe26 for debug.
+Debug Automation : Connecting net /sum_stage3_debug, to System ILA probe pin /system_ila_0/probe27 for debug.
+Debug Automation : Connecting net /sum_stage4_debug, to System ILA probe pin /system_ila_0/probe28 for debug.
+Debug Automation : Connecting net /sum_stage5_debug, to System ILA probe pin /system_ila_0/probe29 for debug.
+Debug Automation : Connecting net /sum_stage6_debug, to System ILA probe pin /system_ila_0/probe30 for debug.
+Debug Automation : Connecting net /valid_stage0_debug, to System ILA probe pin /system_ila_0/probe31 for debug.
+Debug Automation : Connecting net /valid_stage1_debug, to System ILA probe pin /system_ila_0/probe32 for debug.
+Debug Automation : Connecting net /valid_stage2_debug, to System ILA probe pin /system_ila_0/probe33 for debug.
+Debug Automation : Connecting net /valid_stage3_debug, to System ILA probe pin /system_ila_0/probe34 for debug.
+Debug Automation : Connecting net /valid_stage4_debug, to System ILA probe pin /system_ila_0/probe35 for debug.
+Debug Automation : Connecting net /valid_stage5_debug, to System ILA probe pin /system_ila_0/probe36 for debug.
+Debug Automation : Connecting net /valid_stage6_debug, to System ILA probe pin /system_ila_0/probe37 for debug.
+endgroup
+startgroup
+connect_bd_net -net dpe_done [get_bd_pins axi_dpe_0/dpe_done]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {dpe_done }]
+true
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets dpe_done] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                         ]
+WARNING: [BD 5-1069] Please specify '-mon_dir' argument when interface mode is 'Monitor'. Using 'in' as default.
+WARNING: [BD 5-1069] Please specify '-mon_dir' argument when interface mode is 'Monitor'. Using 'in' as default.
+WARNING: [BD 5-1069] Please specify '-mon_dir' argument when interface mode is 'Monitor'. Using 'in' as default.
+Debug Automation : Re-customizing System ILA block '/system_ila_0' to mode MIX, with 0 new slot interface pins and 1 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting net /dpe_done, to System ILA probe pin /system_ila_0/probe38 for debug.
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
+INFO: [BD 5-943] Reserving offset range <0x41C0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0002_0000 [ 4K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0003_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S02_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] andromeda_axi_smc_0: SmartConnect andromeda_axi_smc_0 is in High-performance Mode.
+xit::source_ipfile: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 10340.914 ; gain = 61.406 ; free physical = 149 ; free virtual = 24541
+xit::source_ipfile: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 10355.789 ; gain = 14.875 ; free physical = 155 ; free virtual = 24492
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:microblaze:11.0-9] /microblaze_0: Setting C_BASE_VECTORS to 0x00000000.
+validate_bd_design: Time (s): cpu = 00:01:00 ; elapsed = 00:00:57 . Memory (MB): peak = 10441.914 ; gain = 1088.227 ; free physical = 157 ; free virtual = 24423
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects  [get_files /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v] -no_script -reset -force -quiet
+remove_files  /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+file delete -force /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+make_wrapper -files [get_files /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -top
+INFO: [BD 41-1662] The design 'andromeda.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Wrote  : </home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd> 
+Wrote  : </home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/ui/bd_9d7d77c9.ui> 
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARLOCK as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARQOS as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWQOS as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWLOCK as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net ctrl_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_busy_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_start_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_status_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_en_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_start_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net master_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_buffer_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_index_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_valid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_grant_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_request_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net rvalid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net rx_data_out_ila as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net write_grant_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net write_request_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net write_state_debug as it is marked for debug
+INFO: [Common 17-14] Message 'BD 41-3257' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Verilog Output written to : /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v
+Verilog Output written to : /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/sim/andromeda.v
+Verilog Output written to : /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 10705.391 ; gain = 0.000 ; free physical = 175 ; free virtual = 24400
+add_files -norecurse /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:]

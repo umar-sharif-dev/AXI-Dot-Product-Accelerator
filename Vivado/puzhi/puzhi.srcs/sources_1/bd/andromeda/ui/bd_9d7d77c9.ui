@@ -1,106 +1,107 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.305339",
-   "Default View_TopLeft":"-616,-177",
+   "Default View_ScaleFactor":"0.614266",
+   "Default View_TopLeft":"-117,238",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port c0_ddr4 -pg 1 -lvl 6 -x 2470 -y 820 -defaultsOSRD
+preplace port c0_ddr4 -pg 1 -lvl 6 -x 2510 -y 820 -defaultsOSRD
 preplace port c0_sys -pg 1 -lvl 0 -x 0 -y 900 -defaultsOSRD
 preplace port port-id_sys_rstn -pg 1 -lvl 0 -x 0 -y 1140 -defaultsOSRD
-preplace port port-id_sd_clk -pg 1 -lvl 6 -x 2470 -y 1400 -defaultsOSRD
-preplace port port-id_sd_cmd -pg 1 -lvl 6 -x 2470 -y 1420 -defaultsOSRD
+preplace port port-id_sd_clk -pg 1 -lvl 6 -x 2510 -y 1400 -defaultsOSRD
+preplace port port-id_sd_cmd -pg 1 -lvl 6 -x 2510 -y 1420 -defaultsOSRD
 preplace port port-id_uart_rx -pg 1 -lvl 0 -x 0 -y 1470 -defaultsOSRD
-preplace port port-id_uart_tx -pg 1 -lvl 6 -x 2470 -y 1330 -defaultsOSRD
+preplace port port-id_uart_tx -pg 1 -lvl 6 -x 2510 -y 1330 -defaultsOSRD
 preplace portBus sd_data -pg 1 -lvl 0 -x 0 -y 1430 -defaultsOSRD
-preplace inst ddr4_0 -pg 1 -lvl 4 -x 1980 -y 1010 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 5 -x 2340 -y 720 -defaultsOSRD
-preplace inst util_vector_logic_0 -pg 1 -lvl 3 -x 1380 -y 1140 -defaultsOSRD
+preplace inst ddr4_0 -pg 1 -lvl 4 -x 2020 -y 1040 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 5 -x 2380 -y 720 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 3 -x 1420 -y 1140 -defaultsOSRD
 preplace inst microblaze_0 -pg 1 -lvl 2 -x 700 -y 950 -defaultsOSRD
-preplace inst axi_uartlite_0 -pg 1 -lvl 4 -x 1980 -y 1400 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 4 -x 2020 -y 1430 -defaultsOSRD
 preplace inst sd_controller_wrapper_0 -pg 1 -lvl 2 -x 700 -y 1360 -defaultsOSRD
-preplace inst axi_timer_0 -pg 1 -lvl 4 -x 1980 -y 1220 -defaultsOSRD
-preplace inst microblaze_0_local_memory -pg 1 -lvl 3 -x 1380 -y 800 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 4 -x 2020 -y 1250 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 3 -x 1420 -y 800 -defaultsOSRD
 preplace inst rst_ddr4_0_333M -pg 1 -lvl 1 -x 220 -y 1000 -defaultsOSRD
 preplace inst rst_ddr4_0_100M -pg 1 -lvl 1 -x 220 -y 1330 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 3 -x 1380 -y 990 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 3 -x 1420 -y 990 -defaultsOSRD
 preplace inst axi_dpe_0 -pg 1 -lvl 2 -x 700 -y 350 -defaultsOSRD
 preplace inst mdm_0 -pg 1 -lvl 1 -x 220 -y 790 -defaultsOSRD
-preplace inst system_ila_0 -pg 1 -lvl 4 -x 1980 -y 420 -defaultsOSRD
-preplace netloc Net 1 2 4 1010J -140 NJ -140 NJ -140 2450J
-preplace netloc axi_uartlite_0_tx 1 4 2 2240J 1330 NJ
-preplace netloc ctrl_state_debug 1 2 2 940J 90 1590
-preplace netloc ddr4_0_addn_ui_clkout1 1 0 5 40 1440 400 1470 1060 -130 NJ -130 2190
-preplace netloc ddr4_0_c0_ddr4_ui_clk_sync_rst 1 0 5 30 1100 NJ 1100 1000J -120 NJ -120 2180
-preplace netloc ddr4_0_c0_init_calib_complete 1 4 1 2210 700n
-preplace netloc ddr4_0_dbg_bus 1 4 1 2240 720n
-preplace netloc ddr4_0_dbg_clk 1 4 1 2200 680n
-preplace netloc dma_busy_debug 1 2 2 NJ 0 1790
-preplace netloc dma_start_debug 1 2 2 NJ -20 1800
-preplace netloc dma_status_debug 1 2 2 NJ 20 1760
-preplace netloc dpe_en_debug 1 2 2 940J 150 N
-preplace netloc dpe_start_debug 1 2 2 950J 170 N
-preplace netloc dpe_state_debug 1 2 2 NJ 160 1730
-preplace netloc master_state_debug 1 2 2 NJ 40 1740
-preplace netloc mdm_0_Debug_SYS_Rst 1 0 2 20 720 400
-preplace netloc microblaze_0_Clk 1 0 5 30 890 430 1070 1220 1230 1680 -70 2160
-preplace netloc read_data_buffer_debug 1 2 2 980J 260 1590
-preplace netloc read_data_index_debug 1 2 2 990J 270 1620
-preplace netloc read_data_valid_debug 1 2 2 NJ 280 1670
-preplace netloc read_grant_debug 1 2 2 NJ -40 1770
-preplace netloc read_request_debug 1 2 2 950J -60 1780
-preplace netloc read_state_debug 1 2 2 NJ 140 1710
+preplace inst system_ila_0 -pg 1 -lvl 4 -x 2020 -y 420 -defaultsOSRD
+preplace netloc A_debug 1 2 2 N 480 1630
+preplace netloc A_valid_debug 1 2 2 950 460 N
+preplace netloc Net 1 2 4 1050J -170 NJ -170 NJ -170 2490J
+preplace netloc axi_uartlite_0_tx 1 4 2 2280J 1330 NJ
+preplace netloc ctrl_state_debug 1 2 2 950J 40 N
+preplace netloc ddr4_0_addn_ui_clkout1 1 0 5 40 1230 400 1230 1010 -160 NJ -160 2230
+preplace netloc ddr4_0_c0_ddr4_ui_clk_sync_rst 1 0 5 30 1100 NJ 1100 1000J -150 NJ -150 2220
+preplace netloc ddr4_0_c0_init_calib_complete 1 4 1 2250 700n
+preplace netloc ddr4_0_dbg_bus 1 4 1 2280 720n
+preplace netloc ddr4_0_dbg_clk 1 4 1 2240 680n
+preplace netloc dma_busy_debug 1 2 2 NJ 0 1740
+preplace netloc dma_start_debug 1 2 2 NJ -20 1630
+preplace netloc dma_status_debug 1 2 2 NJ 20 1720
+preplace netloc dpe_done 1 2 2 940 470 1660
+preplace netloc dpe_en_debug 1 2 2 940J 130 1580
+preplace netloc dpe_start_debug 1 2 2 960J 140 N
+preplace netloc dpe_state_debug 1 2 2 NJ 160 N
+preplace netloc master_state_debug 1 2 2 940J 50 1790
+preplace netloc mdm_0_Debug_SYS_Rst 1 0 2 20 860 400
+preplace netloc microblaze_0_Clk 1 0 5 40 890 430 1070 1250 1210 1730 -100 2200
+preplace netloc prod_debug 1 2 2 N 520 1610
+preplace netloc prod_valid_debug 1 2 2 960 500 N
+preplace netloc read_data_buffer_debug 1 2 2 970J 260 1580
+preplace netloc read_data_index_debug 1 2 2 980J 270 1590
+preplace netloc read_data_valid_debug 1 2 2 NJ 280 1610
+preplace netloc read_grant_debug 1 2 2 940J -30 1810
+preplace netloc read_request_debug 1 2 2 NJ -80 1820
+preplace netloc read_state_debug 1 2 2 950J 150 1780
 preplace netloc rst_ddr4_0_100M_peripheral_aresetn 1 1 1 N 1370
-preplace netloc rst_ddr4_0_333M_bus_struct_reset 1 1 2 400 1060 1190J
+preplace netloc rst_ddr4_0_333M_bus_struct_reset 1 1 2 400 1060 1220J
 preplace netloc rst_ddr4_0_333M_mb_reset 1 1 1 410 960n
-preplace netloc rst_ddr4_0_333M_peripheral_aresetn 1 1 3 440 1080 1230 1240 1770
-preplace netloc rvalid_debug 1 2 2 NJ 380 1690
-preplace netloc rx_data_out_ila 1 2 2 NJ 100 1720
-preplace netloc sd_controller_wrapper_0_card_stat 1 2 3 1080J -110 NJ -110 2230
-preplace netloc sd_controller_wrapper_0_card_type 1 2 3 1090J -70 1610J -80 2220
-preplace netloc sd_controller_wrapper_0_sdclk 1 2 4 1050J -100 NJ -100 NJ -100 2440J
+preplace netloc rst_ddr4_0_333M_peripheral_aresetn 1 1 3 440 1080 1260 1200 1710
+preplace netloc rvalid_debug 1 2 2 NJ 380 1700
+preplace netloc rx_data_out_ila 1 2 2 NJ 100 1630
+preplace netloc sd_controller_wrapper_0_card_stat 1 2 3 1120J -140 NJ -140 2270
+preplace netloc sd_controller_wrapper_0_card_type 1 2 3 1130J -120 NJ -120 2260
+preplace netloc sd_controller_wrapper_0_sdclk 1 2 4 1080J -130 NJ -130 NJ -130 2480J
 preplace netloc sd_data_1 1 0 2 NJ 1430 460J
+preplace netloc sum_stage0_debug 1 2 2 970 530 1710
+preplace netloc sum_stage1_debug 1 2 2 980 550 1820
+preplace netloc sum_stage2_debug 1 2 2 990 570 1820
+preplace netloc sum_stage3_debug 1 2 2 1020 590 1820
+preplace netloc sum_stage4_debug 1 2 2 1060 610 1820
+preplace netloc sum_stage5_debug 1 2 2 1100 620 N
+preplace netloc sum_stage6_debug 1 2 2 1140 640 N
 preplace netloc sys_rstn_1 1 0 3 NJ 1140 NJ 1140 NJ
-preplace netloc uart_rx_1 1 0 5 30J 1480 NJ 1480 1130J -90 NJ -90 2170
-preplace netloc util_vector_logic_0_Res 1 3 1 1790J 1040n
-preplace netloc write_grant_debug 1 2 2 940J -50 1750
-preplace netloc write_request_debug 1 2 2 980J -80 1600
-preplace netloc write_state_debug 1 2 2 NJ 180 1700
-preplace netloc wvalid_debug 1 2 2 NJ 400 1690
-preplace netloc A_valid_debug 1 2 2 N 500 1620
-preplace netloc sum_stage5_debug 1 2 2 1070 670 N
-preplace netloc sum_stage4_debug 1 2 2 1020 650 N
-preplace netloc valid_stage0_debug 1 2 2 N 580 1580
-preplace netloc sum_stage6_debug 1 2 2 1100 680 1570
-preplace netloc valid_stage2_debug 1 2 2 1040 1200 1740
-preplace netloc prod_fp32_debug 1 2 2 N 520 1600
-preplace netloc prod_valid_debug 1 2 2 N 540 1600
-preplace netloc valid_stage1_debug 1 2 2 N 620 1560
-preplace netloc valid_stage4_debug 1 2 2 1120 710 1540
-preplace netloc sum_stage1_debug 1 2 2 940 590 N
-preplace netloc valid_stage6_debug 1 2 2 1150 700 1530
-preplace netloc sum_stage3_debug 1 2 2 980 630 N
-preplace netloc valid_stage3_debug 1 2 2 1030 1210 1800
-preplace netloc sum_stage0_debug 1 2 2 N 560 1600
-preplace netloc valid_stage5_debug 1 2 2 1110 690 1550
-preplace netloc sum_stage2_debug 1 2 2 940 610 N
-preplace netloc A_fp32_debug 1 2 2 N 480 1670
-preplace netloc dpe_done 1 2 2 N 460 1590
-preplace netloc axi_dpe_0_m_axi 1 2 2 970 -10 N
-preplace netloc axi_smc_M00_AXI 1 3 1 1560 950n
-preplace netloc axi_smc_M01_AXI 1 3 1 1540 970n
-preplace netloc axi_smc_M02_AXI 1 1 3 460 1220 NJ 1220 1530
-preplace netloc axi_smc_M03_AXI 1 1 3 460 1040 1140J 660 1610
-preplace netloc axi_smc_M04_AXI 1 3 1 1660 30n
-preplace netloc ddr4_0_C0_DDR4 1 4 2 2220J 820 NJ
-preplace netloc diff_clock_rtl_0_1 1 0 4 NJ 900 420J 1050 1200J 880 1580J
+preplace netloc uart_rx_1 1 0 5 20J 1190 NJ 1190 1070J -110 NJ -110 2210
+preplace netloc util_vector_logic_0_Res 1 3 1 1820J 1070n
+preplace netloc valid_stage0_debug 1 2 2 1040 650 1670
+preplace netloc valid_stage1_debug 1 2 2 1030 630 1680
+preplace netloc valid_stage2_debug 1 2 2 N 660 1650
+preplace netloc valid_stage3_debug 1 2 2 1110 680 1620
+preplace netloc valid_stage4_debug 1 2 2 1150 690 1600
+preplace netloc valid_stage5_debug 1 2 2 1160 700 1590
+preplace netloc valid_stage6_debug 1 2 2 1180 710 1580
+preplace netloc write_grant_debug 1 2 2 NJ -60 1800
+preplace netloc write_request_debug 1 2 2 NJ -100 1710
+preplace netloc write_state_debug 1 2 2 NJ 180 1770
+preplace netloc write_valid 1 2 2 N 440 1640
+preplace netloc wvalid_debug 1 2 2 NJ 400 1760
+preplace netloc axi_dpe_0_m_axi 1 2 2 1090 -40 N
+preplace netloc axi_smc_M00_AXI 1 3 1 1720 950n
+preplace netloc axi_smc_M01_AXI 1 3 1 1600 970n
+preplace netloc axi_smc_M02_AXI 1 1 3 460 1220 NJ 1220 1580
+preplace netloc axi_smc_M03_AXI 1 1 3 460 1040 1170J 670 1690
+preplace netloc axi_smc_M04_AXI 1 3 1 1750 0n
+preplace netloc ddr4_0_C0_DDR4 1 4 2 2260J 820 NJ
+preplace netloc diff_clock_rtl_0_1 1 0 4 NJ 900 420J 1050 1230J 880 1700J
 preplace netloc mdm_0_MBDEBUG_0 1 1 1 450 780n
-preplace netloc microblaze_0_M_AXI_DP 1 2 1 1180 940n
-preplace netloc microblaze_0_dlmb_1 1 2 1 1160 770n
-preplace netloc microblaze_0_ilmb_1 1 2 1 1170 790n
-preplace netloc sd_controller_wrapper_0_axi 1 2 1 1210 980n
-levelinfo -pg 1 0 220 700 1380 1980 2340 2470
-pagesize -pg 1 -db -bbox -sgen -140 -180 2580 1490
+preplace netloc microblaze_0_M_AXI_DP 1 2 1 1210 940n
+preplace netloc microblaze_0_dlmb_1 1 2 1 1190 770n
+preplace netloc microblaze_0_ilmb_1 1 2 1 1200 790n
+preplace netloc sd_controller_wrapper_0_axi 1 2 1 1240 980n
+levelinfo -pg 1 0 220 700 1420 2020 2380 2510
+pagesize -pg 1 -db -bbox -sgen -140 -180 2620 1520
 "
 }
 0

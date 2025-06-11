@@ -491,7 +491,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9e53a0de</spirit:value>
+            <spirit:value>a3f8f958</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -504,7 +504,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9e53a0de</spirit:value>
+            <spirit:value>a3f8f958</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1758,7 +1758,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>A_fp32_debug</spirit:name>
+        <spirit:name>A_debug</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -1788,7 +1788,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>prod_fp32_debug</spirit:name>
+        <spirit:name>prod_debug</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
@@ -2122,7 +2122,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-06-11T13:05:55Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2025-06-11T18:55:51Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2024.2</xilinx:xilinxVersion>

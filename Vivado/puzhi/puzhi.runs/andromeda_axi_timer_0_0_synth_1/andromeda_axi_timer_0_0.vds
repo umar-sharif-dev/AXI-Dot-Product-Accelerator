@@ -3,12 +3,12 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue Jun 10 02:56:43 2025
-# Process ID         : 4151837
-# Current directory  : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1
+# Start of session at: Wed Jun 11 19:48:50 2025
+# Process ID         : 97454
+# Current directory  : /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1
 # Command line       : vivado -log andromeda_axi_timer_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source andromeda_axi_timer_0_0.tcl
-# Log file           : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/andromeda_axi_timer_0_0.vds
-# Journal file       : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/vivado.jou
+# Log file           : /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/andromeda_axi_timer_0_0.vds
+# Journal file       : /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/vivado.jou
 # Running On         : dust2
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.2 LTS
@@ -19,7 +19,7 @@
 # Host memory        : 100557 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 109147 MB
-# Available Virtual  : 41237 MB
+# Available Virtual  : 97233 MB
 #-----------------------------------------------------------
 source andromeda_axi_timer_0_0.tcl -notrace
 Command: synth_design -top andromeda_axi_timer_0_0 -part xcku5p-ffvb676-2-i -incremental_mode off -mode out_of_context
@@ -29,11 +29,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4152640
+INFO: [Synth 8-7075] Helper process launched with PID 98658
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2718.410 ; gain = 155.859 ; free physical = 731 ; free virtual = 19637
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2719.000 ; gain = 155.859 ; free physical = 48116 ; free virtual = 59518
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'andromeda_axi_timer_0_0' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/synth/andromeda_axi_timer_0_0.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'andromeda_axi_timer_0_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/synth/andromeda_axi_timer_0_0.vhd:90]
 	Parameter C_FAMILY bound to: kintexuplus - type: string 
 	Parameter C_COUNT_WIDTH bound to: 32 - type: integer 
 	Parameter C_ONE_TIMER_ONLY bound to: 0 - type: integer 
@@ -43,181 +43,181 @@ INFO: [Synth 8-638] synthesizing module 'andromeda_axi_timer_0_0' [/home/malik/a
 	Parameter C_GEN1_ASSERT bound to: 1'b1 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'axi_timer' declared at '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:2000' bound to instance 'U0' of component 'axi_timer' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/synth/andromeda_axi_timer_0_0.vhd:173]
-INFO: [Synth 8-638] synthesizing module 'axi_timer' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:2055]
-INFO: [Synth 8-638] synthesizing module 'tc_core' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1614]
-INFO: [Synth 8-638] synthesizing module 'mux_onehot_f' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:267]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'axi_timer' declared at '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:2000' bound to instance 'U0' of component 'axi_timer' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/synth/andromeda_axi_timer_0_0.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'axi_timer' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:2055]
+INFO: [Synth 8-638] synthesizing module 'tc_core' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1614]
+INFO: [Synth 8-638] synthesizing module 'mux_onehot_f' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:267]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
 INFO: [Synth 8-6157] synthesizing module 'MUXCY' [/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755]
 INFO: [Synth 8-6155] done synthesizing module 'MUXCY' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-256] done synthesizing module 'mux_onehot_f' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:267]
-INFO: [Synth 8-638] synthesizing module 'count_module' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1346]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
-INFO: [Synth 8-638] synthesizing module 'counter_f' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:102]
-INFO: [Synth 8-256] done synthesizing module 'counter_f' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:102]
-INFO: [Synth 8-256] done synthesizing module 'count_module' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1346]
-INFO: [Synth 8-638] synthesizing module 'timer_control' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:741]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
-INFO: [Synth 8-113] binding component instance 'READ_DONE0_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:980]
-INFO: [Synth 8-113] binding component instance 'READ_DONE1_I' to cell 'FDRSE' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:990]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-3491] module 'MUXCY' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:90755' bound to instance 'MUXCY_I' of component 'MUXCY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-256] done synthesizing module 'mux_onehot_f' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'count_module' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1346]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-113] binding component instance 'LOAD_REG_I' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1382]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'count_module' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1346]
+INFO: [Synth 8-638] synthesizing module 'timer_control' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:741]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR0_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:827]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'TCSR1_FF_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:908]
+INFO: [Synth 8-113] binding component instance 'READ_DONE0_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:980]
+INFO: [Synth 8-113] binding component instance 'READ_DONE1_I' to cell 'FDRSE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:990]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'timer_control' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:741]
-INFO: [Synth 8-113] binding component instance 'PWM_FF_I' to cell 'FDRS' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1820]
-INFO: [Synth 8-256] done synthesizing module 'tc_core' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1614]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-256] done synthesizing module 'axi_timer' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:2055]
-INFO: [Synth 8-256] done synthesizing module 'andromeda_axi_timer_0_0' (0#1) [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/synth/andromeda_axi_timer_0_0.vhd:90]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'timer_control' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:741]
+INFO: [Synth 8-113] binding component instance 'PWM_FF_I' to cell 'FDRS' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1820]
+INFO: [Synth 8-256] done synthesizing module 'tc_core' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:1614]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_timer' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/906c/hdl/axi_timer_v2_0_vh_rfs.vhd:2055]
+INFO: [Synth 8-256] done synthesizing module 'andromeda_axi_timer_0_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/synth/andromeda_axi_timer_0_0.vhd:90]
 WARNING: [Synth 8-7129] Port Address_In_Erly[3] in module address_decoder is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Address_In_Erly[4] in module address_decoder is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Bus_RNW in module address_decoder is either unconnected or has no load
@@ -298,43 +298,43 @@ WARNING: [Synth 8-7129] Port Bus2ip_addr[2] in module tc_core is either unconnec
 WARNING: [Synth 8-7129] Port Bus2ip_addr[3] in module tc_core is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Bus2ip_addr[4] in module tc_core is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2807.379 ; gain = 244.828 ; free physical = 740 ; free virtual = 18884
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2807.969 ; gain = 244.828 ; free physical = 46724 ; free virtual = 58130
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2810.348 ; gain = 247.797 ; free physical = 732 ; free virtual = 18876
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2810.938 ; gain = 247.797 ; free physical = 46612 ; free virtual = 58017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2810.348 ; gain = 247.797 ; free physical = 732 ; free virtual = 18876
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2810.938 ; gain = 247.797 ; free physical = 46612 ; free virtual = 58017
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2822.348 ; gain = 0.000 ; free physical = 653 ; free virtual = 18796
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2821.906 ; gain = 0.000 ; free physical = 46470 ; free virtual = 57878
 INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0.xdc] for cell 'U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0.xdc] for cell 'U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2944.223 ; gain = 0.000 ; free physical = 306 ; free virtual = 17977
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2947.750 ; gain = 0.000 ; free physical = 45441 ; free virtual = 56854
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 44 instances were transformed.
   FDR => FDRE: 18 instances
   FDRS => FDRS (FDRE, LUT2, VCC): 1 instance 
   FDRSE => FDRSE (FDRE, LUT4, VCC): 25 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2944.223 ; gain = 0.000 ; free physical = 536 ; free virtual = 18232
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2947.750 ; gain = 0.000 ; free physical = 45433 ; free virtual = 56846
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2944.223 ; gain = 381.672 ; free physical = 353 ; free virtual = 16895
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2947.750 ; gain = 384.609 ; free physical = 44419 ; free virtual = 55870
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -342,14 +342,14 @@ Start Loading Part and Timing Information
 Loading part: xcku5p-ffvb676-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2952.227 ; gain = 389.676 ; free physical = 353 ; free virtual = 16895
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2955.754 ; gain = 392.613 ; free physical = 44411 ; free virtual = 55863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2952.227 ; gain = 389.676 ; free physical = 337 ; free virtual = 16884
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2955.754 ; gain = 392.613 ; free physical = 44403 ; free virtual = 55855
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -362,7 +362,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2952.227 ; gain = 389.676 ; free physical = 539 ; free virtual = 16917
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2955.754 ; gain = 392.613 ; free physical = 44222 ; free virtual = 55708
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -435,25 +435,25 @@ INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instan
 INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module cdc_sync.
 INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module cdc_sync.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2952.227 ; gain = 389.676 ; free physical = 381 ; free virtual = 16477
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2955.754 ; gain = 392.613 ; free physical = 43758 ; free virtual = 55194
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3451.105 ; gain = 888.555 ; free physical = 323 ; free virtual = 16070
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3443.633 ; gain = 880.492 ; free physical = 39753 ; free virtual = 51194
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3483.137 ; gain = 920.586 ; free physical = 312 ; free virtual = 15998
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3476.664 ; gain = 913.523 ; free physical = 39464 ; free virtual = 50905
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3491.145 ; gain = 928.594 ; free physical = 288 ; free virtual = 15955
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3484.672 ; gain = 921.531 ; free physical = 39425 ; free virtual = 50865
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -471,37 +471,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3631.957 ; gain = 1069.406 ; free physical = 280 ; free virtual = 15494
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3632.484 ; gain = 1069.344 ; free physical = 38411 ; free virtual = 49902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3631.957 ; gain = 1069.406 ; free physical = 280 ; free virtual = 15494
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3632.484 ; gain = 1069.344 ; free physical = 38409 ; free virtual = 49901
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3631.957 ; gain = 1069.406 ; free physical = 281 ; free virtual = 15495
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3632.484 ; gain = 1069.344 ; free physical = 38381 ; free virtual = 49873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3631.957 ; gain = 1069.406 ; free physical = 281 ; free virtual = 15495
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3632.484 ; gain = 1069.344 ; free physical = 38380 ; free virtual = 49873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3631.957 ; gain = 1069.406 ; free physical = 281 ; free virtual = 15495
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3632.484 ; gain = 1069.344 ; free physical = 38380 ; free virtual = 49873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3631.957 ; gain = 1069.406 ; free physical = 281 ; free virtual = 15495
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3632.484 ; gain = 1069.344 ; free physical = 38380 ; free virtual = 49873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -530,18 +530,18 @@ Report Cell Usage:
 |11    |FDSE   |     1|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3631.957 ; gain = 1069.406 ; free physical = 281 ; free virtual = 15495
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3632.484 ; gain = 1069.344 ; free physical = 38380 ; free virtual = 49873
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 40 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3631.957 ; gain = 935.531 ; free physical = 241 ; free virtual = 15455
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3631.957 ; gain = 1069.406 ; free physical = 242 ; free virtual = 15456
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3632.484 ; gain = 932.531 ; free physical = 38239 ; free virtual = 49685
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3632.484 ; gain = 1069.344 ; free physical = 38239 ; free virtual = 49685
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3631.957 ; gain = 0.000 ; free physical = 242 ; free virtual = 15455
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3632.484 ; gain = 0.000 ; free physical = 38205 ; free virtual = 49651
 INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3631.957 ; gain = 0.000 ; free physical = 440 ; free virtual = 15015
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3632.484 ; gain = 0.000 ; free physical = 37398 ; free virtual = 48845
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 44 instances were transformed.
   (CARRY4) => CARRY8: 32 instances
@@ -551,11 +551,11 @@ Synth Design complete | Checksum: fa4cad0d
 INFO: [Common 17-83] Releasing license: Synthesis
 193 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 3631.957 ; gain = 2101.113 ; free physical = 418 ; free virtual = 14993
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2521.976; main = 2521.976; forked = 170.893
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3860.625; main = 3609.078; forked = 908.395
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3632.484 ; gain = 2102.051 ; free physical = 37391 ; free virtual = 48837
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2530.434; main = 2530.434; forked = 171.615
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4070.273; main = 3609.605; forked = 908.395
 INFO: [Coretcl 2-1174] Renamed 20 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3633.086 ; gain = 0.000 ; free physical = 418 ; free virtual = 14993
-INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/andromeda_axi_timer_0_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3633.613 ; gain = 0.000 ; free physical = 37383 ; free virtual = 48828
+INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1/andromeda_axi_timer_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file andromeda_axi_timer_0_0_utilization_synth.rpt -pb andromeda_axi_timer_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 10 02:57:10 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 11 19:49:16 2025...

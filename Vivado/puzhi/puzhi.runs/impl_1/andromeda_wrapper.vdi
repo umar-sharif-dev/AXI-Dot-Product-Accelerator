@@ -3,23 +3,23 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue Jun 10 02:59:55 2025
-# Process ID         : 4159050
-# Current directory  : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/impl_1
+# Start of session at: Wed Jun 11 19:57:22 2025
+# Process ID         : 104230
+# Current directory  : /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1
 # Command line       : vivado -log andromeda_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source andromeda_wrapper.tcl -notrace
-# Log file           : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.vdi
-# Journal file       : /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/impl_1/vivado.jou
+# Log file           : /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.vdi
+# Journal file       : /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/vivado.jou
 # Running On         : dust2
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.2 LTS
 # Processor Detail   : Intel(R) Core(TM) Ultra 9 285K
-# CPU Frequency      : 5337.137 MHz
+# CPU Frequency      : 5098.676 MHz
 # CPU Physical cores : 24
 # CPU Logical cores  : 24
 # Host memory        : 100557 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 109147 MB
-# Available Virtual  : 42690 MB
+# Available Virtual  : 98965 MB
 #-----------------------------------------------------------
 source andromeda_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -31,134 +31,217 @@ Command: link_design -top andromeda_wrapper -part xcku5p-ffvb676-2-i
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_dpe_0_0/andromeda_axi_dpe_0_0.dcp' for cell 'andromeda_i/axi_dpe_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/andromeda_axi_smc_0.dcp' for cell 'andromeda_i/axi_smc'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0.dcp' for cell 'andromeda_i/axi_timer_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_uartlite_0_0/andromeda_axi_uartlite_0_0.dcp' for cell 'andromeda_i/axi_uartlite_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/andromeda_ddr4_0_0.dcp' for cell 'andromeda_i/ddr4_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ila_0_0/andromeda_ila_0_0.dcp' for cell 'andromeda_i/ila_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.dcp' for cell 'andromeda_i/mdm_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.dcp' for cell 'andromeda_i/microblaze_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_100M_0/andromeda_rst_ddr4_0_100M_0.dcp' for cell 'andromeda_i/rst_ddr4_0_100M'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.dcp' for cell 'andromeda_i/rst_ddr4_0_333M'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_sd_controller_wrapper_0_0/andromeda_sd_controller_wrapper_0_0.dcp' for cell 'andromeda_i/sd_controller_wrapper_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/andromeda_system_ila_0_0.dcp' for cell 'andromeda_i/system_ila_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_util_vector_logic_0_0/andromeda_util_vector_logic_0_0.dcp' for cell 'andromeda_i/util_vector_logic_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_dlmb_bram_if_cntlr_0/andromeda_dlmb_bram_if_cntlr_0.dcp' for cell 'andromeda_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_dlmb_v10_0/andromeda_dlmb_v10_0.dcp' for cell 'andromeda_i/microblaze_0_local_memory/dlmb_v10'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ilmb_bram_if_cntlr_0/andromeda_ilmb_bram_if_cntlr_0.dcp' for cell 'andromeda_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ilmb_v10_0/andromeda_ilmb_v10_0.dcp' for cell 'andromeda_i/microblaze_0_local_memory/ilmb_v10'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_lmb_bram_0/andromeda_lmb_bram_0.dcp' for cell 'andromeda_i/microblaze_0_local_memory/lmb_bram'
-INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.dcp' for cell 'andromeda_i/axi_dpe_0/inst/bram_sdp_x_vector'
-Netlist sorting complete. Time (s): cpu = 00:00:00.6 ; elapsed = 00:00:00.6 . Memory (MB): peak = 2716.031 ; gain = 0.000 ; free physical = 28954 ; free virtual = 39094
-INFO: [Netlist 29-17] Analyzing 7733 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_dpe_0_0/andromeda_axi_dpe_0_0.dcp' for cell 'andromeda_i/axi_dpe_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/andromeda_axi_smc_0.dcp' for cell 'andromeda_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0.dcp' for cell 'andromeda_i/axi_timer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_uartlite_0_0/andromeda_axi_uartlite_0_0.dcp' for cell 'andromeda_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/andromeda_ddr4_0_0.dcp' for cell 'andromeda_i/ddr4_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ila_0_0/andromeda_ila_0_0.dcp' for cell 'andromeda_i/ila_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.dcp' for cell 'andromeda_i/mdm_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.dcp' for cell 'andromeda_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_100M_0/andromeda_rst_ddr4_0_100M_0.dcp' for cell 'andromeda_i/rst_ddr4_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.dcp' for cell 'andromeda_i/rst_ddr4_0_333M'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_sd_controller_wrapper_0_0/andromeda_sd_controller_wrapper_0_0.dcp' for cell 'andromeda_i/sd_controller_wrapper_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/andromeda_system_ila_0_0.dcp' for cell 'andromeda_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_util_vector_logic_0_0/andromeda_util_vector_logic_0_0.dcp' for cell 'andromeda_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_dlmb_bram_if_cntlr_0/andromeda_dlmb_bram_if_cntlr_0.dcp' for cell 'andromeda_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_dlmb_v10_0/andromeda_dlmb_v10_0.dcp' for cell 'andromeda_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ilmb_bram_if_cntlr_0/andromeda_ilmb_bram_if_cntlr_0.dcp' for cell 'andromeda_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ilmb_v10_0/andromeda_ilmb_v10_0.dcp' for cell 'andromeda_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_lmb_bram_0/andromeda_lmb_bram_0.dcp' for cell 'andromeda_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.dcp' for cell 'andromeda_i/axi_dpe_0/inst/bram_sdp_x_vector'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[0].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[100].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[101].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[102].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[103].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[104].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[105].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[106].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[107].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[108].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[109].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[10].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[110].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[111].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[112].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[113].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[114].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[115].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[116].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[117].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[118].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[119].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[11].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[120].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[121].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[122].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[123].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[124].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[125].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[126].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[127].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[12].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[13].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[14].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[15].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[16].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[17].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[18].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[19].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[1].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[20].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[21].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[22].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[23].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[24].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[25].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[26].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[27].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[28].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[29].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[2].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[30].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[31].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[32].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[33].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[34].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[35].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[36].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[37].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[38].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[39].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[3].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[40].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[41].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[42].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[43].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[44].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[45].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[46].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[47].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[48].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[49].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[4].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[50].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[51].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[52].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[53].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[54].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[55].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[56].fp_mult'
+INFO: [Project 1-454] Reading design checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/ip/floating_point_1/floating_point_1.dcp' for cell 'andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[57].fp_mult'
+INFO: [Common 17-14] Message 'Project 1-454' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Netlist sorting complete. Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 6539.734 ; gain = 0.000 ; free physical = 77270 ; free virtual = 88893
+INFO: [Netlist 29-17] Analyzing 18880 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2024.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Chipscope 16-324] Core: andromeda_i/ddr4_0 UUID: 230984e1-a308-5a23-abaf-72c5a841b372 
 INFO: [Chipscope 16-324] Core: andromeda_i/ila_0 UUID: dc9b1af9-42bb-5647-9a60-5448a3c72071 
 INFO: [Chipscope 16-324] Core: andromeda_i/system_ila_0/inst/ila_lib UUID: c5e75aa2-bb23-57ce-a023-62bbebe219a3 
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0.xdc] for cell 'andromeda_i/axi_timer_0/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0.xdc] for cell 'andromeda_i/axi_timer_0/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'andromeda_i/system_ila_0/inst/ila_lib/inst'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'andromeda_i/system_ila_0/inst/ila_lib/inst'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'andromeda_i/system_ila_0/inst/ila_lib/inst'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'andromeda_i/system_ila_0/inst/ila_lib/inst'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc] for cell 'andromeda_i/axi_smc/inst'
-WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:2]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:3]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:4]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:5]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:6]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:7]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:8]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:9]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:10]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:11]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:12]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:14]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:15]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:18]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:19]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:20]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:21]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:22]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:23]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:24]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:26]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:28]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:29]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:30]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:32]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:36]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:37]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:38]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:39]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:40]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:41]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:42]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:43]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:44]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:45]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:46]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:47]
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:48]
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc] for cell 'andromeda_i/axi_smc/inst'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk1/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk1/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk1/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk1/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr0/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr0/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr0/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr0/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_100M_0/andromeda_rst_ddr4_0_100M_0.xdc] for cell 'andromeda_i/rst_ddr4_0_100M/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_100M_0/andromeda_rst_ddr4_0_100M_0.xdc] for cell 'andromeda_i/rst_ddr4_0_100M/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_100M_0/andromeda_rst_ddr4_0_100M_0_board.xdc] for cell 'andromeda_i/rst_ddr4_0_100M/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_100M_0/andromeda_rst_ddr4_0_100M_0_board.xdc] for cell 'andromeda_i/rst_ddr4_0_100M/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.xdc] for cell 'andromeda_i/rst_ddr4_0_333M/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.xdc] for cell 'andromeda_i/rst_ddr4_0_333M/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_board.xdc] for cell 'andromeda_i/rst_ddr4_0_333M/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_board.xdc] for cell 'andromeda_i/rst_ddr4_0_333M/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_0/bd_828f_microblaze_I_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_0/bd_828f_microblaze_I_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_uartlite_0_0/andromeda_axi_uartlite_0_0.xdc] for cell 'andromeda_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_uartlite_0_0/andromeda_axi_uartlite_0_0.xdc] for cell 'andromeda_i/axi_uartlite_0/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_uartlite_0_0/andromeda_axi_uartlite_0_0_board.xdc] for cell 'andromeda_i/axi_uartlite_0/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_uartlite_0_0/andromeda_axi_uartlite_0_0_board.xdc] for cell 'andromeda_i/axi_uartlite_0/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.xdc] for cell 'andromeda_i/microblaze_0/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.xdc] for cell 'andromeda_i/microblaze_0/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'andromeda_i/ila_0/inst'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'andromeda_i/ila_0/inst'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'andromeda_i/ila_0/inst'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'andromeda_i/ila_0/inst'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/par/andromeda_ddr4_0_0.xdc] for cell 'andromeda_i/ddr4_0/inst'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/par/andromeda_ddr4_0_0.xdc] for cell 'andromeda_i/ddr4_0/inst'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/ip_0/andromeda_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/ip_0/andromeda_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_10/bd_828f_iomodule_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_10/bd_828f_iomodule_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_3/bd_828f_dlmb_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_3/bd_828f_dlmb_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_2/bd_828f_ilmb_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_2/bd_828f_ilmb_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_1/bd_828f_rst_0_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
-WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_1/bd_828f_rst_0_0.xdc:50]
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_1/bd_828f_rst_0_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_1/bd_828f_rst_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_1/bd_828f_rst_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/board_xdc/puzhi.xdc]
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/board_xdc/puzhi.xdc]
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/andromeda_ddr4_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst'
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/andromeda_ddr4_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst'
-Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc] for cell 'andromeda_i/mdm_0/U0'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc:5]
-INFO: [Timing 38-2] Deriving generated clocks [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc:5]
-Finished Parsing XDC File [/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc] for cell 'andromeda_i/mdm_0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0.xdc] for cell 'andromeda_i/axi_timer_0/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_timer_0_0/andromeda_axi_timer_0_0.xdc] for cell 'andromeda_i/axi_timer_0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'andromeda_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'andromeda_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'andromeda_i/system_ila_0/inst/ila_lib/inst'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'andromeda_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc] for cell 'andromeda_i/axi_smc/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:2]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:3]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:4]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:5]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:6]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:8]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:11]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:14]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:19]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:20]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:22]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:23]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:26]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:28]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:29]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:32]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:37]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:38]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:40]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:41]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:43]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:44]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:46]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:47]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc:48]
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc] for cell 'andromeda_i/axi_smc/inst'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0_board.xdc] for cell 'andromeda_i/axi_smc/inst/clk_map/psr0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_100M_0/andromeda_rst_ddr4_0_100M_0.xdc] for cell 'andromeda_i/rst_ddr4_0_100M/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_100M_0/andromeda_rst_ddr4_0_100M_0.xdc] for cell 'andromeda_i/rst_ddr4_0_100M/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_100M_0/andromeda_rst_ddr4_0_100M_0_board.xdc] for cell 'andromeda_i/rst_ddr4_0_100M/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_100M_0/andromeda_rst_ddr4_0_100M_0_board.xdc] for cell 'andromeda_i/rst_ddr4_0_100M/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.xdc] for cell 'andromeda_i/rst_ddr4_0_333M/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0.xdc] for cell 'andromeda_i/rst_ddr4_0_333M/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_board.xdc] for cell 'andromeda_i/rst_ddr4_0_333M/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_rst_ddr4_0_333M_0/andromeda_rst_ddr4_0_333M_0_board.xdc] for cell 'andromeda_i/rst_ddr4_0_333M/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_0/bd_828f_microblaze_I_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_0/bd_828f_microblaze_I_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_uartlite_0_0/andromeda_axi_uartlite_0_0.xdc] for cell 'andromeda_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_uartlite_0_0/andromeda_axi_uartlite_0_0.xdc] for cell 'andromeda_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_uartlite_0_0/andromeda_axi_uartlite_0_0_board.xdc] for cell 'andromeda_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_uartlite_0_0/andromeda_axi_uartlite_0_0_board.xdc] for cell 'andromeda_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.xdc] for cell 'andromeda_i/microblaze_0/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.xdc] for cell 'andromeda_i/microblaze_0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'andromeda_i/ila_0/inst'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'andromeda_i/ila_0/inst'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'andromeda_i/ila_0/inst'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'andromeda_i/ila_0/inst'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/par/andromeda_ddr4_0_0.xdc] for cell 'andromeda_i/ddr4_0/inst'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/par/andromeda_ddr4_0_0.xdc] for cell 'andromeda_i/ddr4_0/inst'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/ip_0/andromeda_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/ip_0/andromeda_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_10/bd_828f_iomodule_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_10/bd_828f_iomodule_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_3/bd_828f_dlmb_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_3/bd_828f_dlmb_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_2/bd_828f_ilmb_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_2/bd_828f_ilmb_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_1/bd_828f_rst_0_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_1/bd_828f_rst_0_0.xdc:50]
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_1/bd_828f_rst_0_0.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_1/bd_828f_rst_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/ip/ip_1/bd_828f_rst_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/board_xdc/puzhi.xdc]
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/board_xdc/puzhi.xdc]
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/andromeda_ddr4_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/andromeda_ddr4_0_0_board.xdc] for cell 'andromeda_i/ddr4_0/inst'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc] for cell 'andromeda_i/mdm_0/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc:5]
+INFO: [Timing 38-2] Deriving generated clocks [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc:5]
+get_clocks: Time (s): cpu = 00:00:39 ; elapsed = 00:00:11 . Memory (MB): peak = 8368.297 ; gain = 444.816 ; free physical = 76048 ; free virtual = 87672
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc] for cell 'andromeda_i/mdm_0/U0'
 INFO: [Project 1-1714] 192 XPM XDC files have been applied to the design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell andromeda_i/axi_dpe_0/inst/bram_sdp_x_vector/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
@@ -251,13 +334,14 @@ INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell andromeda_i/micr
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell andromeda_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell andromeda_i/microblaze_0_local_memory/lmb_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 Generating merged BMM file for the design top 'andromeda_wrapper'...
-INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/data/mb_bootloop_le.elf 
 INFO: [Project 1-1687] 48 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4055.383 ; gain = 0.000 ; free physical = 27864 ; free virtual = 38007
+Netlist sorting complete. Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.69 . Memory (MB): peak = 8668.582 ; gain = 0.000 ; free physical = 75836 ; free virtual = 87662
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2549 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 1496 instances
-  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  A total of 7363 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 1704 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 257 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 256 instances
   IBUF => IBUF (IBUFCTRL, INBUF): 6 instances
   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
   IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instance 
@@ -267,13 +351,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
   RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 256 instances
   RAM16X1D => RAM32X1D (RAMD32(x2)): 7 instances
+  RAM16X1S => RAM32X1S (RAMS32): 4096 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 135 instances
   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 418 instances
   RAM64M8 => RAM64M8 (RAMD64E(x8)): 74 instances
 
-126 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+208 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:38 . Memory (MB): peak = 4055.383 ; gain = 2439.789 ; free physical = 27864 ; free virtual = 38007
+link_design: Time (s): cpu = 00:08:43 ; elapsed = 00:08:11 . Memory (MB): peak = 8668.582 ; gain = 7052.520 ; free physical = 75836 ; free virtual = 87662
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xcku5p'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku5p'
@@ -284,13 +369,13 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.43 . Memory (MB): peak = 4055.383 ; gain = 0.000 ; free physical = 27857 ; free virtual = 38000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.97 . Memory (MB): peak = 8668.582 ; gain = 0.000 ; free physical = 75835 ; free virtual = 87661
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 1ae726294
+Ending Cache Timing Information Task | Checksum: e25b855b
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4055.383 ; gain = 0.000 ; free physical = 27848 ; free virtual = 37991
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:07 . Memory (MB): peak = 8668.582 ; gain = 0.000 ; free physical = 75839 ; free virtual = 87665
 
 Starting Logic Optimization Task
 
@@ -301,55 +386,58 @@ Phase 1.1 Core Generation And Design Setup
 Phase 1.1.1 Generate And Synthesize MIG Cores
 INFO: [IP_Flow 19-12206] Starting IP regeneration with 1 cores.
 INFO: [IP_Flow 19-5647] Added synthesis output to IP cache for IP andromeda_ddr4_0_0_phy, cache-ID = d293efa2583f7514
-Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4471.391 ; gain = 0.000 ; free physical = 27397 ; free virtual = 37603
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4471.391 ; gain = 0.000 ; free physical = 27441 ; free virtual = 37628
-Phase 1.1.1 Generate And Synthesize MIG Cores | Checksum: 24c278d05
+Done building netlist checker database: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.15 . Memory (MB): peak = 8989.117 ; gain = 0.000 ; free physical = 75300 ; free virtual = 87146
+get_clocks: Time (s): cpu = 00:00:34 ; elapsed = 00:00:09 . Memory (MB): peak = 8989.117 ; gain = 0.000 ; free physical = 75373 ; free virtual = 87219
+read_xdc: Time (s): cpu = 00:00:37 ; elapsed = 00:00:12 . Memory (MB): peak = 8989.117 ; gain = 0.000 ; free physical = 75373 ; free virtual = 87219
+Netlist sorting complete. Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.69 . Memory (MB): peak = 8989.117 ; gain = 0.000 ; free physical = 75405 ; free virtual = 87231
+Phase 1.1.1 Generate And Synthesize MIG Cores | Checksum: 182884e6c
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:42 . Memory (MB): peak = 4471.391 ; gain = 95.023 ; free physical = 27441 ; free virtual = 37628
+Time (s): cpu = 00:01:27 ; elapsed = 00:01:00 . Memory (MB): peak = 8989.117 ; gain = 320.535 ; free physical = 75405 ; free virtual = 87231
 
 Phase 1.1.2 Generate And Synthesize Debug Cores
 INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
 INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
 INFO: [Chipscope 16-329] Generating Script for core instance : u_ila_0 
 INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
-Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4494.203 ; gain = 0.000 ; free physical = 27420 ; free virtual = 37647
-Done building netlist checker database: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4494.203 ; gain = 0.000 ; free physical = 27421 ; free virtual = 37648
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4501.203 ; gain = 0.000 ; free physical = 27404 ; free virtual = 37631
-Phase 1.1.2 Generate And Synthesize Debug Cores | Checksum: 277bf0f5a
+Done building netlist checker database: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 9629.906 ; gain = 0.000 ; free physical = 74743 ; free virtual = 86573
+Done building netlist checker database: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 9629.906 ; gain = 0.000 ; free physical = 74742 ; free virtual = 86573
+get_clocks: Time (s): cpu = 00:00:25 ; elapsed = 00:00:07 . Memory (MB): peak = 9652.906 ; gain = 23.000 ; free physical = 74759 ; free virtual = 86589
+Netlist sorting complete. Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:00.84 . Memory (MB): peak = 9652.906 ; gain = 0.000 ; free physical = 74759 ; free virtual = 86589
+Phase 1.1.2 Generate And Synthesize Debug Cores | Checksum: 29cfe5c2f
 
-Time (s): cpu = 00:02:03 ; elapsed = 00:01:51 . Memory (MB): peak = 4501.203 ; gain = 124.836 ; free physical = 27404 ; free virtual = 37631
-Phase 1.1 Core Generation And Design Setup | Checksum: 277bf0f5a
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:19 . Memory (MB): peak = 9652.906 ; gain = 984.324 ; free physical = 74759 ; free virtual = 86589
+Phase 1.1 Core Generation And Design Setup | Checksum: 29cfe5c2f
 
-Time (s): cpu = 00:02:03 ; elapsed = 00:01:51 . Memory (MB): peak = 4501.203 ; gain = 124.836 ; free physical = 27404 ; free virtual = 37631
+Time (s): cpu = 00:03:09 ; elapsed = 00:02:19 . Memory (MB): peak = 9652.906 ; gain = 984.324 ; free physical = 74759 ; free virtual = 86589
 
 Phase 1.2 Setup Constraints And Sort Netlist
-Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 277bf0f5a
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 29cfe5c2f
 
-Time (s): cpu = 00:02:04 ; elapsed = 00:01:51 . Memory (MB): peak = 4501.203 ; gain = 124.836 ; free physical = 27404 ; free virtual = 37631
-Phase 1 Initialization | Checksum: 277bf0f5a
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:20 . Memory (MB): peak = 9652.906 ; gain = 984.324 ; free physical = 74759 ; free virtual = 86589
+Phase 1 Initialization | Checksum: 29cfe5c2f
 
-Time (s): cpu = 00:02:04 ; elapsed = 00:01:51 . Memory (MB): peak = 4501.203 ; gain = 124.836 ; free physical = 27404 ; free virtual = 37631
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:20 . Memory (MB): peak = 9652.906 ; gain = 984.324 ; free physical = 74759 ; free virtual = 86589
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Timer Update
-Phase 2.1 Timer Update | Checksum: 277bf0f5a
+Phase 2.1 Timer Update | Checksum: 29cfe5c2f
 
-Time (s): cpu = 00:02:07 ; elapsed = 00:01:52 . Memory (MB): peak = 4532.875 ; gain = 156.508 ; free physical = 27379 ; free virtual = 37606
+Time (s): cpu = 00:03:22 ; elapsed = 00:02:23 . Memory (MB): peak = 9719.867 ; gain = 1051.285 ; free physical = 74685 ; free virtual = 86516
 
 Phase 2.2 Timing Data Collection
-Phase 2.2 Timing Data Collection | Checksum: 277bf0f5a
+Phase 2.2 Timing Data Collection | Checksum: 29cfe5c2f
 
-Time (s): cpu = 00:02:07 ; elapsed = 00:01:52 . Memory (MB): peak = 4564.875 ; gain = 188.508 ; free physical = 27348 ; free virtual = 37575
-Phase 2 Timer Update And Timing Data Collection | Checksum: 277bf0f5a
+Time (s): cpu = 00:03:23 ; elapsed = 00:02:23 . Memory (MB): peak = 9847.867 ; gain = 1179.285 ; free physical = 74607 ; free virtual = 86437
+Phase 2 Timer Update And Timing Data Collection | Checksum: 29cfe5c2f
 
-Time (s): cpu = 00:02:07 ; elapsed = 00:01:52 . Memory (MB): peak = 4564.875 ; gain = 188.508 ; free physical = 27348 ; free virtual = 37575
+Time (s): cpu = 00:03:23 ; elapsed = 00:02:24 . Memory (MB): peak = 9847.867 ; gain = 1179.285 ; free physical = 74607 ; free virtual = 86437
 
 Phase 3 Retarget
 INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
 INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
 INFO: [Opt 31-1566] Pulled 27 inverters resulting in an inversion of 279 pins
-INFO: [Opt 31-138] Pushed 189 inverter(s) to 11291 load pin(s).
+INFO: [Opt 31-138] Pushed 571 inverter(s) to 13423 load pin(s).
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell andromeda_i/ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM.BLK_MEM_GEN[0].trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell andromeda_i/ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM.BLK_MEM_GEN[0].trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell andromeda_i/ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM.BLK_MEM_GEN[0].trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
@@ -367,79 +455,79 @@ INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell andromeda_i/ila_
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell andromeda_i/ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM.BLK_MEM_GEN[0].trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell andromeda_i/ila_0/inst/ila_core_inst/ila_trace_memory_inst/SUBCORE_RAM.trace_block_memory/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 3 Retarget | Checksum: 2107e07ad
+Phase 3 Retarget | Checksum: 30920f8f1
 
-Time (s): cpu = 00:02:08 ; elapsed = 00:01:53 . Memory (MB): peak = 4564.875 ; gain = 188.508 ; free physical = 27347 ; free virtual = 37575
-Retarget | Checksum: 2107e07ad
-INFO: [Opt 31-389] Phase Retarget created 291 cells and removed 651 cells
-INFO: [Opt 31-1021] In phase Retarget, 327 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:03:31 ; elapsed = 00:02:31 . Memory (MB): peak = 9847.867 ; gain = 1179.285 ; free physical = 74599 ; free virtual = 86429
+Retarget | Checksum: 30920f8f1
+INFO: [Opt 31-389] Phase Retarget created 13202 cells and removed 14456 cells
+INFO: [Opt 31-1021] In phase Retarget, 326 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 Constant propagation
 INFO: [Opt 31-138] Pushed 8 inverter(s) to 16 load pin(s).
-Phase 4 Constant propagation | Checksum: 22200e7cc
+Phase 4 Constant propagation | Checksum: 2ed577f15
 
-Time (s): cpu = 00:02:09 ; elapsed = 00:01:54 . Memory (MB): peak = 4564.875 ; gain = 188.508 ; free physical = 27347 ; free virtual = 37575
-Constant propagation | Checksum: 22200e7cc
-INFO: [Opt 31-389] Phase Constant propagation created 523 cells and removed 3063 cells
-INFO: [Opt 31-1021] In phase Constant propagation, 275 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:03:42 ; elapsed = 00:02:43 . Memory (MB): peak = 9847.867 ; gain = 1179.285 ; free physical = 74599 ; free virtual = 86429
+Constant propagation | Checksum: 2ed577f15
+INFO: [Opt 31-389] Phase Constant propagation created 11081 cells and removed 51028 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 274 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 5 Sweep
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4564.875 ; gain = 0.000 ; free physical = 27347 ; free virtual = 37575
+Done building netlist checker database: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 9847.867 ; gain = 0.000 ; free physical = 74599 ; free virtual = 86430
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4564.875 ; gain = 0.000 ; free physical = 27347 ; free virtual = 37574
-Phase 5 Sweep | Checksum: 264213b59
+Done building netlist checker database: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 9847.867 ; gain = 0.000 ; free physical = 74599 ; free virtual = 86430
+Phase 5 Sweep | Checksum: 26c25e902
 
-Time (s): cpu = 00:02:11 ; elapsed = 00:01:56 . Memory (MB): peak = 4564.875 ; gain = 188.508 ; free physical = 27347 ; free virtual = 37574
-Sweep | Checksum: 264213b59
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1577 cells
-INFO: [Opt 31-1021] In phase Sweep, 12295 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:59 . Memory (MB): peak = 9847.867 ; gain = 1179.285 ; free physical = 74600 ; free virtual = 86430
+Sweep | Checksum: 26c25e902
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 25542 cells
+INFO: [Opt 31-1021] In phase Sweep, 12895 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 6 BUFG optimization
 INFO: [Opt 31-194] Inserted BUFG andromeda_i/mdm_0/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 39 load(s) on clock net andromeda_i/mdm_0/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFGCE
 INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
 INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
-Phase 6 BUFG optimization | Checksum: 2849804b8
+Phase 6 BUFG optimization | Checksum: 29aba82ba
 
-Time (s): cpu = 00:02:12 ; elapsed = 00:01:57 . Memory (MB): peak = 4596.891 ; gain = 220.523 ; free physical = 27347 ; free virtual = 37574
-BUFG optimization | Checksum: 2849804b8
+Time (s): cpu = 00:04:03 ; elapsed = 00:03:01 . Memory (MB): peak = 9879.883 ; gain = 1211.301 ; free physical = 74600 ; free virtual = 86430
+BUFG optimization | Checksum: 29aba82ba
 INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 2 cells.
 
 Phase 7 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 7 Shift Register Optimization | Checksum: 2849804b8
+Phase 7 Shift Register Optimization | Checksum: 29aba82ba
 
-Time (s): cpu = 00:02:13 ; elapsed = 00:01:57 . Memory (MB): peak = 4596.891 ; gain = 220.523 ; free physical = 27347 ; free virtual = 37574
-Shift Register Optimization | Checksum: 2849804b8
+Time (s): cpu = 00:04:03 ; elapsed = 00:03:01 . Memory (MB): peak = 9879.883 ; gain = 1211.301 ; free physical = 74600 ; free virtual = 86431
+Shift Register Optimization | Checksum: 29aba82ba
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 8 Post Processing Netlist
 INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 1 pins
-Phase 8 Post Processing Netlist | Checksum: 2046a0cf0
+Phase 8 Post Processing Netlist | Checksum: 2991bb09f
 
-Time (s): cpu = 00:02:13 ; elapsed = 00:01:57 . Memory (MB): peak = 4596.891 ; gain = 220.523 ; free physical = 27347 ; free virtual = 37575
-Post Processing Netlist | Checksum: 2046a0cf0
+Time (s): cpu = 00:04:04 ; elapsed = 00:03:02 . Memory (MB): peak = 9879.883 ; gain = 1211.301 ; free physical = 74600 ; free virtual = 86430
+Post Processing Netlist | Checksum: 2991bb09f
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 366 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 9 Finalization
 
 Phase 9.1 Finalizing Design Cores and Updating Shapes
-Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2551278ce
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2e492efeb
 
-Time (s): cpu = 00:02:17 ; elapsed = 00:02:02 . Memory (MB): peak = 4596.891 ; gain = 220.523 ; free physical = 27347 ; free virtual = 37574
+Time (s): cpu = 00:04:12 ; elapsed = 00:03:10 . Memory (MB): peak = 9879.883 ; gain = 1211.301 ; free physical = 74600 ; free virtual = 86430
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 4596.891 ; gain = 0.000 ; free physical = 27347 ; free virtual = 37574
-Phase 9.2 Verifying Netlist Connectivity | Checksum: 2551278ce
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.25 . Memory (MB): peak = 9879.883 ; gain = 0.000 ; free physical = 74600 ; free virtual = 86430
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 2e492efeb
 
-Time (s): cpu = 00:02:17 ; elapsed = 00:02:02 . Memory (MB): peak = 4596.891 ; gain = 220.523 ; free physical = 27347 ; free virtual = 37574
-Phase 9 Finalization | Checksum: 2551278ce
+Time (s): cpu = 00:04:12 ; elapsed = 00:03:10 . Memory (MB): peak = 9879.883 ; gain = 1211.301 ; free physical = 74600 ; free virtual = 86430
+Phase 9 Finalization | Checksum: 2e492efeb
 
-Time (s): cpu = 00:02:17 ; elapsed = 00:02:02 . Memory (MB): peak = 4596.891 ; gain = 220.523 ; free physical = 27347 ; free virtual = 37574
+Time (s): cpu = 00:04:12 ; elapsed = 00:03:10 . Memory (MB): peak = 9879.883 ; gain = 1211.301 ; free physical = 74600 ; free virtual = 86430
 Opt_design Change Summary
 =========================
 
@@ -447,18 +535,18 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |             291  |             651  |                                            327  |
-|  Constant propagation         |             523  |            3063  |                                            275  |
-|  Sweep                        |               0  |            1577  |                                          12295  |
+|  Retarget                     |           13202  |           14456  |                                            326  |
+|  Constant propagation         |           11081  |           51028  |                                            274  |
+|  Sweep                        |               0  |           25542  |                                          12895  |
 |  BUFG optimization            |               2  |               2  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
 |  Post Processing Netlist      |               0  |               1  |                                            366  |
 -------------------------------------------------------------------------------------------------------------------------
 
 
-Ending Logic Optimization Task | Checksum: 2551278ce
+Ending Logic Optimization Task | Checksum: 2e492efeb
 
-Time (s): cpu = 00:02:17 ; elapsed = 00:02:02 . Memory (MB): peak = 4596.891 ; gain = 220.523 ; free physical = 27347 ; free virtual = 37574
+Time (s): cpu = 00:04:12 ; elapsed = 00:03:10 . Memory (MB): peak = 9879.883 ; gain = 1211.301 ; free physical = 74600 ; free virtual = 86430
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -473,44 +561,44 @@ Finished Running Vector-less Activity Propagation
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 62 BRAM(s) out of a total of 193 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 71 BRAM(s) out of a total of 202 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 78 newly gated: 57 Total Ports: 386
-Ending PowerOpt Patch Enables Task | Checksum: 27a692240
+Number of BRAM Ports augmented: 87 newly gated: 0 Total Ports: 404
+Ending PowerOpt Patch Enables Task | Checksum: 2b87c50a9
 
-Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.64 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26530 ; free virtual = 36763
-Ending Power Optimization Task | Checksum: 27a692240
+Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:00.85 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73371 ; free virtual = 85205
+Ending Power Optimization Task | Checksum: 2b87c50a9
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 5487.273 ; gain = 890.383 ; free physical = 26530 ; free virtual = 36763
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:19 . Memory (MB): peak = 11168.523 ; gain = 1288.641 ; free physical = 73372 ; free virtual = 85206
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 27a692240
+Ending Final Cleanup Task | Checksum: 2b87c50a9
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26530 ; free virtual = 36763
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73372 ; free virtual = 85206
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26530 ; free virtual = 36763
-Ending Netlist Obfuscation Task | Checksum: 1ec4de72e
+Netlist sorting complete. Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.7 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73372 ; free virtual = 85206
+Ending Netlist Obfuscation Task | Checksum: 2f1ba0081
 
-Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26530 ; free virtual = 36763
+Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.72 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73372 ; free virtual = 85206
 INFO: [Common 17-83] Releasing license: Implementation
-200 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+282 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:02:49 ; elapsed = 00:02:14 . Memory (MB): peak = 5487.273 ; gain = 1431.891 ; free physical = 26530 ; free virtual = 36763
+opt_design: Time (s): cpu = 00:05:45 ; elapsed = 00:03:40 . Memory (MB): peak = 11168.523 ; gain = 2499.941 ; free physical = 73376 ; free virtual = 85210
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Wrote PlaceDB: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.03 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26527 ; free virtual = 36763
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26527 ; free virtual = 36763
+Wrote PlaceDB: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.02 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73376 ; free virtual = 85213
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73376 ; free virtual = 85213
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26524 ; free virtual = 36763
-Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26524 ; free virtual = 36763
-Wrote Device Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26524 ; free virtual = 36766
-Write Physdb Complete: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.07 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26520 ; free virtual = 36762
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.14 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26492 ; free virtual = 36755
-INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26414 ; free virtual = 36677
+Wrote RouteStorage: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.03 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73375 ; free virtual = 85214
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73371 ; free virtual = 85211
+Wrote Device Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73371 ; free virtual = 85214
+Write Physdb Complete: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.06 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73371 ; free virtual = 85214
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.27 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73303 ; free virtual = 85190
+INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:36 ; elapsed = 00:00:14 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73278 ; free virtual = 85175
 INFO: [Chipscope 16-240] Debug cores have already been implemented
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xcku5p'
@@ -530,29 +618,29 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26432 ; free virtual = 36696
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1b57bff6e
+Netlist sorting complete. Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.8 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73303 ; free virtual = 85200
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 205e847b3
 
-Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26432 ; free virtual = 36696
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5487.273 ; gain = 0.000 ; free physical = 26432 ; free virtual = 36696
+Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.85 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73303 ; free virtual = 85201
+Netlist sorting complete. Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.7 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73305 ; free virtual = 85203
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 172dedf23
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 192ba2e7a
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 5537.652 ; gain = 50.379 ; free physical = 26191 ; free virtual = 36589
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 11168.523 ; gain = 0.000 ; free physical = 73178 ; free virtual = 85209
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 18ea506c3
+Phase 1.3 Build Placer Netlist Model | Checksum: 28f5698ea
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 5579.035 ; gain = 91.762 ; free physical = 26093 ; free virtual = 36494
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:40 . Memory (MB): peak = 11458.004 ; gain = 289.480 ; free physical = 72717 ; free virtual = 84750
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 18ea506c3
+Phase 1.4 Constrain Clocks/Macros | Checksum: 28f5698ea
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 5579.035 ; gain = 91.762 ; free physical = 26093 ; free virtual = 36494
-Phase 1 Placer Initialization | Checksum: 18ea506c3
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:40 . Memory (MB): peak = 11458.004 ; gain = 289.480 ; free physical = 72717 ; free virtual = 84750
+Phase 1 Placer Initialization | Checksum: 28f5698ea
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 5579.035 ; gain = 91.762 ; free physical = 26093 ; free virtual = 36494
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:41 . Memory (MB): peak = 11458.004 ; gain = 289.480 ; free physical = 72720 ; free virtual = 84752
 
 Phase 2 Global Placement
 
@@ -561,84 +649,92 @@ Phase 2.1 Floorplanning
 Phase 2.1.1 Partition Driven Placement
 
 Phase 2.1.1.1 PBP: Partition Driven Placement
-Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1dba2036c
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 21d393026
 
-Time (s): cpu = 00:01:06 ; elapsed = 00:00:32 . Memory (MB): peak = 5659.074 ; gain = 171.801 ; free physical = 26148 ; free virtual = 36551
+Time (s): cpu = 00:02:36 ; elapsed = 00:01:11 . Memory (MB): peak = 11538.043 ; gain = 369.520 ; free physical = 72769 ; free virtual = 84803
 
 Phase 2.1.1.2 PBP: Clock Region Placement
 INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
-Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 23148c574
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 17fb89594
 
-Time (s): cpu = 00:01:07 ; elapsed = 00:00:33 . Memory (MB): peak = 5659.074 ; gain = 171.801 ; free physical = 26148 ; free virtual = 36553
+Time (s): cpu = 00:02:38 ; elapsed = 00:01:14 . Memory (MB): peak = 11538.043 ; gain = 369.520 ; free physical = 72769 ; free virtual = 84805
 
 Phase 2.1.1.3 PBP: Compute Congestion
-Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 23148c574
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 17fb89594
 
-Time (s): cpu = 00:01:16 ; elapsed = 00:00:35 . Memory (MB): peak = 6068.059 ; gain = 580.785 ; free physical = 25703 ; free virtual = 36109
+Time (s): cpu = 00:02:49 ; elapsed = 00:01:17 . Memory (MB): peak = 11538.043 ; gain = 369.520 ; free physical = 72313 ; free virtual = 84776
 
 Phase 2.1.1.4 PBP: UpdateTiming
-Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 19e58f340
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 1a74af286
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:00:37 . Memory (MB): peak = 6100.074 ; gain = 612.801 ; free physical = 25704 ; free virtual = 36109
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:21 . Memory (MB): peak = 11538.043 ; gain = 369.520 ; free physical = 72313 ; free virtual = 84776
 
 Phase 2.1.1.5 PBP: Add part constraints
-Phase 2.1.1.5 PBP: Add part constraints | Checksum: 19e58f340
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 1a74af286
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:00:37 . Memory (MB): peak = 6100.074 ; gain = 612.801 ; free physical = 25704 ; free virtual = 36109
-Phase 2.1.1 Partition Driven Placement | Checksum: 19e58f340
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:22 . Memory (MB): peak = 11538.043 ; gain = 369.520 ; free physical = 72313 ; free virtual = 84776
+Phase 2.1.1 Partition Driven Placement | Checksum: 1a74af286
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:00:37 . Memory (MB): peak = 6100.074 ; gain = 612.801 ; free physical = 25704 ; free virtual = 36109
-Phase 2.1 Floorplanning | Checksum: 19e58f340
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:22 . Memory (MB): peak = 11538.043 ; gain = 369.520 ; free physical = 72313 ; free virtual = 84776
+Phase 2.1 Floorplanning | Checksum: 1a74af286
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:00:37 . Memory (MB): peak = 6100.074 ; gain = 612.801 ; free physical = 25704 ; free virtual = 36109
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:22 . Memory (MB): peak = 11538.043 ; gain = 369.520 ; free physical = 72313 ; free virtual = 84776
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 19e58f340
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1a74af286
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:00:37 . Memory (MB): peak = 6100.074 ; gain = 612.801 ; free physical = 25704 ; free virtual = 36109
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:22 . Memory (MB): peak = 11538.043 ; gain = 369.520 ; free physical = 72313 ; free virtual = 84776
 
 Phase 2.3 Post-Processing in Floorplanning
-Phase 2.3 Post-Processing in Floorplanning | Checksum: 1ef0a3f36
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1a5f20026
 
-Time (s): cpu = 00:01:21 ; elapsed = 00:00:37 . Memory (MB): peak = 6100.074 ; gain = 612.801 ; free physical = 25704 ; free virtual = 36109
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:22 . Memory (MB): peak = 11538.043 ; gain = 369.520 ; free physical = 72313 ; free virtual = 84776
 
 Phase 2.4 Global Place Phase1
-Phase 2.4 Global Place Phase1 | Checksum: 1329f34b4
+Phase 2.4 Global Place Phase1 | Checksum: 118075175
 
-Time (s): cpu = 00:02:42 ; elapsed = 00:01:08 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25515 ; free virtual = 35922
+Time (s): cpu = 00:06:31 ; elapsed = 00:02:48 . Memory (MB): peak = 11795.043 ; gain = 626.520 ; free physical = 72102 ; free virtual = 84567
 
 Phase 2.5 Global Place Phase2
 
 Phase 2.5.1 UpdateTiming Before Physical Synthesis
-Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 2233649d9
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 14c41b496
 
-Time (s): cpu = 00:02:47 ; elapsed = 00:01:09 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25514 ; free virtual = 35922
+Time (s): cpu = 00:06:43 ; elapsed = 00:02:51 . Memory (MB): peak = 11795.043 ; gain = 626.520 ; free physical = 72101 ; free virtual = 84566
 
 Phase 2.5.2 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 10 LUTNM shape to break, 3049 LUT instances to create LUTNM shape
-INFO: [Physopt 32-1044] Break lutnm for timing: one critical 10, two critical 0, total 10, new lutff created 0
-INFO: [Physopt 32-1138] End 1 Pass. Optimized 1345 nets or LUTs. Breaked 10 LUTs, combined 1335 existing LUTs and moved 0 existing LUT
-INFO: [Physopt 32-1030] Pass 1. Identified 81 candidate driver sets for equivalent driver rewiring.
-INFO: [Physopt 32-661] Optimized 61 nets.  Re-placed 471 instances.
-INFO: [Physopt 32-775] End 1 Pass. Optimized 61 nets or cells. Created 18 new cells, deleted 62 existing cells and moved 471 existing cells
-Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 6316.074 ; gain = 0.000 ; free physical = 25514 ; free virtual = 35924
-INFO: [Physopt 32-1132] Very high fanout net 'andromeda_i/axi_dpe_0/inst/p_0_in__0' is not considered as a candidate in VHFN optimization. The fanout considered for this optimization is changed from 1024 to 257 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 257.
+INFO: [Physopt 32-1035] Found 943 LUTNM shape to break, 16643 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 89, two critical 854, total 943, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 8618 nets or LUTs. Breaked 943 LUTs, combined 7675 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 115 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 64 nets.  Re-placed 465 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 64 nets or cells. Created 18 new cells, deleted 34 existing cells and moved 465 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:00.84 . Memory (MB): peak = 12466.910 ; gain = 0.000 ; free physical = 71416 ; free virtual = 83883
+INFO: [Physopt 32-1132] Very high fanout net 'andromeda_i/axi_dpe_0/inst/p_0_in__1' is not considered as a candidate in VHFN optimization. The fanout considered for this optimization is changed from 1024 to 257 due to a timing constraint that prevent optimization on all of the loads. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 257.
 INFO: [Physopt 32-1408] Pass 1. Identified 5 candidate nets for high-fanout optimization.
-INFO: [Physopt 32-81] Processed net andromeda_i/axi_dpe_0/inst/read_addr[3]. Replicated 6 times.
+INFO: [Physopt 32-81] Processed net andromeda_i/axi_dpe_0/inst/read_addr[3]. Replicated 5 times.
 INFO: [Physopt 32-81] Processed net andromeda_i/axi_dpe_0/inst/read_addr[2]. Replicated 6 times.
-INFO: [Physopt 32-81] Processed net andromeda_i/axi_dpe_0/inst/s_axi_bresp_r. Replicated 24 times.
-INFO: [Physopt 32-81] Processed net andromeda_i/rst_ddr4_0_333M/U0/peripheral_aresetn[0]. Replicated 57 times.
 INFO: [Physopt 32-81] Processed net andromeda_i/axi_dpe_0/inst/accum_word_count_reg_n_0_[6]. Replicated 49 times.
-INFO: [Physopt 32-232] Optimized 5 nets. Created 142 new instances.
-INFO: [Physopt 32-775] End 1 Pass. Optimized 5 nets or cells. Created 142 new cells, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 6316.074 ; gain = 0.000 ; free physical = 25514 ; free virtual = 35924
-INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-81] Processed net andromeda_i/rst_ddr4_0_333M/U0/peripheral_aresetn[0]. Replicated 77 times.
+INFO: [Physopt 32-81] Processed net andromeda_i/axi_dpe_0/inst/s_axi_bresp_r. Replicated 26 times.
+INFO: [Physopt 32-232] Optimized 5 nets. Created 163 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 5 nets or cells. Created 163 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.97 ; elapsed = 00:00:00.97 . Memory (MB): peak = 12466.910 ; gain = 0.000 ; free physical = 71416 ; free virtual = 83883
+INFO: [Physopt 32-698] Replication is not feasible on the instance andromeda_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/CAP_WR_EN_O_reg as the input net andromeda_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/icap_wr_en to the instance has DONT_TOUCH
+INFO: [Physopt 32-698] Replication is not feasible on the instance andromeda_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/i_intcap.CAP_ADDR_O_reg[0] as the input net andromeda_i/system_ila_0/inst/ila_lib/inst/ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/icap_addr[0] to the instance has DONT_TOUCH
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-457] Pass 1. Identified 2 candidate cells for DSP register optimization.
+INFO: [Physopt 32-666] Processed cell andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/genblk7[1].add4/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP. No change.
+INFO: [Physopt 32-666] Processed cell andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/genblk5[8].add2/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP. No change.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.69 . Memory (MB): peak = 12466.910 ; gain = 0.000 ; free physical = 71416 ; free virtual = 83883
 INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-1402] Pass 1: Identified 5 candidate cells for Shift Register optimization.
-INFO: [Physopt 32-775] End 1 Pass. Optimized 4 nets or cells. Created 98 new cells, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 6316.074 ; gain = 0.000 ; free physical = 25513 ; free virtual = 35924
+INFO: [Physopt 32-1402] Pass 1: Identified 31 candidate cells for Shift Register optimization.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 14 nets or cells. Created 28 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.72 . Memory (MB): peak = 12466.910 ; gain = 0.000 ; free physical = 71416 ; free virtual = 83883
 INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
@@ -647,7 +743,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 6316.074 ; gain = 0.000 ; free physical = 25513 ; free virtual = 35924
+Netlist sorting complete. Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.69 . Memory (MB): peak = 12466.910 ; gain = 0.000 ; free physical = 71416 ; free virtual = 83883
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -656,79 +752,80 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |           10  |           1335  |                  1345  |           0  |           1  |  00:00:01  |
+|  LUT Combining                                    |          943  |           7675  |                  8618  |           0  |           1  |  00:00:03  |
 |  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Equivalent Driver Rewiring                       |           18  |             62  |                    61  |           0  |           1  |  00:00:06  |
-|  Very High Fanout                                 |          142  |              0  |                     5  |           1  |           1  |  00:00:02  |
-|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |           18  |             34  |                    64  |           0  |           1  |  00:00:07  |
+|  Very High Fanout                                 |          163  |              0  |                     5  |           1  |           1  |  00:00:04  |
+|  Fanout                                           |            0  |              0  |                     0  |           2  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
 |  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Shift Register                                   |           98  |              0  |                     4  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |           28  |              0  |                    14  |           0  |           1  |  00:00:01  |
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |          268  |           1397  |                  1415  |           1  |          10  |  00:00:10  |
+|  Total                                            |         1152  |           7709  |                  8701  |           3  |          11  |  00:00:16  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.5.2 Physical Synthesis In Placer | Checksum: 22a3720f6
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1b09d088c
 
-Time (s): cpu = 00:03:01 ; elapsed = 00:01:21 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25513 ; free virtual = 35924
-Phase 2.5 Global Place Phase2 | Checksum: 27fdb61f0
+Time (s): cpu = 00:07:15 ; elapsed = 00:03:18 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70357 ; free virtual = 83666
+Phase 2.5 Global Place Phase2 | Checksum: 1f13f50c5
 
-Time (s): cpu = 00:03:14 ; elapsed = 00:01:25 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25515 ; free virtual = 35925
-Phase 2 Global Placement | Checksum: 27fdb61f0
+Time (s): cpu = 00:07:36 ; elapsed = 00:03:25 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70356 ; free virtual = 83665
+Phase 2 Global Placement | Checksum: 1f13f50c5
 
-Time (s): cpu = 00:03:14 ; elapsed = 00:01:25 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25515 ; free virtual = 35925
+Time (s): cpu = 00:07:36 ; elapsed = 00:03:25 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70356 ; free virtual = 83665
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 26e5396a6
+Phase 3.1 Commit Multi Column Macros | Checksum: 1dfbaa0c9
 
-Time (s): cpu = 00:03:27 ; elapsed = 00:01:29 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25510 ; free virtual = 35921
+Time (s): cpu = 00:07:57 ; elapsed = 00:03:32 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70358 ; free virtual = 83667
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 293c67ce9
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2792eac03
 
-Time (s): cpu = 00:03:35 ; elapsed = 00:01:33 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25499 ; free virtual = 35918
+Time (s): cpu = 00:08:13 ; elapsed = 00:03:39 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70360 ; free virtual = 83669
 
 Phase 3.3 Small Shape DP
 
 Phase 3.3.1 Small Shape Clustering
-Phase 3.3.1 Small Shape Clustering | Checksum: 2a266a160
+Phase 3.3.1 Small Shape Clustering | Checksum: 21dc427b1
 
-Time (s): cpu = 00:03:57 ; elapsed = 00:01:41 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25487 ; free virtual = 35907
+Time (s): cpu = 00:09:00 ; elapsed = 00:03:55 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70356 ; free virtual = 83666
 
 Phase 3.3.2 Slice Area Swap
 
 Phase 3.3.2.1 Slice Area Swap Initial
-Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 25219c10d
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 2226e627b
 
-Time (s): cpu = 00:04:07 ; elapsed = 00:01:49 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25487 ; free virtual = 35907
-Phase 3.3.2 Slice Area Swap | Checksum: 25219c10d
+Time (s): cpu = 00:09:09 ; elapsed = 00:04:02 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70356 ; free virtual = 83666
+Phase 3.3.2 Slice Area Swap | Checksum: 2226e627b
 
-Time (s): cpu = 00:04:07 ; elapsed = 00:01:49 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25487 ; free virtual = 35907
-Phase 3.3 Small Shape DP | Checksum: 1d912bd4e
+Time (s): cpu = 00:09:10 ; elapsed = 00:04:03 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70356 ; free virtual = 83666
+Phase 3.3 Small Shape DP | Checksum: 165773675
 
-Time (s): cpu = 00:04:16 ; elapsed = 00:01:52 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25486 ; free virtual = 35906
+Time (s): cpu = 00:09:30 ; elapsed = 00:04:08 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70356 ; free virtual = 83666
 
 Phase 3.4 Re-assign LUT pins
-Phase 3.4 Re-assign LUT pins | Checksum: 16c4c8230
+Phase 3.4 Re-assign LUT pins | Checksum: 1545a585c
 
-Time (s): cpu = 00:04:18 ; elapsed = 00:01:53 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25486 ; free virtual = 35906
+Time (s): cpu = 00:09:35 ; elapsed = 00:04:12 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70356 ; free virtual = 83666
 
 Phase 3.5 Pipeline Register Optimization
-Phase 3.5 Pipeline Register Optimization | Checksum: 296e50930
+Phase 3.5 Pipeline Register Optimization | Checksum: 26f163d80
 
-Time (s): cpu = 00:04:19 ; elapsed = 00:01:54 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25486 ; free virtual = 35906
+Time (s): cpu = 00:09:36 ; elapsed = 00:04:13 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70356 ; free virtual = 83666
 
 Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: 24c5660f7
+Phase 3.6 Fast Optimization | Checksum: 1e1dbb347
 
-Time (s): cpu = 00:04:43 ; elapsed = 00:02:02 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25479 ; free virtual = 35899
-Phase 3 Detail Placement | Checksum: 24c5660f7
+Time (s): cpu = 00:10:30 ; elapsed = 00:04:28 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70358 ; free virtual = 83668
+Phase 3 Detail Placement | Checksum: 1e1dbb347
 
-Time (s): cpu = 00:04:43 ; elapsed = 00:02:03 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25479 ; free virtual = 35899
+Time (s): cpu = 00:10:32 ; elapsed = 00:04:28 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70358 ; free virtual = 83668
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -736,7 +833,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 2985c4097
+Post Placement Optimization Initialization | Checksum: 24adf4e7c
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -744,34 +841,34 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.232 | TNS=-2.538 |
-Phase 1 Physical Synthesis Initialization | Checksum: 174681fc4
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.253 | TNS=-1631.746 |
+Phase 1 Physical Synthesis Initialization | Checksum: 2097ad40d
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.66 . Memory (MB): peak = 6316.074 ; gain = 0.000 ; free physical = 25489 ; free virtual = 35909
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 70357 ; free virtual = 83667
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
-Ending Physical Synthesis Task | Checksum: 20f8a2c19
+Ending Physical Synthesis Task | Checksum: 23b269517
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.98 . Memory (MB): peak = 6316.074 ; gain = 0.000 ; free physical = 25489 ; free virtual = 35909
-Phase 4.1.1.1 BUFG Insertion | Checksum: 2985c4097
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:03 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 70357 ; free virtual = 83667
+Phase 4.1.1.1 BUFG Insertion | Checksum: 24adf4e7c
 
-Time (s): cpu = 00:05:20 ; elapsed = 00:02:14 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25489 ; free virtual = 35909
+Time (s): cpu = 00:12:07 ; elapsed = 00:04:56 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 70357 ; free virtual = 83667
 
 Phase 4.1.1.2 Post Placement Timing Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.026. For the most accurate timing information please run report_timing.
-Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 2a4cb287b
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.957. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 18d33196d
 
-Time (s): cpu = 00:05:34 ; elapsed = 00:02:27 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25487 ; free virtual = 35907
+Time (s): cpu = 00:12:32 ; elapsed = 00:05:20 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 69473 ; free virtual = 83625
 
-Time (s): cpu = 00:05:34 ; elapsed = 00:02:27 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25487 ; free virtual = 35907
-Phase 4.1 Post Commit Optimization | Checksum: 2a4cb287b
+Time (s): cpu = 00:12:32 ; elapsed = 00:05:20 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 69473 ; free virtual = 83625
+Phase 4.1 Post Commit Optimization | Checksum: 18d33196d
 
-Time (s): cpu = 00:05:34 ; elapsed = 00:02:27 . Memory (MB): peak = 6316.074 ; gain = 828.801 ; free physical = 25487 ; free virtual = 35907
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25411 ; free virtual = 35832
+Time (s): cpu = 00:12:34 ; elapsed = 00:05:20 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 69473 ; free virtual = 83625
+Netlist sorting complete. Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.69 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69480 ; free virtual = 83632
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 2d731a5e5
+Phase 4.2 Post Placement Cleanup | Checksum: e835e0c3
 
-Time (s): cpu = 00:05:48 ; elapsed = 00:02:34 . Memory (MB): peak = 6337.059 ; gain = 849.785 ; free physical = 25411 ; free virtual = 35832
+Time (s): cpu = 00:12:49 ; elapsed = 00:05:27 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 69481 ; free virtual = 83633
 
 Phase 4.3 Placer Reporting
 
@@ -781,48 +878,49 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |           | Global Congestion | Long Congestion   | Short Congestion  |
 | Direction | Region Size       | Region Size       | Region Size       |
 |___________|___________________|___________________|___________________|
-|      North|                1x1|                2x2|                4x4|
+|      North|                1x1|                1x1|                4x4|
 |___________|___________________|___________________|___________________|
 |      South|                1x1|                1x1|                2x2|
 |___________|___________________|___________________|___________________|
 |       East|                1x1|                1x1|                4x4|
 |___________|___________________|___________________|___________________|
-|       West|                1x1|                1x1|                8x8|
+|       West|                1x1|                1x1|                4x4|
 |___________|___________________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 2d731a5e5
+Phase 4.3.1 Print Estimated Congestion | Checksum: e835e0c3
 
-Time (s): cpu = 00:05:49 ; elapsed = 00:02:34 . Memory (MB): peak = 6337.059 ; gain = 849.785 ; free physical = 25411 ; free virtual = 35832
-Phase 4.3 Placer Reporting | Checksum: 2d731a5e5
+Time (s): cpu = 00:12:51 ; elapsed = 00:05:28 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 69481 ; free virtual = 83633
+Phase 4.3 Placer Reporting | Checksum: e835e0c3
 
-Time (s): cpu = 00:05:49 ; elapsed = 00:02:34 . Memory (MB): peak = 6337.059 ; gain = 849.785 ; free physical = 25411 ; free virtual = 35832
+Time (s): cpu = 00:12:52 ; elapsed = 00:05:28 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 69482 ; free virtual = 83634
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25411 ; free virtual = 35832
+Netlist sorting complete. Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.68 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69482 ; free virtual = 83634
 
-Time (s): cpu = 00:05:49 ; elapsed = 00:02:34 . Memory (MB): peak = 6337.059 ; gain = 849.785 ; free physical = 25411 ; free virtual = 35832
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 27ad82ac6
+Time (s): cpu = 00:12:53 ; elapsed = 00:05:28 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 69482 ; free virtual = 83634
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 139db8ba1
 
-Time (s): cpu = 00:05:50 ; elapsed = 00:02:34 . Memory (MB): peak = 6337.059 ; gain = 849.785 ; free physical = 25411 ; free virtual = 35832
-Ending Placer Task | Checksum: 1e2d60531
+Time (s): cpu = 00:12:54 ; elapsed = 00:05:29 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 69483 ; free virtual = 83635
+Ending Placer Task | Checksum: 10984cabe
 
-Time (s): cpu = 00:05:50 ; elapsed = 00:02:34 . Memory (MB): peak = 6337.059 ; gain = 849.785 ; free physical = 25411 ; free virtual = 35832
-249 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:12:55 ; elapsed = 00:05:29 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 69483 ; free virtual = 83635
+338 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:05:56 ; elapsed = 00:02:36 . Memory (MB): peak = 6337.059 ; gain = 849.785 ; free physical = 25411 ; free virtual = 35832
+place_design: Time (s): cpu = 00:13:04 ; elapsed = 00:05:33 . Memory (MB): peak = 13597.145 ; gain = 2428.621 ; free physical = 69483 ; free virtual = 83635
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.92 ; elapsed = 00:00:00.19 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25365 ; free virtual = 35832
-Wrote PlaceDB: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25267 ; free virtual = 35836
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25267 ; free virtual = 35836
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.42 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69356 ; free virtual = 83598
+Wrote PlaceDB: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69071 ; free virtual = 83591
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69071 ; free virtual = 83591
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25266 ; free virtual = 35837
-Wrote Netlist Cache: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.06 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25258 ; free virtual = 35840
-Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25250 ; free virtual = 35835
-Write Physdb Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25250 ; free virtual = 35835
-INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper_placed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25273 ; free virtual = 35735
+Wrote RouteStorage: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69071 ; free virtual = 83593
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.15 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69045 ; free virtual = 83591
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69038 ; free virtual = 83586
+Write Physdb Complete: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69038 ; free virtual = 83586
+report_design_analysis: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69011 ; free virtual = 83560
+INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:37 ; elapsed = 00:00:16 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 69361 ; free virtual = 83603
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xcku5p'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcku5p'
@@ -832,162 +930,189 @@ Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
 
 Phase 1 Build RT Design
-Checksum: PlaceDB: a2af116c ConstDB: 0 ShapeSum: 571982ff RouteDB: e90d70c6
-Nodegraph reading from file.  Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.38 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25277 ; free virtual = 35743
-Post Restoration Checksum: NetGraph: 458c1c99 | NumContArr: 2fc7b688 | Constraints: d3daae08 | Timing: c2a8fa9d
-Phase 1 Build RT Design | Checksum: 20bd77bc6
+Checksum: PlaceDB: 72e055b2 ConstDB: 0 ShapeSum: 84faba5a RouteDB: 11a9bab2
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.31 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68453 ; free virtual = 83540
+Post Restoration Checksum: NetGraph: 6817fb5f | NumContArr: b71befa5 | Constraints: 4dfa35a1 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 22fd71b42
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:04 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25280 ; free virtual = 35747
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:10 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68457 ; free virtual = 83546
 
 Phase 2 Router Initialization
 
 Phase 2.1 Fix Topology Constraints
-Phase 2.1 Fix Topology Constraints | Checksum: 20bd77bc6
+Phase 2.1 Fix Topology Constraints | Checksum: 22fd71b42
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:04 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25280 ; free virtual = 35747
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:10 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68457 ; free virtual = 83546
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 20bd77bc6
+Phase 2.2 Pre Route Cleanup | Checksum: 22fd71b42
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:04 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25280 ; free virtual = 35747
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:10 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68457 ; free virtual = 83547
 
 Phase 2.3 Global Clock Net Routing
  Number of Nodes with overlaps = 0
-Phase 2.3 Global Clock Net Routing | Checksum: 2aea3092a
+Phase 2.3 Global Clock Net Routing | Checksum: 2b130b4c6
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25304 ; free virtual = 35772
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:13 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68460 ; free virtual = 83549
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 22a6befe5
+Phase 2.4 Update Timing | Checksum: 1e58354bc
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:11 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25332 ; free virtual = 35799
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.002  | TNS=0.000  | WHS=-1.023 | THS=-90.141|
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:22 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68461 ; free virtual = 83551
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.757 | TNS=-922.201| WHS=-0.754 | THS=-63.475|
 
 
 Phase 2.5 Update Timing for Bus Skew
 
 Phase 2.5.1 Update Timing
-Phase 2.5.1 Update Timing | Checksum: 1e76eba49
+Phase 2.5.1 Update Timing | Checksum: 1bda79f70
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:00:18 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25351 ; free virtual = 35819
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.002  | TNS=0.000  | WHS=-2.435 | THS=-81.295|
+Time (s): cpu = 00:02:52 ; elapsed = 00:00:41 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68470 ; free virtual = 83560
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.757 | TNS=-957.445| WHS=-2.040 | THS=-68.329|
 
-Phase 2.5 Update Timing for Bus Skew | Checksum: 1cecb7546
+Phase 2.5 Update Timing for Bus Skew | Checksum: 123a5cb82
 
-Time (s): cpu = 00:01:09 ; elapsed = 00:00:18 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25350 ; free virtual = 35818
+Time (s): cpu = 00:02:52 ; elapsed = 00:00:41 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68470 ; free virtual = 83560
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.00256949 %
-  Global Horizontal Routing Utilization  = 0.00663807 %
+  Global Vertical Routing Utilization    = 0.00234663 %
+  Global Horizontal Routing Utilization  = 0.00655745 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 122551
+  Number of Failed Nets               = 270173
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 107778
-  Number of Partially Routed Nets     = 14773
+  Number of Unrouted Nets             = 236790
+  Number of Partially Routed Nets     = 33383
   Number of Node Overlaps             = 0
 
-Phase 2 Router Initialization | Checksum: 24ab3465b
+Phase 2 Router Initialization | Checksum: 250826562
 
-Time (s): cpu = 00:01:12 ; elapsed = 00:00:19 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25352 ; free virtual = 35820
+Time (s): cpu = 00:02:56 ; elapsed = 00:00:42 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68470 ; free virtual = 83559
 
 Phase 3 Global Routing
-Phase 3 Global Routing | Checksum: 24ab3465b
+Phase 3 Global Routing | Checksum: 250826562
 
-Time (s): cpu = 00:01:12 ; elapsed = 00:00:19 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25352 ; free virtual = 35820
+Time (s): cpu = 00:02:56 ; elapsed = 00:00:42 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68470 ; free virtual = 83559
 
 Phase 4 Initial Routing
 
 Phase 4.1 Initial Net Routing Pass
-Phase 4.1 Initial Net Routing Pass | Checksum: 1837cd515
+Phase 4.1 Initial Net Routing Pass | Checksum: 272d70a95
 
-Time (s): cpu = 00:01:32 ; elapsed = 00:00:26 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25355 ; free virtual = 35823
-Phase 4 Initial Routing | Checksum: 19c97f64b
+Time (s): cpu = 00:03:28 ; elapsed = 00:00:52 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68469 ; free virtual = 83559
+Phase 4 Initial Routing | Checksum: 2ffda355c
 
-Time (s): cpu = 00:01:33 ; elapsed = 00:00:26 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25355 ; free virtual = 35823
+Time (s): cpu = 00:03:31 ; elapsed = 00:00:53 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68469 ; free virtual = 83559
+INFO: [Route 35-580] Design has 11 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+===========================================================================================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                                                                                                       |
++====================+===================+===========================================================================================================================================================================+
+| mmcm_clkout0       | mmcm_clkout0      | andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[4].fp_mult/inst/i_synth/need_combiner.use_2to1.skid_buffer_combiner/gen_has_z_tready.reg2_a_tdata_reg[29]/D  |
+| mmcm_clkout0       | mmcm_clkout0      | andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[8].fp_mult/inst/i_synth/need_combiner.use_2to1.skid_buffer_combiner/gen_has_z_tready.reg2_a_tdata_reg[29]/D  |
+| mmcm_clkout0       | mmcm_clkout0      | andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[4].fp_mult/inst/i_synth/need_combiner.use_2to1.skid_buffer_combiner/gen_has_z_tready.reg2_a_tdata_reg[22]/D  |
+| mmcm_clkout0       | mmcm_clkout0      | andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[8].fp_mult/inst/i_synth/need_combiner.use_2to1.skid_buffer_combiner/gen_has_z_tready.reg2_a_tdata_reg[26]/D  |
+| mmcm_clkout0       | mmcm_clkout0      | andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[14].fp_mult/inst/i_synth/need_combiner.use_2to1.skid_buffer_combiner/gen_has_z_tready.reg2_a_tdata_reg[23]/D |
++--------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
 
 Phase 5 Rip-up And Reroute
 
 Phase 5.1 Global Iteration 0
- Number of Nodes with overlaps = 31022
- Number of Nodes with overlaps = 2387
- Number of Nodes with overlaps = 337
- Number of Nodes with overlaps = 83
- Number of Nodes with overlaps = 30
- Number of Nodes with overlaps = 11
- Number of Nodes with overlaps = 7
- Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 60019
+ Number of Nodes with overlaps = 5223
+ Number of Nodes with overlaps = 662
+ Number of Nodes with overlaps = 114
+INFO: [Route 35-443] CLB routing congestion detected. Several CLBs have high routing utilization, which can impact timing closure. Congested CLBs and Nets are dumped in: iter_21_CongestedCLBsAndNets.txt
+ Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 6
  Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.089 | TNS=-0.210 | WHS=-0.673 | THS=-2.114 |
-
-Phase 5.1 Global Iteration 0 | Checksum: 20cf822c9
-
-Time (s): cpu = 00:03:49 ; elapsed = 00:01:18 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25369 ; free virtual = 35838
-
-Phase 5.2 Global Iteration 1
- Number of Nodes with overlaps = 2021
- Number of Nodes with overlaps = 192
- Number of Nodes with overlaps = 46
- Number of Nodes with overlaps = 16
- Number of Nodes with overlaps = 4
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.022 | TNS=-0.022 | WHS=N/A    | THS=N/A    |
-
-Phase 5.2 Global Iteration 1 | Checksum: 246d7727a
-
-Time (s): cpu = 00:04:20 ; elapsed = 00:01:31 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25368 ; free virtual = 35837
-
-Phase 5.3 Global Iteration 2
- Number of Nodes with overlaps = 1355
- Number of Nodes with overlaps = 204
- Number of Nodes with overlaps = 46
- Number of Nodes with overlaps = 21
- Number of Nodes with overlaps = 3
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.051  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.015 | TNS=-2826.803| WHS=-0.715 | THS=-2.139 |
 
-Phase 5.3 Global Iteration 2 | Checksum: 2ae8e5381
+Phase 5.1 Global Iteration 0 | Checksum: 21c1832cd
 
-Time (s): cpu = 00:04:38 ; elapsed = 00:01:40 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25323 ; free virtual = 35818
-Phase 5 Rip-up And Reroute | Checksum: 2ae8e5381
+Time (s): cpu = 00:07:27 ; elapsed = 00:02:13 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68465 ; free virtual = 83555
 
-Time (s): cpu = 00:04:39 ; elapsed = 00:01:40 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25323 ; free virtual = 35818
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.015 | TNS=-2807.884| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 1e2402f23
+
+Time (s): cpu = 00:07:59 ; elapsed = 00:02:22 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68465 ; free virtual = 83555
+
+Phase 5.3 Global Iteration 2
+ Number of Nodes with overlaps = 234
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.009 | TNS=-2771.315| WHS=N/A    | THS=N/A    |
+
+Phase 5.3 Global Iteration 2 | Checksum: 1fde67aa7
+
+Time (s): cpu = 00:08:32 ; elapsed = 00:02:36 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68464 ; free virtual = 83554
+
+Phase 5.4 Global Iteration 3
+ Number of Nodes with overlaps = 761
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.014 | TNS=-2777.616| WHS=N/A    | THS=N/A    |
+
+Phase 5.4 Global Iteration 3 | Checksum: 1b97ffbb2
+
+Time (s): cpu = 00:08:51 ; elapsed = 00:02:47 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68463 ; free virtual = 83554
+Phase 5 Rip-up And Reroute | Checksum: 1b97ffbb2
+
+Time (s): cpu = 00:08:52 ; elapsed = 00:02:47 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68463 ; free virtual = 83554
 
 Phase 6 Delay and Skew Optimization
 
 Phase 6.1 Delay CleanUp
-Phase 6.1 Delay CleanUp | Checksum: 2fd85051b
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.009 | TNS=-2771.316| WHS=0.010  | THS=0.000  |
 
-Time (s): cpu = 00:04:39 ; elapsed = 00:01:40 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25323 ; free virtual = 35818
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.009 | TNS=-2771.316| WHS=0.010  | THS=0.000  |
+
+ Number of Nodes with overlaps = 0
+Phase 6.1 Delay CleanUp | Checksum: 1652b99b7
+
+Time (s): cpu = 00:09:27 ; elapsed = 00:02:54 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68463 ; free virtual = 83553
 
 Phase 6.2 Clock Skew Optimization
-Phase 6.2 Clock Skew Optimization | Checksum: 2fd85051b
+Phase 6.2 Clock Skew Optimization | Checksum: 1652b99b7
 
-Time (s): cpu = 00:04:40 ; elapsed = 00:01:40 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25323 ; free virtual = 35818
-Phase 6 Delay and Skew Optimization | Checksum: 2fd85051b
+Time (s): cpu = 00:09:28 ; elapsed = 00:02:54 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68463 ; free virtual = 83553
+Phase 6 Delay and Skew Optimization | Checksum: 1652b99b7
 
-Time (s): cpu = 00:04:40 ; elapsed = 00:01:40 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25323 ; free virtual = 35818
+Time (s): cpu = 00:09:28 ; elapsed = 00:02:55 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68463 ; free virtual = 83553
 
 Phase 7 Post Hold Fix
 
 Phase 7.1 Hold Fix Iter
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.051  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.009 | TNS=-2745.467| WHS=0.010  | THS=0.000  |
 
-Phase 7.1 Hold Fix Iter | Checksum: 2bb693759
+Phase 7.1 Hold Fix Iter | Checksum: 231d75516
 
-Time (s): cpu = 00:04:53 ; elapsed = 00:01:43 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25323 ; free virtual = 35818
-Phase 7 Post Hold Fix | Checksum: 2bb693759
+Time (s): cpu = 00:09:53 ; elapsed = 00:03:00 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68462 ; free virtual = 83553
+Phase 7 Post Hold Fix | Checksum: 231d75516
 
-Time (s): cpu = 00:04:53 ; elapsed = 00:01:43 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25323 ; free virtual = 35818
+Time (s): cpu = 00:09:54 ; elapsed = 00:03:00 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68462 ; free virtual = 83553
 
 Phase 8 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 9.52929 %
-  Global Horizontal Routing Utilization  = 10.7137 %
+  Global Vertical Routing Utilization    = 17.6277 %
+  Global Horizontal Routing Utilization  = 20.0302 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -997,73 +1122,131 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 8 Route finalize | Checksum: 2bb693759
 
-Time (s): cpu = 00:04:55 ; elapsed = 00:01:44 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25321 ; free virtual = 35817
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 80.7512%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 76.7772%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 74.0385%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 74.0385%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 231d75516
+
+Time (s): cpu = 00:09:57 ; elapsed = 00:03:01 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68462 ; free virtual = 83553
 
 Phase 9 Verifying routed nets
 
  Verification completed successfully
-Phase 9 Verifying routed nets | Checksum: 2bb693759
+Phase 9 Verifying routed nets | Checksum: 231d75516
 
-Time (s): cpu = 00:04:55 ; elapsed = 00:01:44 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25322 ; free virtual = 35818
+Time (s): cpu = 00:09:58 ; elapsed = 00:03:01 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68462 ; free virtual = 83553
 
 Phase 10 Depositing Routes
-Phase 10 Depositing Routes | Checksum: 2bb693759
+Phase 10 Depositing Routes | Checksum: 231d75516
 
-Time (s): cpu = 00:04:59 ; elapsed = 00:01:46 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25323 ; free virtual = 35819
+Time (s): cpu = 00:10:07 ; elapsed = 00:03:07 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68460 ; free virtual = 83550
 
 Phase 11 Resolve XTalk
-Phase 11 Resolve XTalk | Checksum: 2309929aa
+Phase 11 Resolve XTalk | Checksum: 16833c383
 
-Time (s): cpu = 00:05:00 ; elapsed = 00:01:46 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25323 ; free virtual = 35819
+Time (s): cpu = 00:10:08 ; elapsed = 00:03:07 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68460 ; free virtual = 83550
 
 Phase 12 Post Process Routing
-Phase 12 Post Process Routing | Checksum: 2309929aa
+Phase 12 Post Process Routing | Checksum: 16833c383
 
-Time (s): cpu = 00:05:01 ; elapsed = 00:01:47 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25323 ; free virtual = 35819
+Time (s): cpu = 00:10:10 ; elapsed = 00:03:08 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68461 ; free virtual = 83551
 
 Phase 13 Post Router Timing
 
 Phase 13.1 Update Timing
-Phase 13.1 Update Timing | Checksum: 2309929aa
+Phase 13.1 Update Timing | Checksum: 16833c383
 
-Time (s): cpu = 00:05:09 ; elapsed = 00:01:49 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25327 ; free virtual = 35823
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.051  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+Time (s): cpu = 00:10:32 ; elapsed = 00:03:14 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68462 ; free virtual = 83553
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.009 | TNS=-2745.467| WHS=0.010  | THS=0.000  |
 
-INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 13 Post Router Timing | Checksum: 2309929aa
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 13 Post Router Timing | Checksum: 16833c383
 
-Time (s): cpu = 00:05:09 ; elapsed = 00:01:49 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25327 ; free virtual = 35823
-Total Elapsed time in route_design: 108.65 secs
+Time (s): cpu = 00:10:33 ; elapsed = 00:03:14 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68462 ; free virtual = 83553
+Time taken to check if laguna hold fix is required (in secs): 0
 
-Phase 14 Post-Route Event Processing
-Phase 14 Post-Route Event Processing | Checksum: 1b20f3bc3
+Phase 14 Physical Synthesis in Router
 
-Time (s): cpu = 00:05:10 ; elapsed = 00:01:49 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25327 ; free virtual = 35823
+Phase 14.1 Physical Synthesis Initialization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-1.009 | TNS=-2689.018 | WHS=0.010 | THS=0.000 |
+Phase 14.1 Physical Synthesis Initialization | Checksum: 16833c383
+
+Time (s): cpu = 00:11:48 ; elapsed = 00:03:32 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68542 ; free virtual = 83632
+WARNING: [Physopt 32-745] Physical Optimization has determined that the magnitude of the negative slack is too large and it is highly unlikely that slack will be improved. Post-Route Physical Optimization is most effective when WNS is above -0.5ns
+
+Phase 14.2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-1.009 | TNS=-2689.018 | WHS=0.010 | THS=0.000 |
+INFO: [Physopt 32-952] Improved path group WNS = -0.965. Path group: mmcm_clkout0. Processed net: andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[21].fp_mult/inst/i_synth/need_combiner.use_2to1.skid_buffer_combiner/m_axis_z_tdata_a[30].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: mmcm_clkout0. Processed net: andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_MUL[21].fp_mult/inst/i_synth/need_combiner.use_2to1.skid_buffer_combiner/m_axis_z_tdata_a[30].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: mmcm_clkout0. Processed net: andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_CONVERT[21].convert/fixed2float_inst/inst/i_synth/need_combiner.use_2to1.skid_buffer_combiner/Q[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: mmcm_clkout0. Processed net: andromeda_i/axi_dpe_0/inst/dot_product_inst/dpe_inst/GEN_CONVERT[21].convert/fixed2float_inst/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/LZE/ZERO_DET_CC_1/m_axis_result_tdata[7].
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.965 | TNS=-2688.899 | WHS=0.010 | THS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.69 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68540 ; free virtual = 83631
+Phase 14.2 Critical Path Optimization | Checksum: 22fa26948
+
+Time (s): cpu = 00:12:05 ; elapsed = 00:03:36 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68540 ; free virtual = 83631
+Netlist sorting complete. Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.68 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68537 ; free virtual = 83628
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=-0.965 | TNS=-2688.899 | WHS=0.010 | THS=0.000 |
+Phase 14 Physical Synthesis in Router | Checksum: 22fa26948
+
+Time (s): cpu = 00:12:08 ; elapsed = 00:03:38 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68537 ; free virtual = 83628
+Total Elapsed time in route_design: 217.75 secs
+
+Phase 15 Post-Route Event Processing
+Phase 15 Post-Route Event Processing | Checksum: 188b3685c
+
+Time (s): cpu = 00:12:10 ; elapsed = 00:03:39 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68536 ; free virtual = 83627
 INFO: [Route 35-16] Router Completed Successfully
-Ending Routing Task | Checksum: 1b20f3bc3
+Ending Routing Task | Checksum: 188b3685c
 
-Time (s): cpu = 00:05:10 ; elapsed = 00:01:49 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25327 ; free virtual = 35823
+Time (s): cpu = 00:12:12 ; elapsed = 00:03:39 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68537 ; free virtual = 83628
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-263 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+364 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:05:11 ; elapsed = 00:01:50 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25327 ; free virtual = 35823
+route_design: Time (s): cpu = 00:12:13 ; elapsed = 00:03:40 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68535 ; free virtual = 83626
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.21 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25269 ; free virtual = 35818
-Wrote PlaceDB: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25171 ; free virtual = 35816
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25171 ; free virtual = 35816
+Write ShapeDB Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.44 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68414 ; free virtual = 83599
+Wrote PlaceDB: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68133 ; free virtual = 83592
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68133 ; free virtual = 83592
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.81 ; elapsed = 00:00:00.35 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25142 ; free virtual = 35813
-Wrote Netlist Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25134 ; free virtual = 35816
-Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25134 ; free virtual = 35819
-Write Physdb Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25134 ; free virtual = 35819
-INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 6337.059 ; gain = 0.000 ; free physical = 25205 ; free virtual = 35753
+Wrote RouteStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68057 ; free virtual = 83568
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68030 ; free virtual = 83564
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68022 ; free virtual = 83559
+Write Physdb Complete: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68022 ; free virtual = 83559
+report_design_analysis: Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 67981 ; free virtual = 83519
+INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:41 ; elapsed = 00:00:17 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68366 ; free virtual = 83569
 WARNING: [Memdata 28-361] Design is having concatenated BRAM controllers(heterogenous memory), this configuration is not supported by Updatemem for current device part. Only the first BRAM controller will be added to .MMI and used by Updatemem to update the bitstream with new data.
 INFO: [Memdata 28-167] Found XPM memory block andromeda_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the andromeda_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
 INFO: [Memdata 28-167] Found XPM memory block andromeda_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the andromeda_i/axi_smc/inst/s02_nodes/s02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
@@ -1147,7 +1330,7 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Vivado 12-3199] DRC finished with 0 Errors
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 Generating merged BMM file for the design top 'andromeda_wrapper'...
-INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/data/mb_bootloop_le.elf 
 INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
 Loading data files...
 Loading site data...
@@ -1155,13 +1338,13 @@ Loading route data...
 Processing options...
 Creating bitmap...
 Creating bitstream...
-Bitstream compression saved 41330944 bits.
+Bitstream compression saved 19387616 bits.
 Writing bitstream ./andromeda_wrapper.bit...
 Writing bitstream ./andromeda_wrapper.bin...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-348 Infos, 80 Warnings, 0 Critical Warnings and 0 Errors encountered.
+449 Infos, 82 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:59 ; elapsed = 00:00:51 . Memory (MB): peak = 6545.160 ; gain = 0.000 ; free physical = 25224 ; free virtual = 35793
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 10 03:08:33 2025...
+write_bitstream: Time (s): cpu = 00:01:04 ; elapsed = 00:00:39 . Memory (MB): peak = 13597.145 ; gain = 0.000 ; free physical = 68269 ; free virtual = 83499
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 11 20:20:08 2025...

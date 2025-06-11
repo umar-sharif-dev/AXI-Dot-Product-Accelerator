@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc rfile:../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc id:1 order:LATE scoped_inst:U0} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc rfile:../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_mdm_0_0/andromeda_mdm_0_0.xdc id:1 order:LATE scoped_inst:U0} [current_design]
 current_instance U0
 set_property src_info {type:SCOPED_XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -quiet -scoped -user mdm -tags 12436 -type CDC -id CDC-10 -description "Debug protocol ensures stable signals" -from [get_pins -quiet MDM_Core_I1/JTAG_CONTROL_I/Debug_SYS_Rst_i_reg/C]

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/malik/andromeda_ila/andromeda/Vivado/board_xdc/puzhi.xdc rfile:../../../../board_xdc/puzhi.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/board_xdc/puzhi.xdc rfile:../../../../board_xdc/puzhi.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN K22 [get_ports c0_sys_clk_p]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

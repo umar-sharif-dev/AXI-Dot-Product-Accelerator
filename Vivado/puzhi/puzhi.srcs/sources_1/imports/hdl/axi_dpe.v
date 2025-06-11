@@ -124,9 +124,9 @@ module axi_dpe #(
     output wire         dpe_done,
     
         // Debug ports for ILA
-    output wire [31:0]  A_fp32_debug,
+    output wire [31:0]  A_debug,
     output wire         A_valid_debug,
-    output wire [31:0]  prod_fp32_debug,
+    output wire [31:0]  prod_debug,
     output wire         prod_valid_debug,
     output wire [31:0]  sum_stage0_debug,
     output wire         valid_stage0_debug,
@@ -335,9 +335,9 @@ module axi_dpe #(
         .done         (dpe_done),
         
         // Debug outputs
-        .A_fp32_debug      (A_fp32_debug),
+        .A_debug           (A_debug),
         .A_valid_debug     (A_valid_debug),
-        .prod_fp32_debug   (prod_fp32_debug),
+        .prod_debug        (prod_debug),
         .prod_valid_debug  (prod_valid_debug),
         .sum_stage0_debug  (sum_stage0_debug),
         .valid_stage0_debug(valid_stage0_debug),
