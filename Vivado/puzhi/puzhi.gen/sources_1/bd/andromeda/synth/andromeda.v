@@ -2,8 +2,8 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-//Date        : Tue Jun 10 02:56:32 2025
-//Host        : dust2 running 64-bit Ubuntu 24.04.2 LTS
+//Date        : Wed Jun 11 09:09:20 2025
+//Host        : hp running 64-bit Ubuntu 20.04.6 LTS
 //Command     : generate_target andromeda.bd
 //Design      : andromeda
 //Purpose     : IP block netlist
@@ -57,6 +57,8 @@ module andromeda
   input uart_rx;
   output uart_tx;
 
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]A_fp32_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire A_valid_debug;
   (* CONN_BUS_INFO = "axi_dpe_0_m_axi xilinx.com:interface:aximm:1.0 AXI4 ARADDR" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]axi_dpe_0_m_axi_ARADDR;
   (* CONN_BUS_INFO = "axi_dpe_0_m_axi xilinx.com:interface:aximm:1.0 AXI4 ARBURST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]axi_dpe_0_m_axi_ARBURST;
   (* CONN_BUS_INFO = "axi_dpe_0_m_axi xilinx.com:interface:aximm:1.0 AXI4 ARCACHE" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [3:0]axi_dpe_0_m_axi_ARCACHE;
@@ -216,6 +218,7 @@ module andromeda
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire dma_busy_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire dma_start_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]dma_status_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire dpe_done;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire dpe_en_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire dpe_start_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]dpe_state_debug;
@@ -269,6 +272,8 @@ module andromeda
   wire microblaze_0_ilmb_1_READY;
   wire microblaze_0_ilmb_1_UE;
   wire microblaze_0_ilmb_1_WAIT;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]prod_fp32_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire prod_valid_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]read_data_buffer_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [7:0]read_data_index_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire read_data_valid_debug;
@@ -301,22 +306,39 @@ module andromeda
   wire [3:0]sd_controller_wrapper_0_card_stat;
   wire [1:0]sd_controller_wrapper_0_card_type;
   wire [3:0]sd_data;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]sum_stage0_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]sum_stage1_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]sum_stage2_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]sum_stage3_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]sum_stage4_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]sum_stage5_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]sum_stage6_debug;
   wire sys_rstn;
   wire uart_rx;
   wire uart_tx;
   wire [0:0]util_vector_logic_0_Res;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire valid_stage0_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire valid_stage1_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire valid_stage2_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire valid_stage3_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire valid_stage4_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire valid_stage5_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire valid_stage6_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire write_grant_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire write_request_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]write_state_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire wvalid_debug;
 
   andromeda_axi_dpe_0_0 axi_dpe_0
-       (.aclk(microblaze_0_Clk),
+       (.A_fp32_debug(A_fp32_debug),
+        .A_valid_debug(A_valid_debug),
+        .aclk(microblaze_0_Clk),
         .aresetn(rst_ddr4_0_333M_peripheral_aresetn),
         .ctrl_state_debug(ctrl_state_debug),
         .dma_busy_debug(dma_busy_debug),
         .dma_start_debug(dma_start_debug),
         .dma_status_debug(dma_status_debug),
+        .dpe_done(dpe_done),
         .dpe_en_debug(dpe_en_debug),
         .dpe_start_debug(dpe_start_debug),
         .dpe_state_debug(dpe_state_debug),
@@ -350,6 +372,8 @@ module andromeda
         .m_axi_wstrb(axi_dpe_0_m_axi_WSTRB),
         .m_axi_wvalid(axi_dpe_0_m_axi_WVALID),
         .master_state_debug(master_state_debug),
+        .prod_fp32_debug(prod_fp32_debug),
+        .prod_valid_debug(prod_valid_debug),
         .read_data_buffer_debug(read_data_buffer_debug),
         .read_data_index_debug(read_data_index_debug),
         .read_data_valid_debug(read_data_valid_debug),
@@ -377,6 +401,20 @@ module andromeda
         .s_axi_wready(axi_smc_M03_AXI_WREADY),
         .s_axi_wstrb(axi_smc_M03_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M03_AXI_WVALID),
+        .sum_stage0_debug(sum_stage0_debug),
+        .sum_stage1_debug(sum_stage1_debug),
+        .sum_stage2_debug(sum_stage2_debug),
+        .sum_stage3_debug(sum_stage3_debug),
+        .sum_stage4_debug(sum_stage4_debug),
+        .sum_stage5_debug(sum_stage5_debug),
+        .sum_stage6_debug(sum_stage6_debug),
+        .valid_stage0_debug(valid_stage0_debug),
+        .valid_stage1_debug(valid_stage1_debug),
+        .valid_stage2_debug(valid_stage2_debug),
+        .valid_stage3_debug(valid_stage3_debug),
+        .valid_stage4_debug(valid_stage4_debug),
+        .valid_stage5_debug(valid_stage5_debug),
+        .valid_stage6_debug(valid_stage6_debug),
         .write_grant_debug(write_grant_debug),
         .write_request_debug(write_request_debug),
         .write_state_debug(write_state_debug),
@@ -912,7 +950,26 @@ module andromeda
         .probe18(write_state_debug),
         .probe19(wvalid_debug),
         .probe2(dma_start_debug),
+        .probe20(A_fp32_debug),
+        .probe21(A_valid_debug),
+        .probe22(prod_fp32_debug),
+        .probe23(prod_valid_debug),
+        .probe24(sum_stage0_debug),
+        .probe25(sum_stage1_debug),
+        .probe26(sum_stage2_debug),
+        .probe27(sum_stage3_debug),
+        .probe28(sum_stage4_debug),
+        .probe29(sum_stage5_debug),
         .probe3(dma_status_debug),
+        .probe30(sum_stage6_debug),
+        .probe31(valid_stage0_debug),
+        .probe32(valid_stage1_debug),
+        .probe33(valid_stage2_debug),
+        .probe34(valid_stage3_debug),
+        .probe35(valid_stage4_debug),
+        .probe36(valid_stage5_debug),
+        .probe37(valid_stage6_debug),
+        .probe38(dpe_done),
         .probe4(dpe_en_debug),
         .probe5(dpe_start_debug),
         .probe6(dpe_state_debug),

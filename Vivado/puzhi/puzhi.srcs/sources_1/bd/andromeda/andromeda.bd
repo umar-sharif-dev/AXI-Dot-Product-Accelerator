@@ -2007,6 +2007,78 @@
           },
           "dpe_done": {
             "direction": "O"
+          },
+          "A_fp32_debug": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "A_valid_debug": {
+            "direction": "O"
+          },
+          "prod_fp32_debug": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "prod_valid_debug": {
+            "direction": "O"
+          },
+          "sum_stage0_debug": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "valid_stage0_debug": {
+            "direction": "O"
+          },
+          "sum_stage1_debug": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "valid_stage1_debug": {
+            "direction": "O"
+          },
+          "sum_stage2_debug": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "valid_stage2_debug": {
+            "direction": "O"
+          },
+          "sum_stage3_debug": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "valid_stage3_debug": {
+            "direction": "O"
+          },
+          "sum_stage4_debug": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "valid_stage4_debug": {
+            "direction": "O"
+          },
+          "sum_stage5_debug": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "valid_stage5_debug": {
+            "direction": "O"
+          },
+          "sum_stage6_debug": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "valid_stage6_debug": {
+            "direction": "O"
           }
         },
         "addressing": {
@@ -2039,7 +2111,7 @@
             "value": "3"
           },
           "C_NUM_OF_PROBES": {
-            "value": "20"
+            "value": "39"
           },
           "C_PROBE0_TYPE": {
             "value": "0"
@@ -2077,7 +2149,64 @@
           "C_PROBE1_TYPE": {
             "value": "0"
           },
+          "C_PROBE20_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE21_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE22_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE23_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE24_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE25_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE26_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE27_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE28_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE29_TYPE": {
+            "value": "0"
+          },
           "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE30_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE31_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE32_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE33_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE34_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE35_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE36_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE37_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE38_TYPE": {
             "value": "0"
           },
           "C_PROBE3_TYPE": {
@@ -2340,6 +2469,34 @@
       }
     },
     "nets": {
+      "A_fp32_debug": {
+        "ports": [
+          "axi_dpe_0/A_fp32_debug",
+          "system_ila_0/probe20"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "A_valid_debug": {
+        "ports": [
+          "axi_dpe_0/A_valid_debug",
+          "system_ila_0/probe21"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
       "Net": {
         "ports": [
           "sd_cmd",
@@ -2441,6 +2598,20 @@
           }
         }
       },
+      "dpe_done": {
+        "ports": [
+          "axi_dpe_0/dpe_done",
+          "system_ila_0/probe38"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
       "dpe_en_debug": {
         "ports": [
           "axi_dpe_0/dpe_en_debug",
@@ -2512,9 +2683,37 @@
           "axi_timer_0/s_axi_aclk",
           "axi_uartlite_0/s_axi_aclk",
           "axi_smc/aclk",
-          "axi_dpe_0/aclk",
-          "system_ila_0/clk"
+          "system_ila_0/clk",
+          "axi_dpe_0/aclk"
         ]
+      },
+      "prod_fp32_debug": {
+        "ports": [
+          "axi_dpe_0/prod_fp32_debug",
+          "system_ila_0/probe22"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "prod_valid_debug": {
+        "ports": [
+          "axi_dpe_0/prod_valid_debug",
+          "system_ila_0/probe23"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "read_data_buffer_debug": {
         "ports": [
@@ -2625,8 +2824,8 @@
           "axi_uartlite_0/s_axi_aresetn",
           "ddr4_0/c0_ddr4_aresetn",
           "axi_smc/aresetn",
-          "axi_dpe_0/aresetn",
-          "system_ila_0/resetn"
+          "system_ila_0/resetn",
+          "axi_dpe_0/aresetn"
         ]
       },
       "rvalid_debug": {
@@ -2681,6 +2880,104 @@
           "sd_controller_wrapper_0/sddat"
         ]
       },
+      "sum_stage0_debug": {
+        "ports": [
+          "axi_dpe_0/sum_stage0_debug",
+          "system_ila_0/probe24"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "sum_stage1_debug": {
+        "ports": [
+          "axi_dpe_0/sum_stage1_debug",
+          "system_ila_0/probe25"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "sum_stage2_debug": {
+        "ports": [
+          "axi_dpe_0/sum_stage2_debug",
+          "system_ila_0/probe26"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "sum_stage3_debug": {
+        "ports": [
+          "axi_dpe_0/sum_stage3_debug",
+          "system_ila_0/probe27"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "sum_stage4_debug": {
+        "ports": [
+          "axi_dpe_0/sum_stage4_debug",
+          "system_ila_0/probe28"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "sum_stage5_debug": {
+        "ports": [
+          "axi_dpe_0/sum_stage5_debug",
+          "system_ila_0/probe29"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "sum_stage6_debug": {
+        "ports": [
+          "axi_dpe_0/sum_stage6_debug",
+          "system_ila_0/probe30"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
       "sys_rstn_1": {
         "ports": [
           "sys_rstn",
@@ -2698,6 +2995,104 @@
           "util_vector_logic_0/Res",
           "ddr4_0/sys_rst"
         ]
+      },
+      "valid_stage0_debug": {
+        "ports": [
+          "axi_dpe_0/valid_stage0_debug",
+          "system_ila_0/probe31"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "valid_stage1_debug": {
+        "ports": [
+          "axi_dpe_0/valid_stage1_debug",
+          "system_ila_0/probe32"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "valid_stage2_debug": {
+        "ports": [
+          "axi_dpe_0/valid_stage2_debug",
+          "system_ila_0/probe33"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "valid_stage3_debug": {
+        "ports": [
+          "axi_dpe_0/valid_stage3_debug",
+          "system_ila_0/probe34"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "valid_stage4_debug": {
+        "ports": [
+          "axi_dpe_0/valid_stage4_debug",
+          "system_ila_0/probe35"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "valid_stage5_debug": {
+        "ports": [
+          "axi_dpe_0/valid_stage5_debug",
+          "system_ila_0/probe36"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
+      "valid_stage6_debug": {
+        "ports": [
+          "axi_dpe_0/valid_stage6_debug",
+          "system_ila_0/probe37"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
       },
       "write_grant_debug": {
         "ports": [
