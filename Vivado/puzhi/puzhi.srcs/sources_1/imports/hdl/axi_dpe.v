@@ -120,9 +120,28 @@ module axi_dpe #(
         
     // Dot Product Engine outputs
     output wire [255:0] dpe_wr_ready_out,
-    output reg        write_valid,
-    output wire        dpe_done
+    output reg          write_valid,
+    output wire         dpe_done,
     
+        // Debug ports for ILA
+    output wire [31:0]  A_fp32_debug,
+    output wire         A_valid_debug,
+    output wire [31:0]  prod_fp32_debug,
+    output wire         prod_valid_debug,
+    output wire [31:0]  sum_stage0_debug,
+    output wire         valid_stage0_debug,
+    output wire [31:0]  sum_stage1_debug,
+    output wire         valid_stage1_debug,
+    output wire [31:0]  sum_stage2_debug,
+    output wire         valid_stage2_debug,
+    output wire [31:0]  sum_stage3_debug,
+    output wire         valid_stage3_debug,
+    output wire [31:0]  sum_stage4_debug,
+    output wire         valid_stage4_debug,
+    output wire [31:0]  sum_stage5_debug,
+    output wire         valid_stage5_debug,
+    output wire [31:0]  sum_stage6_debug,
+    output wire         valid_stage6_debug
 );
 
     //----------------------------------------------------------------------------
@@ -302,20 +321,39 @@ module axi_dpe #(
     assign dpe_wr_ready_out = dpe_dout_debug;
     
     // Instantiate the dot product engine
-//    top_dot_product_engine dot_product_inst (
-//        .clk          (aclk),
-//        .rst          (~aresetn),
-//        .rstn         (aresetn),
-//       // .en           (dpe_en),
-//       . data_type    (3'b010),
-//        .start        (dpe_start), 
-//        .A_valid      (dpe_en),
-//    	.A_data	      (dpe_a_row_packed),
-//    	.x_vector     (bram_dout),
+    top_dot_product_engine dot_product_inst (
+        .clk          (aclk),
+        .rst          (~aresetn),
+        .rstn         (aresetn),
+       // .en           (dpe_en),
+       . data_type    (3'b010),
+        .A_valid      (read_data_valid),
+    	.A_data	      (dpe_a_row_packed),
+    	.x_vector     (bram_dout),
     	   
-//        .y_out        (dpe_y_out),
-//        .done         (dpe_done)
-//    );
+        .y_out        (dpe_y_out),
+        .done         (dpe_done),
+        
+        // Debug outputs
+        .A_fp32_debug      (A_fp32_debug),
+        .A_valid_debug     (A_valid_debug),
+        .prod_fp32_debug   (prod_fp32_debug),
+        .prod_valid_debug  (prod_valid_debug),
+        .sum_stage0_debug  (sum_stage0_debug),
+        .valid_stage0_debug(valid_stage0_debug),
+        .sum_stage1_debug  (sum_stage1_debug),
+        .valid_stage1_debug(valid_stage1_debug),
+        .sum_stage2_debug  (sum_stage2_debug),
+        .valid_stage2_debug(valid_stage2_debug),
+        .sum_stage3_debug  (sum_stage3_debug),
+        .valid_stage3_debug(valid_stage3_debug),
+        .sum_stage4_debug  (sum_stage4_debug),
+        .valid_stage4_debug(valid_stage4_debug),
+        .sum_stage5_debug  (sum_stage5_debug),
+        .valid_stage5_debug(valid_stage5_debug),
+        .sum_stage6_debug  (sum_stage6_debug),
+        .valid_stage6_debug(valid_stage6_debug)
+    );
 
 
 reg [4095:0] accum_buffer;

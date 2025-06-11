@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jun 11 08:03:22 2025
+# Process ID         : 317570
+# Current directory  : /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi
+# Command line       : vivado puzhi.xpr
+# Log file           : /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.log
+# Journal file       : /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.jou
+# Running On         : hp
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 20.04.6 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz
+# CPU Frequency      : 3444.692 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16650 MB
+# Swap memory        : 26843 MB
+# Total Virtual      : 43494 MB
+# Available Virtual  : 29005 MB
+#-----------------------------------------------------------
+start_gui
+open_project puzhi.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+report_ip_status -name ip_status 
+startgroup
+connect_bd_net -net A_valid_debug [get_bd_pins axi_dpe_0/A_valid_debug]
+connect_bd_net -net sum_stage5_debug [get_bd_pins axi_dpe_0/sum_stage5_debug]
+connect_bd_net -net sum_stage4_debug [get_bd_pins axi_dpe_0/sum_stage4_debug]
+connect_bd_net -net valid_stage0_debug [get_bd_pins axi_dpe_0/valid_stage0_debug]
+connect_bd_net -net sum_stage6_debug [get_bd_pins axi_dpe_0/sum_stage6_debug]
+connect_bd_net -net valid_stage2_debug [get_bd_pins axi_dpe_0/valid_stage2_debug]
+connect_bd_net -net prod_fp32_debug [get_bd_pins axi_dpe_0/prod_fp32_debug]
+connect_bd_net -net prod_valid_debug [get_bd_pins axi_dpe_0/prod_valid_debug]
+connect_bd_net -net valid_stage1_debug [get_bd_pins axi_dpe_0/valid_stage1_debug]
+connect_bd_net -net valid_stage4_debug [get_bd_pins axi_dpe_0/valid_stage4_debug]
+connect_bd_net -net sum_stage1_debug [get_bd_pins axi_dpe_0/sum_stage1_debug]
+connect_bd_net -net valid_stage6_debug [get_bd_pins axi_dpe_0/valid_stage6_debug]
+connect_bd_net -net sum_stage3_debug [get_bd_pins axi_dpe_0/sum_stage3_debug]
+connect_bd_net -net valid_stage3_debug [get_bd_pins axi_dpe_0/valid_stage3_debug]
+connect_bd_net -net sum_stage0_debug [get_bd_pins axi_dpe_0/sum_stage0_debug]
+connect_bd_net -net valid_stage5_debug [get_bd_pins axi_dpe_0/valid_stage5_debug]
+connect_bd_net -net sum_stage2_debug [get_bd_pins axi_dpe_0/sum_stage2_debug]
+connect_bd_net -net A_fp32_debug [get_bd_pins axi_dpe_0/A_fp32_debug]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {A_valid_debug sum_stage5_debug sum_stage4_debug valid_stage0_debug sum_stage6_debug valid_stage2_debug prod_fp32_debug prod_valid_debug valid_stage1_debug valid_stage4_debug sum_stage1_debug valid_stage6_debug sum_stage3_debug valid_stage3_debug sum_stage0_debug valid_stage5_debug sum_stage2_debug A_fp32_debug }]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets A_fp32_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets A_valid_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets prod_fp32_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets prod_valid_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage0_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage1_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage2_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage3_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage4_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage5_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets sum_stage6_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage0_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage1_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage2_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage3_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage4_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage5_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                          [get_bd_nets valid_stage6_debug] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                         ]
+endgroup
+startgroup
+connect_bd_net -net dpe_done [get_bd_pins axi_dpe_0/dpe_done]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {dpe_done }]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets dpe_done] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                         ]
+validate_bd_design
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects  [get_files /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v] -no_script -reset -force -quiet
+remove_files  /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+file delete -force /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -top
+add_files -norecurse /home/hp/Downloads/axi_dpe_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+update_compile_order -fileset sources_1
