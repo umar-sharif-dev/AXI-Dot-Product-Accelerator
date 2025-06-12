@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Jun 12 10:04:00 2025
-# Process ID         : 94077
+# Start of session at: Thu Jun 12 15:21:29 2025
+# Process ID         : 232349
 # Current directory  : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1
 # Command line       : vivado -log andromeda_axi_dpe_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source andromeda_axi_dpe_0_0.tcl
 # Log file           : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/andromeda_axi_dpe_0_0.vds
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.2 LTS
 # Processor Detail   : Intel(R) Core(TM) Ultra 9 285K
-# CPU Frequency      : 5319.502 MHz
+# CPU Frequency      : 5209.337 MHz
 # CPU Physical cores : 24
 # CPU Logical cores  : 24
 # Host memory        : 49823 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 58413 MB
-# Available Virtual  : 53678 MB
+# Available Virtual  : 51994 MB
 #-----------------------------------------------------------
 source andromeda_axi_dpe_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -32,9 +32,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 94352
+INFO: [Synth 8-7075] Helper process launched with PID 232795
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2746.695 ; gain = 157.828 ; free physical = 32072 ; free virtual = 45202
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2743.961 ; gain = 154.859 ; free physical = 28513 ; free virtual = 43829
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'x_wr_addr', assumed default net type 'wire' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:48]
 INFO: [Synth 8-11241] undeclared symbol 'read_data_valid', assumed default net type 'wire' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:330]
@@ -46,8 +46,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_dpe' [/home/ujaved/work_dir/axi_dp
 	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXI_DATA_WIDTH bound to: 256 - type: integer 
 	Parameter C_M_AXI_BURST_LEN bound to: 128 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'sdp_w4096x2_r4096x2' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-94077-nuke/realtime/sdp_w4096x2_r4096x2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'sdp_w4096x2_r4096x2' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-94077-nuke/realtime/sdp_w4096x2_r4096x2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sdp_w4096x2_r4096x2' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-232349-nuke/realtime/sdp_w4096x2_r4096x2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sdp_w4096x2_r4096x2' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-232349-nuke/realtime/sdp_w4096x2_r4096x2_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'top_dot_product_engine' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:2]
 INFO: [Synth 8-6157] synthesizing module 'block_ram' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/block_ram.sv:1]
 	Parameter ADDR_WIDTH bound to: 4 - type: integer 
@@ -359,15 +359,15 @@ INFO: [Common 17-14] Message 'Synth 8-556' appears 100 times and further instanc
 INFO: [Synth 8-6157] synthesizing module 'dot_product_engine' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:3]
 	Parameter DATA_WIDTH bound to: 32'sb00000000000000000000000000100000 
 INFO: [Synth 8-6157] synthesizing module 'intN_to_fp32_wrapper' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/intN_to_fp32_wrapper.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-94077-nuke/realtime/floating_point_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-94077-nuke/realtime/floating_point_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_3' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-94077-nuke/realtime/floating_point_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_3' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-94077-nuke/realtime/floating_point_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-232349-nuke/realtime/floating_point_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-232349-nuke/realtime/floating_point_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_3' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-232349-nuke/realtime/floating_point_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_3' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-232349-nuke/realtime/floating_point_3_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'intN_to_fp32_wrapper' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/intN_to_fp32_wrapper.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_1' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-94077-nuke/realtime/floating_point_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_1' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-94077-nuke/realtime/floating_point_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'floating_point_2' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-94077-nuke/realtime/floating_point_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'floating_point_2' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-94077-nuke/realtime/floating_point_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_1' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-232349-nuke/realtime/floating_point_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_1' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-232349-nuke/realtime/floating_point_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'floating_point_2' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-232349-nuke/realtime/floating_point_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'floating_point_2' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/.Xil/Vivado-232349-nuke/realtime/floating_point_2_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'dot_product_engine' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv:3]
 INFO: [Synth 8-6155] done synthesizing module 'top_dot_product_engine' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:2]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:391]
@@ -375,7 +375,7 @@ INFO: [Synth 8-155] case statement is not full and has no default [/home/ujaved/
 INFO: [Synth 8-155] case statement is not full and has no default [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:808]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:875]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:1003]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:1075]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:1077]
 INFO: [Synth 8-6155] done synthesizing module 'axi_dpe' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'andromeda_axi_dpe_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_dpe_0_0/synth/andromeda_axi_dpe_0_0.v:53]
 WARNING: [Synth 8-3848] Net GEN_X_BRAMS[0].x_wr_addr in module/entity top_dot_product_engine does not have driver. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv:48]
@@ -484,7 +484,7 @@ INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance '
 WARNING: [Synth 8-6014] Unused sequential element bram_re_reg was removed.  [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:474]
 WARNING: [Synth 8-6014] Unused sequential element burst_count_reg was removed.  [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:861]
 WARNING: [Synth 8-6014] Unused sequential element beats_reg_reg was removed.  [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:906]
-WARNING: [Synth 8-6014] Unused sequential element write_beats_reg was removed.  [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:1072]
+WARNING: [Synth 8-6014] Unused sequential element write_beats_reg was removed.  [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:1074]
 WARNING: [Synth 8-7129] Port rst in module top_dot_product_engine is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module axi_dpe is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module axi_dpe is either unconnected or has no load
@@ -501,18 +501,18 @@ WARNING: [Synth 8-7129] Port m_axi_rresp[0] in module axi_dpe is either unconnec
 WARNING: [Synth 8-7129] Port m_axi_bresp[1] in module axi_dpe is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m_axi_bresp[0] in module axi_dpe is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2873.867 ; gain = 285.000 ; free physical = 31828 ; free virtual = 44962
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2874.133 ; gain = 285.031 ; free physical = 28254 ; free virtual = 43573
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2873.867 ; gain = 285.000 ; free physical = 31828 ; free virtual = 44962
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2874.133 ; gain = 285.031 ; free physical = 28231 ; free virtual = 43550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2873.867 ; gain = 285.000 ; free physical = 31828 ; free virtual = 44962
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2874.133 ; gain = 285.031 ; free physical = 28231 ; free virtual = 43550
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2873.867 ; gain = 0.000 ; free physical = 31812 ; free virtual = 44946
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2874.133 ; gain = 0.000 ; free physical = 28105 ; free virtual = 43424
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -1803,14 +1803,14 @@ Parsing XDC File [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Acceler
 Finished Parsing XDC File [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3015.270 ; gain = 0.000 ; free physical = 31302 ; free virtual = 44452
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3014.535 ; gain = 0.000 ; free physical = 27612 ; free virtual = 42932
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3023.207 ; gain = 7.938 ; free physical = 31281 ; free virtual = 44451
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3021.473 ; gain = 6.938 ; free physical = 27594 ; free virtual = 42926
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3023.207 ; gain = 434.340 ; free physical = 31041 ; free virtual = 44198
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3021.473 ; gain = 432.371 ; free physical = 27284 ; free virtual = 42615
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -1818,7 +1818,7 @@ Start Loading Part and Timing Information
 Loading part: xcku5p-ffvb676-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3031.211 ; gain = 442.344 ; free physical = 31041 ; free virtual = 44198
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3029.477 ; gain = 440.375 ; free physical = 27284 ; free virtual = 42615
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2465,7 +2465,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/dot_product_inst/dpe_inst/\G
 Applied set_property KEEP_HIERARCHY = SOFT for inst/dot_product_inst/dpe_inst/\GEN_CONVERT[127].convert /fixed2float_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/bram_sdp_x_vector. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3031.211 ; gain = 442.344 ; free physical = 31007 ; free virtual = 44165
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3029.477 ; gain = 440.375 ; free physical = 27283 ; free virtual = 42614
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'axil_write_state_reg' in module 'axi_dpe'
 INFO: [Synth 8-802] inferred FSM for state register 'ctrl_state_reg' in module 'axi_dpe'
@@ -2519,7 +2519,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'read_state_reg' using enco
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_state_reg' using encoding 'one-hot' in module 'axi_dpe'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3031.211 ; gain = 442.344 ; free physical = 30601 ; free virtual = 43803
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3029.477 ; gain = 440.375 ; free physical = 26882 ; free virtual = 42256
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -2713,7 +2713,7 @@ INFO: [Synth 8-3333] propagating constant 1 across sequential element (\m_axi_ar
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axi_arcache_r_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axi_arcache_r_reg[3] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 3059.145 ; gain = 470.277 ; free physical = 23573 ; free virtual = 36763
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 3057.410 ; gain = 468.309 ; free physical = 19796 ; free virtual = 35159
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -2862,13 +2862,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:38 . Memory (MB): peak = 3628.695 ; gain = 1039.828 ; free physical = 20379 ; free virtual = 33602
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:38 . Memory (MB): peak = 3630.930 ; gain = 1041.828 ; free physical = 16609 ; free virtual = 31973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:04 . Memory (MB): peak = 3936.586 ; gain = 1347.719 ; free physical = 17112 ; free virtual = 30346
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:04 . Memory (MB): peak = 3928.828 ; gain = 1339.727 ; free physical = 13716 ; free virtual = 29090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -3016,7 +3016,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 3948.512 ; gain = 1359.645 ; free physical = 10911 ; free virtual = 24180
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 3940.754 ; gain = 1351.652 ; free physical = 7141 ; free virtual = 22550
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -3034,37 +3034,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 3948.512 ; gain = 1359.645 ; free physical = 10764 ; free virtual = 24129
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 3940.754 ; gain = 1351.652 ; free physical = 6939 ; free virtual = 22445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 3948.512 ; gain = 1359.645 ; free physical = 10764 ; free virtual = 24129
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 3940.754 ; gain = 1351.652 ; free physical = 6939 ; free virtual = 22445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 3948.512 ; gain = 1359.645 ; free physical = 10583 ; free virtual = 23948
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 3940.754 ; gain = 1351.652 ; free physical = 6813 ; free virtual = 22319
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 3948.512 ; gain = 1359.645 ; free physical = 10583 ; free virtual = 23948
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 3940.754 ; gain = 1351.652 ; free physical = 6805 ; free virtual = 22311
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 3948.512 ; gain = 1359.645 ; free physical = 10543 ; free virtual = 23909
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 3940.754 ; gain = 1351.652 ; free physical = 6754 ; free virtual = 22260
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 3948.512 ; gain = 1359.645 ; free physical = 10536 ; free virtual = 23901
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 3940.754 ; gain = 1351.652 ; free physical = 6747 ; free virtual = 22253
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -3096,47 +3096,47 @@ Report Cell Usage:
 |640   |sdp_w4096x2_r4096x2 |     1|
 |641   |CARRY8              |    40|
 |642   |LUT1                |     6|
-|643   |LUT2                |  4635|
-|644   |LUT3                |   343|
-|645   |LUT4                |   428|
-|646   |LUT5                |  4235|
-|647   |LUT6                | 10049|
+|643   |LUT2                |  4637|
+|644   |LUT3                |   336|
+|645   |LUT4                |   431|
+|646   |LUT5                |  4229|
+|647   |LUT6                | 10056|
 |648   |MUXF7               |   184|
 |649   |MUXF8               |    12|
 |650   |RAM128X1D           |   256|
 |651   |RAM16X1S            |  4096|
 |652   |RAM64M8             |    74|
-|653   |FDRE                | 14035|
+|653   |FDRE                | 14028|
 |654   |FDSE                |    37|
 +------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 3948.512 ; gain = 1359.645 ; free physical = 10536 ; free virtual = 23901
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 3940.754 ; gain = 1351.652 ; free physical = 6747 ; free virtual = 22253
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3948.512 ; gain = 1210.305 ; free physical = 20119 ; free virtual = 33477
-Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 3948.512 ; gain = 1359.645 ; free physical = 20120 ; free virtual = 33468
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3940.754 ; gain = 1204.312 ; free physical = 16386 ; free virtual = 31886
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 3940.754 ; gain = 1351.652 ; free physical = 16386 ; free virtual = 31875
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3948.512 ; gain = 0.000 ; free physical = 20118 ; free virtual = 33464
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3940.754 ; gain = 0.000 ; free physical = 16387 ; free virtual = 31873
 INFO: [Netlist 29-17] Analyzing 4662 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3948.512 ; gain = 0.000 ; free physical = 22925 ; free virtual = 36271
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3940.754 ; gain = 0.000 ; free physical = 19259 ; free virtual = 34746
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4426 instances were transformed.
   RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 256 instances
   RAM16X1S => RAM32X1S (RAMS32): 4096 instances
   RAM64M8 => RAM64M8 (RAMD64E(x8)): 74 instances
 
-Synth Design complete | Checksum: 2e19e121
+Synth Design complete | Checksum: ab1c0e32
 INFO: [Common 17-83] Releasing license: Synthesis
 275 Infos, 334 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 3948.512 ; gain = 2416.395 ; free physical = 22936 ; free virtual = 36282
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8666.289; main = 2870.420; forked = 6653.315
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 17046.801; main = 3944.598; forked = 13991.570
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 3940.754 ; gain = 2408.402 ; free physical = 19265 ; free virtual = 34752
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8590.863; main = 2853.438; forked = 6580.832
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 17038.289; main = 3936.840; forked = 13984.793
 INFO: [Coretcl 2-1174] Renamed 266 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3948.512 ; gain = 0.000 ; free physical = 22933 ; free virtual = 36281
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3940.754 ; gain = 0.000 ; free physical = 19260 ; free virtual = 34750
 INFO: [Common 17-1381] The checkpoint '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/andromeda_axi_dpe_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file andromeda_axi_dpe_0_0_utilization_synth.rpt -pb andromeda_axi_dpe_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 10:05:31 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 15:23:00 2025...

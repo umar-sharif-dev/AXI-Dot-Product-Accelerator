@@ -1026,11 +1026,13 @@ always @(posedge aclk) begin
                           dpe_count <= 3'd0;
                           dpe_acc <= {dpe_accumulator[223:0], dpe_y_out};  // accumulate + write
                           write_valid <= 1'b1;
+                          dpe_state <= DPE_DONE;
+                          
                           dpe_accumulator <= 256'd0;
                         end
                     dpe_en <= 1'b0;
                     //dpe_dout_debug <= {224'b0, dpe_y_out};
-                    dpe_state <= DPE_DONE;
+                    //dpe_state <= DPE_DONE;
                 end
             end
             

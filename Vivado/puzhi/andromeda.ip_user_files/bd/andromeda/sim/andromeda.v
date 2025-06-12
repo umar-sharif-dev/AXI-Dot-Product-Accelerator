@@ -2,8 +2,8 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-//Date        : Wed Jun 11 19:48:37 2025
-//Host        : dust2 running 64-bit Ubuntu 24.04.2 LTS
+//Date        : Thu Jun 12 15:21:21 2025
+//Host        : nuke running 64-bit Ubuntu 24.04.2 LTS
 //Command     : generate_target andromeda.bd
 //Design      : andromeda
 //Purpose     : IP block netlist
@@ -222,6 +222,7 @@ module andromeda
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire dpe_en_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire dpe_start_debug;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]dpe_state_debug;
+  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [255:0]dpe_wr_ready_out;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [3:0]master_state_debug;
   wire mdm_0_Debug_SYS_Rst;
   wire mdm_0_MBDEBUG_0_CAPTURE;
@@ -343,6 +344,7 @@ module andromeda
         .dpe_en_debug(dpe_en_debug),
         .dpe_start_debug(dpe_start_debug),
         .dpe_state_debug(dpe_state_debug),
+        .dpe_wr_ready_out(dpe_wr_ready_out),
         .m_axi_araddr(axi_dpe_0_m_axi_ARADDR),
         .m_axi_arburst(axi_dpe_0_m_axi_ARBURST),
         .m_axi_arcache(axi_dpe_0_m_axi_ARCACHE),
@@ -952,7 +954,7 @@ module andromeda
         .probe18(write_state_debug),
         .probe19(wvalid_debug),
         .probe2(dma_start_debug),
-        .probe20(1'b0),
+        .probe20(dpe_wr_ready_out),
         .probe21(A_valid_debug),
         .probe22(1'b0),
         .probe23(prod_valid_debug),

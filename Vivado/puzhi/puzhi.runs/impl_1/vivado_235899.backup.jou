@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Jun 12 10:06:40 2025
-# Process ID         : 96642
+# Start of session at: Thu Jun 12 15:25:48 2025
+# Process ID         : 235899
 # Current directory  : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1
 # Command line       : vivado -log andromeda_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source andromeda_wrapper.tcl -notrace
 # Log file           : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.vdi
@@ -19,6 +19,6 @@
 # Host memory        : 49823 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 58413 MB
-# Available Virtual  : 54018 MB
+# Available Virtual  : 52215 MB
 #-----------------------------------------------------------
 source andromeda_wrapper.tcl -notrace

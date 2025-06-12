@@ -44,6 +44,7 @@ preplace netloc dpe_done 1 2 2 940 470 1670
 preplace netloc dpe_en_debug 1 2 2 940J 130 1610
 preplace netloc dpe_start_debug 1 2 2 960J 140 N
 preplace netloc dpe_state_debug 1 2 2 NJ 160 N
+preplace netloc dpe_wr_ready_out 1 2 2 N 420 1820
 preplace netloc master_state_debug 1 2 2 940J 50 1810
 preplace netloc mdm_0_Debug_SYS_Rst 1 0 2 20 860 400
 preplace netloc microblaze_0_Clk 1 0 5 40 890 430 1070 1280 1210 1770 -100 2200
@@ -87,7 +88,6 @@ preplace netloc write_request_debug 1 2 2 NJ -100 1590
 preplace netloc write_state_debug 1 2 2 1110J 370 1840
 preplace netloc write_valid 1 2 2 N 440 1650
 preplace netloc wvalid_debug 1 2 2 NJ 400 1830
-preplace netloc dpe_wr_ready_out 1 2 2 N 420 1820
 preplace netloc axi_dpe_0_m_axi 1 2 2 1120 -40 N
 preplace netloc axi_smc_M00_AXI 1 3 1 1760 950n
 preplace netloc axi_smc_M01_AXI 1 3 1 1610 970n

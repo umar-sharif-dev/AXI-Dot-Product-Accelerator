@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x85741C7BE0D1100D",
+      "boundary_crc": "0x7700965F7C60E2F3",
       "design_src": "SBD",
       "device": "xcku5p-ffvb676-2-i",
       "name": "bd_85fa",
@@ -563,7 +563,7 @@
       },
       "probe20": {
         "direction": "I",
-        "left": "0",
+        "left": "255",
         "right": "0"
       },
       "probe21": {
@@ -932,7 +932,7 @@
             "value": "0"
           },
           "C_PROBE20_WIDTH": {
-            "value": "1"
+            "value": "256"
           },
           "C_PROBE21_MU_CNT": {
             "value": "1"
