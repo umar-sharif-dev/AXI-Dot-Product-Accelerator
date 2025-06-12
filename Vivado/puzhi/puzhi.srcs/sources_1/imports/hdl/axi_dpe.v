@@ -1,3 +1,4 @@
+
 module axi_dpe #(
     parameter C_S_AXI_ADDR_WIDTH = 32,
     parameter C_S_AXI_DATA_WIDTH = 32,
@@ -984,68 +985,45 @@ always @(posedge aclk) begin
         endcase
     end
 end
-reg [255:0]dpe_acc;
+
+
 reg [255:0] dpe_accumulator;
 reg [2:0] dpe_count;
-// DPE (Dot Product Engine) FSM
-always @(posedge aclk) begin
-    if (!aresetn) begin
-        dpe_state <= DPE_IDLE;
-        dpe_en <= 1'b0;
-        dpe_start <= 1'b0;
-        dpe_dout_debug <= 'h0;
-        dpe_acc <= 256'd0;
-        write_valid <= 1'd0;
-        dpe_count <= 3'd0;
-        dpe_accumulator <= 256'd0;
-    end
-    else begin
-        case (dpe_state)
-            DPE_IDLE: begin
-                dpe_start <= 1'b0;
-                
-                // Start DPE when new read data is available
-                if (read_data_valid) begin
-                    dpe_en <= 1'b1;
-                    dpe_start <= 1'b1;
-                    write_valid<=1'd0;
-          	    dpe_count<=3'd0;
-                    dpe_state <= DPE_ACTIVE;
-                end
-            end
-            
-            DPE_ACTIVE: begin
-                dpe_start <= 1'b0;  // Clear start signal after one cycle
-                
-                // Wait for DPE to complete
-                if (dpe_done) begin
+// changes here for accumlation
+//output accumlation of dpe logic
+    always @(posedge aclk) begin
+              if (!aresetn) begin
+                      
+                       write_valid         <= 1'd0;
+                       dpe_count           <= 3'd0;
+                       dpe_accumulator     <= 256'd0;
+                        dpe_dout_debug     <=  256'h0;
+                        dpe_start          <=1'b0;
+                        dpe_en              <=1'b0;
+
+
+
+
+              end 
+              else begin
+    
+                  if (dpe_done) begin
                           dpe_accumulator <= {dpe_accumulator[223:0], dpe_y_out};
                           dpe_count <= dpe_count + 1;
                           write_valid<=1'b0;
+                      // Once 8 outputs collected (256 bits), store for write
                       if (dpe_count == 3'd7) begin
                           dpe_count <= 3'd0;
-                          dpe_acc <= {dpe_accumulator[223:0], dpe_y_out};  // accumulate + write
+                       dpe_dout_debug <= {dpe_accumulator[223:0], dpe_y_out};  
                           write_valid <= 1'b1;
-                          dpe_state <= DPE_DONE;
-                          
                           dpe_accumulator <= 256'd0;
                         end
-                    dpe_en <= 1'b0;
-                    //dpe_dout_debug <= {224'b0, dpe_y_out};
-                    //dpe_state <= DPE_DONE;
-                end
-            end
-            
-            DPE_DONE: begin
-                // Signal that processed data is ready for writing
-                if (write_valid) begin
-                   dpe_dout_debug <= dpe_acc;
-                end
-                dpe_state <= DPE_IDLE;
-            end
-        endcase
-    end
-end
+                    end  
+                   else write_valid<=1'b0; 
+             end 
+      end 
+
+/////////////////////////////////////////////////////////////////////////////////
 reg [31:0] bytes_in_write_burst;
 reg [31:0] write_beats;
 // Write FSM

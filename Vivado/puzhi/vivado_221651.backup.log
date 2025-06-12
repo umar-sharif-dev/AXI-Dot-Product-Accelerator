@@ -1,0 +1,386 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun 12 14:39:56 2025
+# Process ID         : 221651
+# Current directory  : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi
+# Command line       : vivado puzhi.xpr
+# Log file           : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.log
+# Journal file       : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.jou
+# Running On         : nuke
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285K
+# CPU Frequency      : 800.000 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 49823 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 58413 MB
+# Available Virtual  : 55510 MB
+#-----------------------------------------------------------
+start_gui
+open_project puzhi.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/tools/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 8682.449 ; gain = 1079.000 ; free physical = 36099 ; free virtual = 51665
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-18:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251591782
+set_property PROGRAM.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.bit} [get_hw_devices xcku5p_0]
+set_property PROBES.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx} [get_hw_devices xcku5p_0]
+current_hw_device [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+INFO: [Labtools 27-2302] Device xcku5p (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xcku5p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+Processed interface axi_dpe_0_m_axi_ila2_slot0
+Processed interface axi_smc_M04_AXI_ila2_slot2
+Processed interface axi_smc_M03_AXI_ila2_slot1
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 14:59:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2025-Jun-12 14:59:38
+Processed interface axi_dpe_0_m_axi_ila2_slot0
+Processed interface axi_smc_M04_AXI_ila2_slot2
+Processed interface axi_smc_M03_AXI_ila2_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+Reading block design file </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd>...
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: AMD recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:module_ref:sd_controller_wrapper:1.0 - sd_controller_wrapper_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_333M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_100M
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:module_ref:axi_dpe:1.0 - axi_dpe_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /axi_dpe_0/m_axi.
+Successfully read diagram <andromeda> from block design file </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd>
+Upgrading '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd'
+INFO: [IP_Flow 19-3420] Updated andromeda_axi_dpe_0_0 to use current project options
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /axi_dpe_0/m_axi.
+Wrote  : </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd> 
+Wrote  : </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/ui/bd_9d7d77c9.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/utils_1/imports/synth_1/andromeda_wrapper.dcp with file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/andromeda_wrapper.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/block_ram.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+Upgrading '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd'
+INFO: [IP_Flow 19-3420] Updated andromeda_axi_dpe_0_0 to use current project options
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /axi_dpe_0/m_axi.
+Wrote  : </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd> 
+generate_target all [get_files  /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
+INFO: [BD 5-943] Reserving offset range <0x41C0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0002_0000 [ 4K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0003_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S02_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] andromeda_axi_smc_0: SmartConnect andromeda_axi_smc_0 is in High-performance Mode.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:microblaze:11.0-9] /microblaze_0: Setting C_BASE_VECTORS to 0x00000000.
+Wrote  : </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd> 
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARLOCK as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARQOS as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWQOS as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWLOCK as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net A_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net A_valid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net ctrl_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_busy_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_start_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_status_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_done as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_en_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_start_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_wr_ready_out as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net master_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net prod_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net prod_valid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_buffer_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_index_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_valid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_grant_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_request_debug as it is marked for debug
+INFO: [Common 17-14] Message 'BD 41-3257' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Verilog Output written to : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v
+Verilog Output written to : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/sim/andromeda.v
+Verilog Output written to : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'bd_828f' - hence not re-generating.
+Exporting to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/hw_handoff/andromeda_axi_smc_0.hwh
+Generated Hardware Definition File /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/andromeda_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dpe_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/andromeda_system_ila_0_0_ooc.xdc'
+Exporting to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/hw_handoff/andromeda_system_ila_0_0.hwh
+Generated Hardware Definition File /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/synth/andromeda_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+Exporting to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hw_handoff/andromeda.hwh
+Generated Hardware Definition File /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.hwdef
+generate_target: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 10499.004 ; gain = 700.109 ; free physical = 34589 ; free virtual = 49946
+export_ip_user_files -of_objects [get_files /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+launch_runs andromeda_axi_dpe_0_0_synth_1 andromeda_axi_smc_0_synth_1 andromeda_system_ila_0_0_synth_1 -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_2/floating_point_2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_1/floating_point_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_3/floating_point_3.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_0/floating_point_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci' is already up-to-date
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/block_ram.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+[Thu Jun 12 15:21:28 2025] Launched andromeda_axi_dpe_0_0_synth_1, andromeda_axi_smc_0_synth_1, andromeda_system_ila_0_0_synth_1...
+Run output will be captured here:
+andromeda_axi_dpe_0_0_synth_1: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/runme.log
+andromeda_axi_smc_0_synth_1: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1/runme.log
+andromeda_system_ila_0_0_synth_1: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_system_ila_0_0_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/modelsim} {questa=/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/questa} {xcelium=/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/xcelium} {vcs=/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/vcs} {riviera=/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/riviera}] -of_objects [get_files /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -directory /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files/sim_scripts -ip_user_files_dir /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files -ipstatic_source_dir /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/block_ram.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/block_ram.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/block_ram.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/imports/hdl/axi_dpe.v:]
+launch_runs synth_1 -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_2/floating_point_2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_1/floating_point_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_3/floating_point_3.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_0/floating_point_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci' is already up-to-date
+[Thu Jun 12 15:25:04 2025] Launched synth_1...
+Run output will be captured here: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_2/floating_point_2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_1/floating_point_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_3/floating_point_3.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_0/floating_point_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci' is already up-to-date
+[Thu Jun 12 15:25:47 2025] Launched impl_1...
+Run output will be captured here: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_2/floating_point_2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_1/floating_point_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_3/floating_point_3.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_0/floating_point_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci' is already up-to-date
+[Thu Jun 12 15:51:15 2025] Launched impl_1...
+Run output will be captured here: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (/opt/tools/Xilinx/Vivado/2024.2/data/embeddedsw) loading 0 seconds
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 16:09:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2025-Jun-12 16:17:49
+Processed interface axi_dpe_0_m_axi_ila2_slot0
+Processed interface axi_smc_M04_AXI_ila2_slot2
+Processed interface axi_smc_M03_AXI_ila2_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 16:36:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2025-Jun-12 16:36:57
+Processed interface axi_dpe_0_m_axi_ila2_slot0
+Processed interface axi_smc_M04_AXI_ila2_slot2
+Processed interface axi_smc_M03_AXI_ila2_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+write_hw_ila_data {/home/ujaved/work_dir/iladata.ila} hw_ila_data_2
+/home/ujaved/work_dir/iladata.ila
+save_wave_config {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 17:25:25 2025...

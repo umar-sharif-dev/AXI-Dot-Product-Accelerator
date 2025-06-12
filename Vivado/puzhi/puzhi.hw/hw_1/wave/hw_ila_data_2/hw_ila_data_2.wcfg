@@ -9,13 +9,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="664"></ZoomEndTime>
-      <Cursor1Time time="569"></Cursor1Time>
+      <ZoomStartTime time="487"></ZoomStartTime>
+      <ZoomEndTime time="538"></ZoomEndTime>
+      <Cursor1Time time="516"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="315"></NameColumnWidth>
-      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="22" />
    <wave_markers>
@@ -64,17 +64,7 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject type="group" fp_name="group175">
-         <obj_property name="label">slot_0 : axi_dpe_0_m_axi : Write Transactions 0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="Detail_Data">ila_2___slot_0___axi_dpe_0_m_axi___Write_Transactions_0_tooltip</obj_property>
-         <obj_property name="Render_Data">ila_2___slot_0___axi_dpe_0_m_axi___Write_Transactions_0</obj_property>
-         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
-         <obj_property name="CustomSignalColor">LightSeaGreen</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      </wvobject>
-      <wvobject type="group" fp_name="group174">
+      <wvobject type="group" fp_name="group161">
          <obj_property name="label">slot_0 : axi_dpe_0_m_axi : Read Transactions 0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <obj_property name="Detail_Data">ila_2___slot_0___axi_dpe_0_m_axi___Read_Transactions_0_tooltip</obj_property>
@@ -476,7 +466,6 @@
    <wvobject type="group" fp_name="group594">
       <obj_property name="label">mul_out</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject type="array" fp_name="andromeda_i/system_ila_0/inst/probe23">
          <obj_property name="DisplayName">label</obj_property>
          <obj_property name="ElementShortName">andromeda_i/system_ila_0/inst/probe23[0:0]</obj_property>
@@ -694,7 +683,7 @@
       <obj_property name="CustomSignalColor">OliveDrab</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <wvobject type="group" fp_name="group178">
+      <wvobject type="group" fp_name="group163">
          <obj_property name="label">slot_1 : axi_smc_M03_AXI : Write Transactions 0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <obj_property name="Detail_Data">ila_2___slot_1___axi_smc_M03_AXI___Write_Transactions_0_tooltip</obj_property>
@@ -961,17 +950,7 @@
       <obj_property name="CustomSignalColor">OliveDrab</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      <wvobject type="group" fp_name="group177">
-         <obj_property name="label">slot_2 : axi_smc_M04_AXI : Write Transactions 0</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="Detail_Data">ila_2___slot_2___axi_smc_M04_AXI___Write_Transactions_0_tooltip</obj_property>
-         <obj_property name="Render_Data">ila_2___slot_2___axi_smc_M04_AXI___Write_Transactions_0</obj_property>
-         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
-         <obj_property name="CustomSignalColor">LightSeaGreen</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-      </wvobject>
-      <wvobject type="group" fp_name="group176">
+      <wvobject type="group" fp_name="group162">
          <obj_property name="label">slot_2 : axi_smc_M04_AXI : Read Transactions 0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <obj_property name="Detail_Data">ila_2___slot_2___axi_smc_M04_AXI___Read_Transactions_0_tooltip</obj_property>

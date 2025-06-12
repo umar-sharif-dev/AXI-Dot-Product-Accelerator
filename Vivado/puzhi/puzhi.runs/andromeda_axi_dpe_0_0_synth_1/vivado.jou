@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Jun 12 15:21:29 2025
-# Process ID         : 232349
+# Start of session at: Thu Jun 12 19:11:21 2025
+# Process ID         : 368260
 # Current directory  : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1
 # Command line       : vivado -log andromeda_axi_dpe_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source andromeda_axi_dpe_0_0.tcl
 # Log file           : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/andromeda_axi_dpe_0_0.vds
@@ -13,12 +13,12 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.2 LTS
 # Processor Detail   : Intel(R) Core(TM) Ultra 9 285K
-# CPU Frequency      : 5209.337 MHz
+# CPU Frequency      : 5400.000 MHz
 # CPU Physical cores : 24
 # CPU Logical cores  : 24
 # Host memory        : 49823 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 58413 MB
-# Available Virtual  : 51994 MB
+# Available Virtual  : 51977 MB
 #-----------------------------------------------------------
 source andromeda_axi_dpe_0_0.tcl -notrace

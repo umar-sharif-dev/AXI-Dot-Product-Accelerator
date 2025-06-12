@@ -109,8 +109,6 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param bd.open.in_stealth_mode 3
-  set_param tcl.collectionResultDisplayLimit 0
-  set_param xicom.use_bs_reader 1
   set_param chipscope.maxJobs 6
   set_param runs.launchOptions { -jobs 24  }
   open_checkpoint andromeda_wrapper_routed.dcp

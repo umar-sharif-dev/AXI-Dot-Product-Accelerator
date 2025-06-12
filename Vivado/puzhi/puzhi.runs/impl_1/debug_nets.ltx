@@ -1824,12 +1824,10 @@
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "andromeda_i/system_ila_0/inst/probe6[1]",
-                                                "parentNetId": 16
+                                                "name": "andromeda_i/system_ila_0/inst/probe6[1]"
                                             },
                                             {
-                                                "name": "andromeda_i/system_ila_0/inst/probe6[0]",
-                                                "parentNetId": 17
+                                                "name": "andromeda_i/system_ila_0/inst/probe6[0]"
                                             }
                                         ]
                                     }
@@ -2100,7 +2098,7 @@
                                         "subnets": [
                                             {
                                                 "name": "andromeda_i/system_ila_0/inst/probe13[2]",
-                                                "parentNetId": 62
+                                                "parentNetId": 60
                                             },
                                             {
                                                 "name": "andromeda_i/system_ila_0/inst/probe13[1]"
@@ -11802,8 +11800,6 @@
                             },
                             {
                                 "name": "probe16",
-                                "connectedBus": "write_grant_debug",
-                                "protocol": "PROBE",
                                 "port_maps": [
                                     {
                                         "logical_port": "probe16",
@@ -11818,8 +11814,6 @@
                             },
                             {
                                 "name": "probe17",
-                                "connectedBus": "write_request_debug",
-                                "protocol": "PROBE",
                                 "port_maps": [
                                     {
                                         "logical_port": "probe17",
@@ -12296,8 +12290,6 @@
                             },
                             {
                                 "name": "probe6",
-                                "connectedBus": "dpe_state_debug",
-                                "protocol": "PROBE",
                                 "port_maps": [
                                     {
                                         "logical_port": "probe6",
@@ -13238,53 +13230,7 @@
                         ]
                     },
                     {
-                        "id": 16,
-                        "name": "andromeda_i/axi_dpe_0/inst/dpe_state_debug[1]",
-                        "state_reg": [
-                            {
-                                "name": "andromeda_i/axi_dpe_0/inst/FSM_onehot_dpe_state_reg[0]",
-                                "states": [
-                                    {
-                                        "name": "DPE_IDLE",
-                                        "val": "001"
-                                    },
-                                    {
-                                        "name": "DPE_ACTIVE",
-                                        "val": "010"
-                                    },
-                                    {
-                                        "name": "DPE_DONE",
-                                        "val": "100"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 17,
-                        "name": "andromeda_i/axi_dpe_0/inst/dpe_state_debug[0]",
-                        "state_reg": [
-                            {
-                                "name": "andromeda_i/axi_dpe_0/inst/FSM_onehot_dpe_state_reg[2]",
-                                "states": [
-                                    {
-                                        "name": "DPE_IDLE",
-                                        "val": "001"
-                                    },
-                                    {
-                                        "name": "DPE_ACTIVE",
-                                        "val": "010"
-                                    },
-                                    {
-                                        "name": "DPE_DONE",
-                                        "val": "100"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 62,
+                        "id": 60,
                         "name": "andromeda_i/axi_dpe_0/inst/read_state_debug[2]",
                         "state_reg": [
                             {

@@ -7,7 +7,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Thu Jun 12 15:25:06 2025
+  **** Start of session at: Thu Jun 12 19:19:24 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -32,14 +32,14 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 235552
+INFO: [Synth 8-7075] Helper process launched with PID 371981
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2861.191 ; gain = 154.859 ; free physical = 32201 ; free virtual = 47683
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2861.383 ; gain = 154.797 ; free physical = 32092 ; free virtual = 47692
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'andromeda_wrapper' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'andromeda' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:13]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_dpe_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_axi_dpe_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_axi_dpe_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_axi_dpe_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_dpe_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_axi_dpe_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_axi_dpe_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_axi_dpe_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'bytes_in_current_burst_debug' of module 'andromeda_axi_dpe_0_0' is unconnected for instance 'axi_dpe_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:334]
 WARNING: [Synth 8-7071] port 'read_transfer_count_debug' of module 'andromeda_axi_dpe_0_0' is unconnected for instance 'axi_dpe_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:334]
 WARNING: [Synth 8-7071] port 'm_axi_arready_debug' of module 'andromeda_axi_dpe_0_0' is unconnected for instance 'axi_dpe_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:334]
@@ -47,78 +47,78 @@ WARNING: [Synth 8-7071] port 'm_axi_arvalid_r_debug' of module 'andromeda_axi_dp
 WARNING: [Synth 8-7071] port 'm_axi_rvalid_debug' of module 'andromeda_axi_dpe_0_0' is unconnected for instance 'axi_dpe_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:334]
 WARNING: [Synth 8-7071] port 'm_axi_rready_r_debug' of module 'andromeda_axi_dpe_0_0' is unconnected for instance 'axi_dpe_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:334]
 WARNING: [Synth 8-7023] instance 'axi_dpe_0' of module 'andromeda_axi_dpe_0_0' has 97 connections declared, but only 91 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:334]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_smc_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_axi_smc_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_smc_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_axi_smc_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_axi_smc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'andromeda_axi_smc_0' is unconnected for instance 'axi_smc' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:426]
 WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'andromeda_axi_smc_0' is unconnected for instance 'axi_smc' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:426]
 WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'andromeda_axi_smc_0' is unconnected for instance 'axi_smc' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:426]
 WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'andromeda_axi_smc_0' is unconnected for instance 'axi_smc' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:426]
 WARNING: [Synth 8-7023] instance 'axi_smc' of module 'andromeda_axi_smc_0' has 182 connections declared, but only 178 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:426]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_timer_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_axi_timer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_axi_timer_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_timer_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_axi_timer_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_axi_timer_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'generateout0' of module 'andromeda_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:605]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'andromeda_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:605]
 WARNING: [Synth 8-7071] port 'pwm0' of module 'andromeda_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:605]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'andromeda_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:605]
 WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'andromeda_axi_timer_0_0' has 26 connections declared, but only 22 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:605]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_uartlite_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_axi_uartlite_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_uartlite_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_axi_uartlite_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_axi_uartlite_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'andromeda_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:628]
 WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'andromeda_axi_uartlite_0_0' has 22 connections declared, but only 21 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:628]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_ddr4_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_ddr4_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_ddr4_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_ddr4_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_ddr4_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_ddr4_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_ddr4_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_ddr4_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_bid' of module 'andromeda_ddr4_0_0' is unconnected for instance 'ddr4_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:650]
 WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rid' of module 'andromeda_ddr4_0_0' is unconnected for instance 'ddr4_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:650]
 WARNING: [Synth 8-7023] instance 'ddr4_0' of module 'andromeda_ddr4_0_0' has 61 connections declared, but only 59 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:650]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:710]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_ila_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_ila_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_ila_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_mdm_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_mdm_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_mdm_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_mdm_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_microblaze_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_microblaze_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_ila_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_ila_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_mdm_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_mdm_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_mdm_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_mdm_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_microblaze_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_microblaze_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_microblaze_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'andromeda_microblaze_0_0' is unconnected for instance 'microblaze_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:729]
 WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'andromeda_microblaze_0_0' has 52 connections declared, but only 51 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:729]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1TBTZIU' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:992]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_dlmb_bram_if_cntlr_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_dlmb_bram_if_cntlr_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_dlmb_v10_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_dlmb_v10_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_dlmb_bram_if_cntlr_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_dlmb_bram_if_cntlr_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_dlmb_v10_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_dlmb_v10_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_dlmb_v10_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'andromeda_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:1117]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'andromeda_dlmb_v10_0' has 25 connections declared, but only 24 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:1117]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_ilmb_bram_if_cntlr_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_ilmb_bram_if_cntlr_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_ilmb_v10_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_ilmb_v10_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_ilmb_bram_if_cntlr_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_ilmb_bram_if_cntlr_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_ilmb_v10_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_ilmb_v10_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_ilmb_v10_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'andromeda_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:1163]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'andromeda_ilmb_v10_0' has 25 connections declared, but only 24 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:1163]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_lmb_bram_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_lmb_bram_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_lmb_bram_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_lmb_bram_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_lmb_bram_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'andromeda_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:1188]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'andromeda_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:1188]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'andromeda_lmb_bram_0' has 16 connections declared, but only 14 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:1188]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1TBTZIU' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:992]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_rst_ddr4_0_100M_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_rst_ddr4_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_rst_ddr4_0_100M_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_rst_ddr4_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_rst_ddr4_0_100M_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_rst_ddr4_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_rst_ddr4_0_100M_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_rst_ddr4_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'andromeda_rst_ddr4_0_100M_0' is unconnected for instance 'rst_ddr4_0_100M' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:803]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'andromeda_rst_ddr4_0_100M_0' is unconnected for instance 'rst_ddr4_0_100M' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:803]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'andromeda_rst_ddr4_0_100M_0' is unconnected for instance 'rst_ddr4_0_100M' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:803]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'andromeda_rst_ddr4_0_100M_0' is unconnected for instance 'rst_ddr4_0_100M' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:803]
 WARNING: [Synth 8-7023] instance 'rst_ddr4_0_100M' of module 'andromeda_rst_ddr4_0_100M_0' has 10 connections declared, but only 6 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:803]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_rst_ddr4_0_333M_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_rst_ddr4_0_333M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_rst_ddr4_0_333M_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_rst_ddr4_0_333M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_rst_ddr4_0_333M_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_rst_ddr4_0_333M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_rst_ddr4_0_333M_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_rst_ddr4_0_333M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'andromeda_rst_ddr4_0_333M_0' is unconnected for instance 'rst_ddr4_0_333M' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:810]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'andromeda_rst_ddr4_0_333M_0' is unconnected for instance 'rst_ddr4_0_333M' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:810]
 WARNING: [Synth 8-7023] instance 'rst_ddr4_0_333M' of module 'andromeda_rst_ddr4_0_333M_0' has 10 connections declared, but only 8 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:810]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_sd_controller_wrapper_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_sd_controller_wrapper_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_sd_controller_wrapper_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_sd_controller_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_sd_controller_wrapper_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_sd_controller_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_sd_controller_wrapper_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_sd_controller_wrapper_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'andromeda_sd_controller_wrapper_0_0' is unconnected for instance 'sd_controller_wrapper_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:819]
 WARNING: [Synth 8-7023] instance 'sd_controller_wrapper_0' of module 'andromeda_sd_controller_wrapper_0_0' has 42 connections declared, but only 41 given [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:819]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:861]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_system_ila_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_system_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_system_ila_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_system_ila_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_util_vector_logic_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_util_vector_logic_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'andromeda_util_vector_logic_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-235453-nuke/realtime/andromeda_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_system_ila_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_system_ila_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_util_vector_logic_0_0' [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'andromeda_util_vector_logic_0_0' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/.Xil/Vivado-371885-nuke/realtime/andromeda_util_vector_logic_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'andromeda' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'andromeda_wrapper' (0#1) [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v:13]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_dpe_0'. This will prevent further optimization [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:334]
@@ -128,18 +128,18 @@ INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance '
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sd_controller_wrapper_0'. This will prevent further optimization [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:819]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v:710]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2950.160 ; gain = 243.828 ; free physical = 32091 ; free virtual = 47575
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2950.320 ; gain = 243.734 ; free physical = 31982 ; free virtual = 47583
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2950.160 ; gain = 243.828 ; free physical = 32091 ; free virtual = 47575
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2953.289 ; gain = 246.703 ; free physical = 31982 ; free virtual = 47583
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2950.160 ; gain = 243.828 ; free physical = 32091 ; free virtual = 47575
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2953.289 ; gain = 246.703 ; free physical = 31982 ; free virtual = 47583
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2950.160 ; gain = 0.000 ; free physical = 32091 ; free virtual = 47575
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2953.289 ; gain = 0.000 ; free physical = 31982 ; free virtual = 47583
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -188,16 +188,16 @@ Parsing XDC File [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Acceler
 Finished Parsing XDC File [/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2999.086 ; gain = 0.000 ; free physical = 32091 ; free virtual = 47574
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2999.246 ; gain = 0.000 ; free physical = 31974 ; free virtual = 47575
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2999.086 ; gain = 0.000 ; free physical = 32091 ; free virtual = 47574
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2999.246 ; gain = 0.000 ; free physical = 31974 ; free virtual = 47575
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'andromeda_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '3.001', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2999.086 ; gain = 292.754 ; free physical = 32092 ; free virtual = 47575
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2999.246 ; gain = 292.660 ; free physical = 31975 ; free virtual = 47576
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -205,7 +205,7 @@ Start Loading Part and Timing Information
 Loading part: xcku5p-ffvb676-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.090 ; gain = 300.758 ; free physical = 32092 ; free virtual = 47575
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.250 ; gain = 300.664 ; free physical = 31975 ; free virtual = 47576
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -386,10 +386,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for andromeda_i/axi_dpe_0. (constrain
 Applied set_property KEEP_HIERARCHY = SOFT for andromeda_i/mdm_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for andromeda_i/system_ila_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.090 ; gain = 300.758 ; free physical = 32094 ; free virtual = 47578
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.250 ; gain = 300.664 ; free physical = 31975 ; free virtual = 47576
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.090 ; gain = 300.758 ; free physical = 32094 ; free virtual = 47579
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3007.250 ; gain = 300.664 ; free physical = 31975 ; free virtual = 47578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -412,25 +412,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3007.090 ; gain = 300.758 ; free physical = 32099 ; free virtual = 47589
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3007.250 ; gain = 300.664 ; free physical = 31974 ; free virtual = 47583
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3545.719 ; gain = 839.387 ; free physical = 31642 ; free virtual = 47133
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3545.879 ; gain = 839.293 ; free physical = 31526 ; free virtual = 47134
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3546.719 ; gain = 840.387 ; free physical = 31650 ; free virtual = 47140
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3546.879 ; gain = 840.293 ; free physical = 31526 ; free virtual = 47134
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3563.969 ; gain = 857.637 ; free physical = 31634 ; free virtual = 47125
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3564.129 ; gain = 857.543 ; free physical = 31510 ; free virtual = 47118
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -448,37 +448,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.781 ; gain = 1018.449 ; free physical = 31508 ; free virtual = 46999
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3724.941 ; gain = 1018.355 ; free physical = 31386 ; free virtual = 46995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.781 ; gain = 1018.449 ; free physical = 31508 ; free virtual = 46999
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3724.941 ; gain = 1018.355 ; free physical = 31386 ; free virtual = 46995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.781 ; gain = 1018.449 ; free physical = 31508 ; free virtual = 46999
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.941 ; gain = 1018.355 ; free physical = 31386 ; free virtual = 46995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.781 ; gain = 1018.449 ; free physical = 31508 ; free virtual = 46999
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.941 ; gain = 1018.355 ; free physical = 31386 ; free virtual = 46995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.781 ; gain = 1018.449 ; free physical = 31508 ; free virtual = 46999
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.941 ; gain = 1018.355 ; free physical = 31386 ; free virtual = 46995
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.781 ; gain = 1018.449 ; free physical = 31508 ; free virtual = 46999
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.941 ; gain = 1018.355 ; free physical = 31388 ; free virtual = 46997
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -534,18 +534,18 @@ Report Cell Usage:
 |20    |OBUF                              |     2|
 +------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.781 ; gain = 1018.449 ; free physical = 31508 ; free virtual = 46999
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.941 ; gain = 1018.355 ; free physical = 31388 ; free virtual = 46997
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3724.781 ; gain = 969.523 ; free physical = 31508 ; free virtual = 46999
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.781 ; gain = 1018.449 ; free physical = 31509 ; free virtual = 46999
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3724.941 ; gain = 972.398 ; free physical = 31388 ; free virtual = 46997
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3724.941 ; gain = 1018.355 ; free physical = 31395 ; free virtual = 47004
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3724.781 ; gain = 0.000 ; free physical = 31764 ; free virtual = 47254
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3724.941 ; gain = 0.000 ; free physical = 31561 ; free virtual = 47169
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3724.781 ; gain = 0.000 ; free physical = 31764 ; free virtual = 47255
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3724.941 ; gain = 0.000 ; free physical = 31568 ; free virtual = 47177
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
@@ -554,10 +554,10 @@ Synth Design complete | Checksum: e44ac5f8
 INFO: [Common 17-83] Releasing license: Synthesis
 74 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 3724.781 ; gain = 2108.184 ; free physical = 31764 ; free virtual = 47255
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2804.231; main = 2770.281; forked = 242.570
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4412.121; main = 3645.875; forked = 908.398
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3724.781 ; gain = 0.000 ; free physical = 31763 ; free virtual = 47254
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 3724.941 ; gain = 2105.152 ; free physical = 31568 ; free virtual = 47177
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2806.488; main = 2769.588; forked = 242.162
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4412.281; main = 3646.035; forked = 908.398
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3724.941 ; gain = 0.000 ; free physical = 31568 ; free virtual = 47177
 INFO: [Common 17-1381] The checkpoint '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/andromeda_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file andromeda_wrapper_utilization_synth.rpt -pb andromeda_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 15:25:28 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 19:19:46 2025...
