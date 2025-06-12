@@ -124,9 +124,9 @@ module axi_dpe #(
     output wire         dpe_done,
     
         // Debug ports for ILA
-    output wire [31:0]  A_fp32_debug,
+    output wire [31:0]  A_debug,
     output wire         A_valid_debug,
-    output wire [31:0]  prod_fp32_debug,
+    output wire [31:0]  prod_debug,
     output wire         prod_valid_debug,
     output wire [31:0]  sum_stage0_debug,
     output wire         valid_stage0_debug,
@@ -335,9 +335,9 @@ module axi_dpe #(
         .done         (dpe_done),
         
         // Debug outputs
-        .A_fp32_debug      (A_fp32_debug),
+        .A_debug           (A_debug),
         .A_valid_debug     (A_valid_debug),
-        .prod_fp32_debug   (prod_fp32_debug),
+        .prod_debug        (prod_debug),
         .prod_valid_debug  (prod_valid_debug),
         .sum_stage0_debug  (sum_stage0_debug),
         .valid_stage0_debug(valid_stage0_debug),
@@ -974,6 +974,7 @@ always @(posedge aclk) begin
             READ_DONE: begin
                 // Release bus access
                 read_request <= 1'b0;
+                read_data_valid <= 1'b0;
                 
                 // Wait for control to transition back to IDLE
                 if (ctrl_state == CTRL_IDLE) begin
@@ -1025,11 +1026,13 @@ always @(posedge aclk) begin
                           dpe_count <= 3'd0;
                           dpe_acc <= {dpe_accumulator[223:0], dpe_y_out};  // accumulate + write
                           write_valid <= 1'b1;
+                          dpe_state <= DPE_DONE;
+                          
                           dpe_accumulator <= 256'd0;
                         end
                     dpe_en <= 1'b0;
                     //dpe_dout_debug <= {224'b0, dpe_y_out};
-                    dpe_state <= DPE_DONE;
+                    //dpe_state <= DPE_DONE;
                 end
             end
             
