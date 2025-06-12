@@ -1,4 +1,4 @@
-# Install script for directory: /home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/uartlite/src
+# Install script for directory: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/uartlite/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core
+# Install script for directory: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/xiltimer/src/core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/cmake_install.cmake")
+  include("/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/cmake_install.cmake")
 
 endif()
 

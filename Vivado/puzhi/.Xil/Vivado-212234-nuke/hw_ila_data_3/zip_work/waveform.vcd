@@ -1,0 +1,29 @@
+$date
+        2025-Jun-12 14:12:51
+$end
+$version
+        Vivado v2024.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 256 " andromeda_i/axi_dpe_0/inst/dpe_dout_debug [255:0] $end
+$var reg 1 f# andromeda_i/axi_dpe_0/inst/dpe_en $end
+$var reg 1 g# andromeda_i/axi_dpe_0/inst/dpe_start $end
+$var reg 1 h# _TRIGGER $end
+$var reg 1 i# _WINDOW $end
+$var reg 1 j# _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+0f#
+0g#
+0h#
+1i#
+0j#
+$end
+#512
+1h#

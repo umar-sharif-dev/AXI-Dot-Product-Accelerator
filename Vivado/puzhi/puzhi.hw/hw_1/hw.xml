@@ -15,6 +15,10 @@
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
     <Object name="andromeda_i/ila_0" gui_info="">
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
@@ -29,13 +33,19 @@
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
-    <Object name="andromeda_i/system_ila_0/inst/probe2[0:0]" gui_info="Trigger Setup=0"/>
+    <Object name="andromeda_i/axi_dpe_0/inst/dpe_dout_debug[255:0]" gui_info="Trigger Setup=0"/>
+    <Object name="andromeda_i/system_ila_0/inst/net_slot_0_axi_rvalid" gui_info="Trigger Setup=1"/>
+    <Object name="andromeda_i/system_ila_0/inst/probe14[0:0]" gui_info="Trigger Setup=0"/>
+    <Object name="andromeda_i/system_ila_0/inst/probe21[0:0]" gui_info=""/>
+    <Object name="andromeda_i/system_ila_0/inst/probe24[31:0]" gui_info=""/>
+    <Object name="andromeda_i/system_ila_0/inst/probe2[0:0]" gui_info=""/>
+    <Object name="andromeda_i/system_ila_0/inst/probe39[31:0]" gui_info=""/>
   </ObjectList>
   <probeset name="hw project" active="false">
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq256&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq256&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="neq256&apos;u0"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -44,9 +54,9 @@
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe0[255:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.SELECT" value="Short"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq256&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="neq256&apos;u0"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -959,7 +969,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe20[1:0]"/>
+        <Option Id="MAP" value="probe42[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : AR_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -981,7 +991,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe44[1:0]"/>
+        <Option Id="MAP" value="probe66[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1003,7 +1013,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe21[31:0]"/>
+        <Option Id="MAP" value="probe43[31:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : ARADDR"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1055,7 +1065,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe22[1:0]"/>
+        <Option Id="MAP" value="probe44[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : ARBURST"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1081,7 +1091,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe23[3:0]"/>
+        <Option Id="MAP" value="probe45[3:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : ARCACHE"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1101,11 +1111,11 @@
         <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
-        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe24[7:0]"/>
+        <Option Id="MAP" value="probe46[7:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : ARLEN"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1133,7 +1143,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe25[2:0]"/>
+        <Option Id="MAP" value="probe47[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : ARPROT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1164,7 +1174,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe44[1]"/>
+        <Option Id="MAP" value="probe66[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : ARREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1185,7 +1195,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe26[2:0]"/>
+        <Option Id="MAP" value="probe48[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : ARSIZE"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1216,7 +1226,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe44[0]"/>
+        <Option Id="MAP" value="probe66[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : ARVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1237,7 +1247,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe27[1:0]"/>
+        <Option Id="MAP" value="probe49[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : AW_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1259,7 +1269,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe41[1:0]"/>
+        <Option Id="MAP" value="probe63[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1281,7 +1291,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe28[31:0]"/>
+        <Option Id="MAP" value="probe50[31:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : AWADDR"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1333,7 +1343,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe29[1:0]"/>
+        <Option Id="MAP" value="probe51[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : AWBURST"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1359,7 +1369,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe30[3:0]"/>
+        <Option Id="MAP" value="probe52[3:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : AWCACHE"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1383,7 +1393,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe31[7:0]"/>
+        <Option Id="MAP" value="probe53[7:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : AWLEN"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1411,7 +1421,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe32[2:0]"/>
+        <Option Id="MAP" value="probe54[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : AWPROT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1442,7 +1452,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe41[1]"/>
+        <Option Id="MAP" value="probe63[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : AWREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1463,7 +1473,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe33[2:0]"/>
+        <Option Id="MAP" value="probe55[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : AWSIZE"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1494,7 +1504,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe41[0]"/>
+        <Option Id="MAP" value="probe63[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : AWVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1515,7 +1525,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe34[1:0]"/>
+        <Option Id="MAP" value="probe56[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : B_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1537,7 +1547,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe43[1:0]"/>
+        <Option Id="MAP" value="probe65[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1559,7 +1569,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe43[1]"/>
+        <Option Id="MAP" value="probe65[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : BREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1580,7 +1590,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe35[1:0]"/>
+        <Option Id="MAP" value="probe57[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : BRESP"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1606,7 +1616,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe43[0]"/>
+        <Option Id="MAP" value="probe65[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : BVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1627,7 +1637,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe36[1:0]"/>
+        <Option Id="MAP" value="probe58[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : R_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1649,7 +1659,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe45[2:0]"/>
+        <Option Id="MAP" value="probe67[2:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1672,7 +1682,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe37[255:0]"/>
+        <Option Id="MAP" value="probe59[255:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : RDATA"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1948,7 +1958,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe45[2]"/>
+        <Option Id="MAP" value="probe67[2]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : RLAST"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1969,7 +1979,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe45[1]"/>
+        <Option Id="MAP" value="probe67[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : RREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1990,7 +2000,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe38[1:0]"/>
+        <Option Id="MAP" value="probe60[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : RRESP"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2009,18 +2019,18 @@
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe45[0]"/>
+        <Option Id="MAP" value="probe67[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : RVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -2037,7 +2047,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe42[2:0]"/>
+        <Option Id="MAP" value="probe64[2:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2060,7 +2070,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe39[255:0]"/>
+        <Option Id="MAP" value="probe61[255:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : WDATA"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2336,7 +2346,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe42[2]"/>
+        <Option Id="MAP" value="probe64[2]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : WLAST"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2357,7 +2367,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe42[1]"/>
+        <Option Id="MAP" value="probe64[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : WREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2378,7 +2388,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe40[31:0]"/>
+        <Option Id="MAP" value="probe62[31:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : WSTRB"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2430,7 +2440,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe42[0]"/>
+        <Option Id="MAP" value="probe64[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_0 : axi_dpe_0_m_axi : WVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2451,7 +2461,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe46[1:0]"/>
+        <Option Id="MAP" value="probe68[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : AR_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2473,7 +2483,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe62[1:0]"/>
+        <Option Id="MAP" value="probe84[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2495,7 +2505,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe47[31:0]"/>
+        <Option Id="MAP" value="probe69[31:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : ARADDR"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2547,7 +2557,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe48[2:0]"/>
+        <Option Id="MAP" value="probe70[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : ARPROT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2578,7 +2588,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe62[1]"/>
+        <Option Id="MAP" value="probe84[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : ARREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2599,7 +2609,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe62[0]"/>
+        <Option Id="MAP" value="probe84[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : ARVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2620,7 +2630,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe49[1:0]"/>
+        <Option Id="MAP" value="probe71[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : AW_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2642,7 +2652,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe59[1:0]"/>
+        <Option Id="MAP" value="probe81[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2664,7 +2674,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe50[31:0]"/>
+        <Option Id="MAP" value="probe72[31:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : AWADDR"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2716,7 +2726,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe51[2:0]"/>
+        <Option Id="MAP" value="probe73[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : AWPROT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2747,7 +2757,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe59[1]"/>
+        <Option Id="MAP" value="probe81[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : AWREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2768,7 +2778,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe59[0]"/>
+        <Option Id="MAP" value="probe81[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : AWVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2789,7 +2799,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe52[1:0]"/>
+        <Option Id="MAP" value="probe74[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : B_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2811,7 +2821,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe61[1:0]"/>
+        <Option Id="MAP" value="probe83[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2833,7 +2843,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe61[1]"/>
+        <Option Id="MAP" value="probe83[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : BREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2854,7 +2864,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe53[1:0]"/>
+        <Option Id="MAP" value="probe75[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : BRESP"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2880,7 +2890,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe61[0]"/>
+        <Option Id="MAP" value="probe83[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : BVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2901,7 +2911,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe54[1:0]"/>
+        <Option Id="MAP" value="probe76[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : R_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2923,7 +2933,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe63[1:0]"/>
+        <Option Id="MAP" value="probe85[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2945,7 +2955,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe55[31:0]"/>
+        <Option Id="MAP" value="probe77[31:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : RDATA"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -2997,7 +3007,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe63[1]"/>
+        <Option Id="MAP" value="probe85[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : RREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3018,7 +3028,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe56[1:0]"/>
+        <Option Id="MAP" value="probe78[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : RRESP"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3044,7 +3054,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe63[0]"/>
+        <Option Id="MAP" value="probe85[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : RVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3065,7 +3075,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe60[1:0]"/>
+        <Option Id="MAP" value="probe82[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3087,7 +3097,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe57[31:0]"/>
+        <Option Id="MAP" value="probe79[31:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : WDATA"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3139,7 +3149,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe60[1]"/>
+        <Option Id="MAP" value="probe82[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : WREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3160,7 +3170,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe58[3:0]"/>
+        <Option Id="MAP" value="probe80[3:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : WSTRB"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3184,7 +3194,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe60[0]"/>
+        <Option Id="MAP" value="probe82[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_1 : axi_smc_M03_AXI : WVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3205,7 +3215,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe64[1:0]"/>
+        <Option Id="MAP" value="probe86[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AR_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3227,7 +3237,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe92[1:0]"/>
+        <Option Id="MAP" value="probe114[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3249,7 +3259,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe65[30:0]"/>
+        <Option Id="MAP" value="probe87[30:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : ARADDR"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3300,7 +3310,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe66[1:0]"/>
+        <Option Id="MAP" value="probe88[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : ARBURST"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3326,7 +3336,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe67[3:0]"/>
+        <Option Id="MAP" value="probe89[3:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : ARCACHE"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3350,7 +3360,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe68[7:0]"/>
+        <Option Id="MAP" value="probe90[7:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : ARLEN"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3378,7 +3388,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe69[0]"/>
+        <Option Id="MAP" value="probe91[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : ARLOCK"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3399,7 +3409,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe70[2:0]"/>
+        <Option Id="MAP" value="probe92[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : ARPROT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3430,7 +3440,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe71[3:0]"/>
+        <Option Id="MAP" value="probe93[3:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : ARQOS"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3454,7 +3464,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe92[1]"/>
+        <Option Id="MAP" value="probe114[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : ARREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3475,7 +3485,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe72[2:0]"/>
+        <Option Id="MAP" value="probe94[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : ARSIZE"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3506,7 +3516,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe92[0]"/>
+        <Option Id="MAP" value="probe114[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : ARVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3527,7 +3537,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe73[1:0]"/>
+        <Option Id="MAP" value="probe95[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AW_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3549,7 +3559,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe89[1:0]"/>
+        <Option Id="MAP" value="probe111[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3571,7 +3581,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe74[30:0]"/>
+        <Option Id="MAP" value="probe96[30:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AWADDR"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3622,7 +3632,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe75[1:0]"/>
+        <Option Id="MAP" value="probe97[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AWBURST"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3648,7 +3658,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe76[3:0]"/>
+        <Option Id="MAP" value="probe98[3:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AWCACHE"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3672,7 +3682,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe77[7:0]"/>
+        <Option Id="MAP" value="probe99[7:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AWLEN"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3700,7 +3710,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe78[0]"/>
+        <Option Id="MAP" value="probe100[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AWLOCK"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3721,7 +3731,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe79[2:0]"/>
+        <Option Id="MAP" value="probe101[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AWPROT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3752,7 +3762,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe80[3:0]"/>
+        <Option Id="MAP" value="probe102[3:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AWQOS"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3776,7 +3786,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe89[1]"/>
+        <Option Id="MAP" value="probe111[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AWREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3797,7 +3807,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe81[2:0]"/>
+        <Option Id="MAP" value="probe103[2:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AWSIZE"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3828,7 +3838,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe89[0]"/>
+        <Option Id="MAP" value="probe111[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : AWVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3849,7 +3859,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe82[1:0]"/>
+        <Option Id="MAP" value="probe104[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : B_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3871,7 +3881,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe91[1:0]"/>
+        <Option Id="MAP" value="probe113[1:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3893,7 +3903,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe91[1]"/>
+        <Option Id="MAP" value="probe113[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : BREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3914,7 +3924,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe83[1:0]"/>
+        <Option Id="MAP" value="probe105[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : BRESP"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3940,7 +3950,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe91[0]"/>
+        <Option Id="MAP" value="probe113[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : BVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3961,7 +3971,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe84[1:0]"/>
+        <Option Id="MAP" value="probe106[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : R_CNT"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -3983,7 +3993,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe93[2:0]"/>
+        <Option Id="MAP" value="probe115[2:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4006,7 +4016,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe85[255:0]"/>
+        <Option Id="MAP" value="probe107[255:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : RDATA"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4282,7 +4292,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe93[2]"/>
+        <Option Id="MAP" value="probe115[2]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : RLAST"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4303,7 +4313,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe93[1]"/>
+        <Option Id="MAP" value="probe115[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : RREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4324,7 +4334,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe86[1:0]"/>
+        <Option Id="MAP" value="probe108[1:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : RRESP"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4350,7 +4360,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe93[0]"/>
+        <Option Id="MAP" value="probe115[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : RVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4371,7 +4381,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe90[2:0]"/>
+        <Option Id="MAP" value="probe112[2:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4394,7 +4404,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe87[255:0]"/>
+        <Option Id="MAP" value="probe109[255:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : WDATA"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4670,7 +4680,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe90[2]"/>
+        <Option Id="MAP" value="probe112[2]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : WLAST"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4691,7 +4701,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe90[1]"/>
+        <Option Id="MAP" value="probe112[1]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : WREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4712,7 +4722,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe88[31:0]"/>
+        <Option Id="MAP" value="probe110[31:0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : WSTRB"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4764,7 +4774,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe90[0]"/>
+        <Option Id="MAP" value="probe112[0]"/>
         <Option Id="NAME.CUSTOM" value="slot_2 : axi_smc_M04_AXI : WVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -4808,7 +4818,7 @@
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe10[0]"/>
-        <Option Id="NAME.CUSTOM" value="read_data_valid_debug (A_valid)"/>
+        <Option Id="NAME.CUSTOM" value="read_data_valid_debug"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
@@ -4886,7 +4896,7 @@
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -4894,10 +4904,10 @@
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe14[0]"/>
-        <Option Id="NAME.CUSTOM" value="(m_axi_rvalid &amp;&amp; m_axi_rready_r)"/>
+        <Option Id="NAME.CUSTOM" value="rvalid_debug"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
@@ -5287,10 +5297,682 @@
         <net name="andromeda_i/system_ila_0/inst/probe1[0]"/>
       </nets>
     </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe20[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe20[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq256&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq256&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe20[255:0]"/>
+        <Option Id="NAME.CUSTOM" value="dpe_wr_ready_out"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq256&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe20[255]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[254]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[253]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[252]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[251]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[250]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[249]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[248]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[247]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[246]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[245]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[244]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[243]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[242]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[241]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[240]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[239]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[238]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[237]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[236]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[235]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[234]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[233]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[232]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[231]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[230]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[229]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[228]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[227]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[226]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[225]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[224]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[223]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[222]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[221]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[220]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[219]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[218]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[217]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[216]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[215]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[214]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[213]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[212]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[211]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[210]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[209]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[208]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[207]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[206]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[205]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[204]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[203]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[202]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[201]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[200]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[199]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[198]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[197]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[196]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[195]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[194]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[193]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[192]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[191]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[190]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[189]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[188]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[187]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[186]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[185]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[184]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[183]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[182]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[181]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[180]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[179]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[178]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[177]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[176]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[175]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[174]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[173]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[172]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[171]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[170]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[169]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[168]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[167]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[166]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[165]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[164]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[163]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[162]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[161]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[160]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[159]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[158]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[157]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[156]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[155]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[154]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[153]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[152]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[151]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[150]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[149]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[148]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[147]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[146]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[145]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[144]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[143]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[142]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[141]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[140]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[139]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[138]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[137]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[136]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[135]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[134]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[133]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[132]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[131]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[130]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[129]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[128]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[127]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[126]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[125]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[124]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[123]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[122]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[121]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[120]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[119]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[118]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[117]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[116]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[115]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[114]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[113]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[112]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[111]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[110]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[109]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[108]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[107]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[106]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[105]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[104]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[103]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[102]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[101]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[100]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[99]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[98]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[97]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[96]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[95]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[94]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[93]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[92]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[91]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[90]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[89]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[88]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[87]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[86]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[85]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[84]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[83]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[82]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[81]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[80]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[79]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[78]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[77]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[76]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[75]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[74]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[73]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[72]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[71]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[70]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[69]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[68]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[67]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[66]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[65]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[64]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[63]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[62]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[61]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[60]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[59]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[58]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[57]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[56]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[55]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[54]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[53]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[52]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[51]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[50]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[49]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[48]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[47]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[46]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[45]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[44]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[43]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[42]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[41]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[40]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[39]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[38]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[37]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[36]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[35]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[34]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[33]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[32]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[31]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[30]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[29]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[28]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[27]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[26]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[25]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[24]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[23]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[22]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[21]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[20]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[19]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[18]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[17]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[16]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[15]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[14]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[13]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[12]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[11]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[10]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[9]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[8]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[7]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[6]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[5]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[4]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[3]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[2]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[1]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe20[0]"/>
+      </nets>
+    </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
-        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bR"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe21[0]"/>
+        <Option Id="NAME.CUSTOM" value="A_valid_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe21[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe22[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe22[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe23[0]"/>
+        <Option Id="NAME.CUSTOM" value="prod_valid_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe23[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe24[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="sum_stage0_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe24[31]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[30]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[29]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[28]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[27]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[26]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[25]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[24]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[23]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[22]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[21]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[20]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[19]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[18]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[17]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[16]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[15]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[14]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[13]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[12]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[11]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[10]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[9]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[8]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[7]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[6]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[5]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[4]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[3]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[2]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[1]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe24[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe25[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="sum_stage1_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe25[31]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[30]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[29]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[28]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[27]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[26]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[25]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[24]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[23]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[22]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[21]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[20]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[19]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[18]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[17]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[16]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[15]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[14]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[13]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[12]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[11]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[10]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[9]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[8]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[7]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[6]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[5]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[4]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[3]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[2]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[1]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe25[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe26[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="sum_stage2_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe26[31]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[30]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[29]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[28]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[27]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[26]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[25]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[24]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[23]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[22]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[21]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[20]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[19]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[18]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[17]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[16]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[15]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[14]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[13]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[12]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[11]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[10]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[9]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[8]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[7]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[6]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[5]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[4]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[3]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[2]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[1]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe26[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe27[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="sum_stage3_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe27[31]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[30]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[29]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[28]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[27]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[26]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[25]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[24]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[23]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[22]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[21]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[20]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[19]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[18]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[17]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[16]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[15]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[14]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[13]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[12]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[11]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[10]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[9]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[8]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[7]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[6]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[5]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[4]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[3]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[2]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[1]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe27[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe28[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="sum_stage4_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe28[31]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[30]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[29]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[28]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[27]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[26]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[25]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[24]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[23]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[22]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[21]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[20]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[19]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[18]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[17]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[16]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[15]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[14]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[13]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[12]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[11]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[10]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[9]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[8]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[7]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[6]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[5]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[4]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[3]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[2]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[1]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe28[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe29[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="sum_stage5_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe29[31]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[30]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[29]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[28]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[27]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[26]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[25]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[24]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[23]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[22]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[21]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[20]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[19]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[18]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[17]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[16]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[15]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[14]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[13]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[12]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[11]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[10]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[9]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[8]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[7]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[6]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[5]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[4]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[3]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[2]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[1]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe29[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
@@ -5301,11 +5983,283 @@
         <Option Id="NAME.CUSTOM" value="dma_start_debug"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
-        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bR"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
       </probeOptions>
       <nets>
         <net name="andromeda_i/system_ila_0/inst/probe2[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe30[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="sum_stage6_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe30[31]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[30]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[29]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[28]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[27]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[26]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[25]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[24]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[23]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[22]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[21]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[20]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[19]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[18]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[17]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[16]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[15]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[14]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[13]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[12]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[11]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[10]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[9]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[8]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[7]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[6]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[5]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[4]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[3]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[2]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[1]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe30[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe31[0]"/>
+        <Option Id="NAME.CUSTOM" value="valid_stage0_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe31[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe32[0]"/>
+        <Option Id="NAME.CUSTOM" value="valid_stage1_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe32[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe33[0]"/>
+        <Option Id="NAME.CUSTOM" value="valid_stage2_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe33[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe34[0]"/>
+        <Option Id="NAME.CUSTOM" value="valid_stage3_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe34[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe35[0]"/>
+        <Option Id="NAME.CUSTOM" value="valid_stage4_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe35[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe36[0]"/>
+        <Option Id="NAME.CUSTOM" value="valid_stage5_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe36[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe37[0]"/>
+        <Option Id="NAME.CUSTOM" value="valid_stage6_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe37[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe38[0]"/>
+        <Option Id="NAME.CUSTOM" value="dpe_done"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe38[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe39[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="A_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe39[31]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[30]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[29]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[28]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[27]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[26]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[25]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[24]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[23]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[22]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[21]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[20]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[19]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[18]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[17]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[16]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[15]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[14]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[13]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[12]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[11]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[10]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[9]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[8]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[7]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[6]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[5]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[4]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[3]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[2]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[1]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe39[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
@@ -5328,6 +6282,79 @@
       <nets>
         <net name="andromeda_i/system_ila_0/inst/probe3[1]"/>
         <net name="andromeda_i/system_ila_0/inst/probe3[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe40[31:0]"/>
+        <Option Id="NAME.CUSTOM" value="prod_debug"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe40[31]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[30]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[29]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[28]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[27]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[26]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[25]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[24]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[23]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[22]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[21]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[20]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[19]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[18]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[17]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[16]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[15]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[14]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[13]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[12]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[11]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[10]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[9]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[8]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[7]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[6]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[5]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[4]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[3]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[2]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[1]"/>
+        <net name="andromeda_i/system_ila_0/inst/probe40[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe41[0]"/>
+        <Option Id="NAME.CUSTOM" value="write_valid"/>
+        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="andromeda_i/system_ila_0/inst/probe41[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
@@ -5406,7 +6433,7 @@
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe7[3:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.SELECT" value="Short"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>

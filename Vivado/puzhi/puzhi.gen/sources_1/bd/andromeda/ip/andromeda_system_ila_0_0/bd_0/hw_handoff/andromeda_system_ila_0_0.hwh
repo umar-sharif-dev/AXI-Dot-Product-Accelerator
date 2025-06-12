@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun 11 19:48:46 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun 12 10:03:58 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="kintexuplus" DEVICE="xcku5p" NAME="bd_85fa" PACKAGE="ffvb676" SPEEDGRADE="-2"/>
 
@@ -515,7 +515,7 @@
         <CONNECTION INSTANCE="ila_lib" PORT="probe19"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="0" NAME="probe20" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe20">
+    <PORT DIR="I" LEFT="255" NAME="probe20" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe20">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ila_lib" PORT="probe20"/>
       </CONNECTIONS>
@@ -3902,7 +3902,7 @@
         <PARAMETER NAME="C_PROBE209_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_PROBE20_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE20_TYPE" VALUE="0"/>
-        <PARAMETER NAME="C_PROBE20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_PROBE20_WIDTH" VALUE="256"/>
         <PARAMETER NAME="C_PROBE210_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE210_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROBE210_WIDTH" VALUE="1"/>
@@ -6673,7 +6673,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="probe19"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="probe20" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe20">
+        <PORT DIR="I" LEFT="255" NAME="probe20" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe20">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="probe20"/>
           </CONNECTIONS>

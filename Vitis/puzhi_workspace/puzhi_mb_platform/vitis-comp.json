@@ -3,7 +3,7 @@
   "type": "PLATFORM",
   "configuration": {
     "description": "",
-    "xsa": "/home/malik/andromeda_ila/andromeda/Vivado/puzhi/andromeda_wrapper.xsa",
+    "xsa": "/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda_wrapper.xsa",
     "xsaPathInPlatform": "puzhi_mb_platform/hw/andromeda_wrapper.xsa",
     "emulationXsa": "",
     "emulationXsaPathInPlatform": "",

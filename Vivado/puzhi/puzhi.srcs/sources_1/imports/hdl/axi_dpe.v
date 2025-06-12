@@ -974,6 +974,7 @@ always @(posedge aclk) begin
             READ_DONE: begin
                 // Release bus access
                 read_request <= 1'b0;
+                read_data_valid <= 1'b0;
                 
                 // Wait for control to transition back to IDLE
                 if (ctrl_state == CTRL_IDLE) begin

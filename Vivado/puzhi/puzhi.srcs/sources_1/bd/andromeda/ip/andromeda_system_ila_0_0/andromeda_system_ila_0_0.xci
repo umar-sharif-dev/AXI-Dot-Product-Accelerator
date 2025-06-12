@@ -4029,7 +4029,7 @@
         "probe17": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "probe18": [ { "direction": "in", "size_left": "2", "size_right": "0", "driver_value": "0" } ],
         "probe19": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
-        "probe20": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
+        "probe20": [ { "direction": "in", "size_left": "255", "size_right": "0", "driver_value": "0" } ],
         "probe21": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "probe22": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
         "probe23": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],

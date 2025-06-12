@@ -2663,6 +2663,20 @@
           }
         }
       },
+      "dpe_wr_ready_out": {
+        "ports": [
+          "axi_dpe_0/dpe_wr_ready_out",
+          "system_ila_0/probe20"
+        ],
+        "hdl_attributes": {
+          "DEBUG": {
+            "value": "true"
+          },
+          "MARK_DEBUG": {
+            "value": "true"
+          }
+        }
+      },
       "master_state_debug": {
         "ports": [
           "axi_dpe_0/master_state_debug",

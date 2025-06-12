@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-i" LaunchTime="1749671807" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/andromeda_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xcku5p-ffvb676-2-i" LaunchTime="1749722639" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/andromeda_wrapper.dcp">
   <File Type="VDS-TIMING-PB" Name="andromeda_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="andromeda_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="andromeda_wrapper.dcp"/>
@@ -188,8 +188,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="andromeda_system_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="andromeda_axi_dpe_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="andromeda_system_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="andromeda_rst_ddr4_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="andromeda_rst_ddr4_0_333M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="andromeda_lmb_bram_0"/>

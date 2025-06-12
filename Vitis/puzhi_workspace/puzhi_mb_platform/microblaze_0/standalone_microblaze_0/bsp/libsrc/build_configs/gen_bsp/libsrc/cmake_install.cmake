@@ -1,4 +1,4 @@
-# Install script for directory: /home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc
+# Install script for directory: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,28 +39,28 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src/cmake_install.cmake")
+  include("/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/tmrctr/src/cmake_install.cmake")
+  include("/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/tmrctr/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/cmake_install.cmake")
+  include("/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartlite/src/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/include/../include")
+   "/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/include/../include")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/include/.." TYPE DIRECTORY MESSAGE_LAZY FILES "/home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/include")
+  file(INSTALL DESTINATION "/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/include/.." TYPE DIRECTORY MESSAGE_LAZY FILES "/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/libsrc/build_configs/gen_bsp/include")
 endif()
 

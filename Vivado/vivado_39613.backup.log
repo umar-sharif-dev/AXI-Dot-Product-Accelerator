@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jun 10 03:09:20 2025
+# Process ID         : 39613
+# Current directory  : /home/malik/andromeda_ila/andromeda/Vivado
+# Command line       : vivado ./puzhi/puzhi.xpr
+# Log file           : /home/malik/andromeda_ila/andromeda/Vivado/vivado.log
+# Journal file       : /home/malik/andromeda_ila/andromeda/Vivado/vivado.jou
+# Running On         : dust2
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285K
+# CPU Frequency      : 800.000 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 100557 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 109147 MB
+# Available Virtual  : 44674 MB
+#-----------------------------------------------------------
+start_gui
+open_project ./puzhi/puzhi.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/malik/andromeda_ila/andromeda/Vivado/puzhi/andromeda.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/tools/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 8605.809 ; gain = 1004.117 ; free physical = 30763 ; free virtual = 41383
+update_compile_order -fileset sources_1
+open_bd_design {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+Reading block design file </home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd>...
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: AMD recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:module_ref:sd_controller_wrapper:1.0 - sd_controller_wrapper_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_333M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_100M
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:module_ref:axi_dpe:1.0 - axi_dpe_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /axi_dpe_0/m_axi.
+Successfully read diagram <andromeda> from block design file </home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd>
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-18:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251935086
+set_property PROGRAM.FILE {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.bit} [get_hw_devices xcku5p_0]
+set_property PROBES.FILE {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx} [get_hw_devices xcku5p_0]
+current_hw_device [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+INFO: [Labtools 27-2302] Device xcku5p (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xcku5p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+Processing Interface axi_dpe_0_m_axi_ila2_slot0
+Processing Interface axi_smc_M04_AXI_ila2_slot2
+Processing Interface axi_smc_M03_AXI_ila2_slot1
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes andromeda_i/system_ila_0/inst/probe2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-10 03:14:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2025-Jun-10 03:14:37
+Processed interface axi_dpe_0_m_axi_ila2_slot0
+Processed interface axi_smc_M04_AXI_ila2_slot2
+Processed interface axi_smc_M03_AXI_ila2_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+open_bd_design {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+open_bd_design {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+open_bd_design {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+save_wave_config {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {/home/malik/andromeda_ila/andromeda/Vivado/puzhi/puzhi.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 10 05:20:03 2025...

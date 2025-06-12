@@ -1,0 +1,546 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun 12 03:05:19 2025
+# Process ID         : 39595
+# Current directory  : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi
+# Command line       : vivado puzhi.xpr
+# Log file           : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.log
+# Journal file       : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.jou
+# Running On         : nuke
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 285K
+# CPU Frequency      : 800.000 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 49823 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 58413 MB
+# Available Virtual  : 57447 MB
+#-----------------------------------------------------------
+start_gui
+open_project puzhi.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/tools/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 8693.445 ; gain = 1087.656 ; free physical = 41004 ; free virtual = 53543
+update_compile_order -fileset sources_1
+open_bd_design {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+Reading block design file </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd>...
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - ddr4_0
+Adding component instance block -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: AMD recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:module_ref:sd_controller_wrapper:1.0 - sd_controller_wrapper_0
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_333M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ddr4_0_100M
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:module_ref:axi_dpe:1.0 - axi_dpe_0
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_0
+Adding component instance block -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /axi_dpe_0/m_axi.
+Successfully read diagram <andromeda> from block design file </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd>
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:16:47
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-18:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251591782
+set_property PROGRAM.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.bit} [get_hw_devices xcku5p_0]
+set_property PROBES.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx} [get_hw_devices xcku5p_0]
+current_hw_device [get_hw_devices xcku5p_0]
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+INFO: [Labtools 27-2302] Device xcku5p (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xcku5p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+WARNING: [Labtools 27-3222] Mismatch between the design programmed into the device xcku5p (JTAG device index = 0) and the probes file(s) /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx.
+ The hw_probe  in the probes file has port index 114. This port does not exist in the ILA core at location (uuid_C5E75AA2BB2357CEA02362BBEBE219A3).
+set_property PROBES.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 9414.000 ; gain = 0.000 ; free physical = 40542 ; free virtual = 53166
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcku5p (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xcku5p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+Processed interface axi_dpe_0_m_axi_ila2_slot0
+Processed interface axi_smc_M04_AXI_ila2_slot2
+Processed interface axi_smc_M03_AXI_ila2_slot1
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe39} }
+set_property NAME.CUSTOM A_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe39] 
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe21} }
+set_property NAME.CUSTOM A_valid_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe21] 
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe24} }
+set_property NAME.CUSTOM sum_stage0_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe24] 
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe24} {andromeda_i/system_ila_0/inst/probe25} {andromeda_i/system_ila_0/inst/probe26} {andromeda_i/system_ila_0/inst/probe27} {andromeda_i/system_ila_0/inst/probe28} {andromeda_i/system_ila_0/inst/probe29} {andromeda_i/system_ila_0/inst/probe30} {andromeda_i/system_ila_0/inst/probe31} {andromeda_i/system_ila_0/inst/probe32} {andromeda_i/system_ila_0/inst/probe33} {andromeda_i/system_ila_0/inst/probe34} {andromeda_i/system_ila_0/inst/probe36} {andromeda_i/system_ila_0/inst/probe37} {andromeda_i/system_ila_0/inst/probe35} {andromeda_i/system_ila_0/inst/probe23} }
+set_property NAME.CUSTOM sum_stage0_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe24] 
+set_property NAME.CUSTOM sum_stage1_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe25] 
+set_property NAME.CUSTOM sum_stage2_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe26] 
+set_property NAME.CUSTOM sum_stage3_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe27] 
+set_property NAME.CUSTOM sum_stage4_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe28] 
+set_property NAME.CUSTOM sum_stage5_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe29] 
+set_property NAME.CUSTOM sum_stage6_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe30] 
+set_property NAME.CUSTOM valid_stage0_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe31] 
+set_property NAME.CUSTOM valid_stage1_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe32] 
+set_property NAME.CUSTOM valid_stage2_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe33] 
+set_property NAME.CUSTOM valid_stage3_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe34] 
+set_property NAME.CUSTOM valid_stage5_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe36] 
+set_property NAME.CUSTOM valid_stage6_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe37] 
+set_property NAME.CUSTOM valid_stage4_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe35] 
+set_property NAME.CUSTOM prod_valid_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe23] 
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe40} }
+set_property NAME.CUSTOM prod_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe40] 
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 03:54:46
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 04:17:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2025-Jun-12 04:18:34
+Processed interface axi_dpe_0_m_axi_ila2_slot0
+Processed interface axi_smc_M04_AXI_ila2_slot2
+Processed interface axi_smc_M03_AXI_ila2_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes andromeda_i/system_ila_0/inst/net_slot_0_axi_rvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes andromeda_i/system_ila_0/inst/probe2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 04:38:56
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 04:45:04
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 04:47:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2025-Jun-12 04:48:27
+Processed interface axi_dpe_0_m_axi_ila2_slot0
+Processed interface axi_smc_M04_AXI_ila2_slot2
+Processed interface axi_smc_M03_AXI_ila2_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 07:20:18
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 07:28:55
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2025-Jun-12 07:30:12
+Processing Interface axi_dpe_0_m_axi_ila2_slot0
+Processed interface axi_smc_M04_AXI_ila2_slot2
+Processed interface axi_smc_M03_AXI_ila2_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe41} }
+set_property NAME.CUSTOM write_valid [get_hw_probes andromeda_i/system_ila_0/inst/probe41] 
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2025-Jun-12 08:58:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2025-Jun-12 08:58:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_3' trigger was armed at 2025-Jun-12 08:59:45
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_3' triggered at 2025-Jun-12 08:59:45
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/backup/hw_ila_data_3.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq256'bXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX [get_hw_probes andromeda_i/axi_dpe_0/inst/dpe_dout_debug -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+open_bd_design {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+startgroup
+connect_bd_net -net dpe_wr_ready_out [get_bd_pins axi_dpe_0/dpe_wr_ready_out]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {dpe_wr_ready_out }]
+true
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_nets dpe_wr_ready_out] {PROBE_TYPE "Data and Trigger" CLK_SRC "/ddr4_0/c0_ddr4_ui_clk" SYSTEM_ILA "Auto" } \
+                                                         ]
+Debug Automation : Re-customizing System ILA block '/system_ila_0' to mode MIX, with 0 new slot interface pins and 0 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting net /dpe_wr_ready_out, to System ILA probe pin /system_ila_0/probe20 for debug.
+save_bd_design
+Wrote  : </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd> 
+Wrote  : </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/ui/bd_9d7d77c9.ui> 
+open_bd_design {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+open_bd_design {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+open_bd_design {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+open_bd_design {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/utils_1/imports/synth_1/andromeda_wrapper.dcp with file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/andromeda_wrapper.dcp
+update_module_reference andromeda_axi_dpe_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 'aclk' has no FREQ_HZ parameter.
+Upgrading '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd'
+INFO: [IP_Flow 19-3420] Updated andromeda_axi_dpe_0_0 to use current project options
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_dpe_0/s_axi/reg0 from address space /sd_controller_wrapper_0/axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /sd_controller_wrapper_0/axilite/reg0 from address space /axi_dpe_0/m_axi.
+Wrote  : </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd> 
+Wrote  : </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/ui/bd_9d7d77c9.ui> 
+launch_runs synth_1 -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_2/floating_point_2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_1/floating_point_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_3/floating_point_3.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_0/floating_point_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci' is already up-to-date
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to any ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. 
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dpe_0/m_axi.
+Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /sd_controller_wrapper_0/axi.
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
+INFO: [BD 5-943] Reserving offset range <0x41C0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0002_0000 [ 4K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0003_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 2G ]> from slave interface '/axi_smc/S02_AXI' to master interface '/axi_smc/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] andromeda_axi_smc_0: SmartConnect andromeda_axi_smc_0 is in High-performance Mode.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:microblaze:11.0-9] /microblaze_0: Setting C_BASE_VECTORS to 0x00000000.
+Wrote  : </home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd> 
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_AWLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_dpe_0_m_axi_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M03_AXI_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWADDR as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARCACHE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARLOCK as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWBURST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARQOS as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWQOS as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARPROT as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WSTRB as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_ARSIZE as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WLAST as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWLEN as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_AWLOCK as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WVALID as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_WREADY as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_RDATA as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net axi_smc_M04_AXI_BRESP as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net A_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net A_valid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net ctrl_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_busy_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_start_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dma_status_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_done as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_en_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_start_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net dpe_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net master_state_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net prod_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net prod_valid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_buffer_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_index_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_data_valid_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_grant_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_request_debug as it is marked for debug
+WARNING: [BD 41-3257] Drive strength cannot be preserved for ports connected to net read_state_debug as it is marked for debug
+INFO: [Common 17-14] Message 'BD 41-3257' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Verilog Output written to : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.v
+Verilog Output written to : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/sim/andromeda.v
+Verilog Output written to : /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hdl/andromeda_wrapper.v
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'bd_828f' - hence not re-generating.
+Exporting to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/hw_handoff/andromeda_axi_smc_0.hwh
+Generated Hardware Definition File /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/andromeda_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dpe_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/andromeda_system_ila_0_0_ooc.xdc'
+Exporting to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/hw_handoff/andromeda_system_ila_0_0.hwh
+Generated Hardware Definition File /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/synth/andromeda_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+Exporting to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/hw_handoff/andromeda.hwh
+Generated Hardware Definition File /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/synth/andromeda.hwdef
+[Thu Jun 12 10:03:59 2025] Launched andromeda_axi_smc_0_synth_1, andromeda_system_ila_0_0_synth_1, andromeda_axi_dpe_0_0_synth_1...
+Run output will be captured here:
+andromeda_axi_smc_0_synth_1: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1/runme.log
+andromeda_system_ila_0_0_synth_1: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_system_ila_0_0_synth_1/runme.log
+andromeda_axi_dpe_0_0_synth_1: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1/runme.log
+[Thu Jun 12 10:03:59 2025] Launched synth_1...
+Run output will be captured here: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 10875.758 ; gain = 1070.887 ; free physical = 38403 ; free virtual = 51527
+launch_runs impl_1 -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_2/floating_point_2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_1/floating_point_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_3/floating_point_3.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_0/floating_point_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci' is already up-to-date
+[Thu Jun 12 10:06:39 2025] Launched impl_1...
+Run output will be captured here: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_2/floating_point_2.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_1/floating_point_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_3/floating_point_3.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_0/floating_point_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP '/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci' is already up-to-date
+[Thu Jun 12 10:36:12 2025] Launched impl_1...
+Run output will be captured here: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/runme.log
+set_property PROBES.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx} [get_hw_devices xcku5p_0]
+set_property FULL_PROBES.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.ltx} [get_hw_devices xcku5p_0]
+set_property PROGRAM.FILE {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1/andromeda_wrapper.bit} [get_hw_devices xcku5p_0]
+program_hw_devices [get_hw_devices xcku5p_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 11072.527 ; gain = 0.000 ; free physical = 37312 ; free virtual = 51558
+refresh_hw_device [lindex [get_hw_devices xcku5p_0] 0]
+WARNING: [Labtools 27-3089] Calibration is still in-progress.
+INFO: [Labtools 27-2302] Device xcku5p (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+INFO: [Labtools 27-2302] Device xcku5p (JTAG device index = 0) is programmed with a design that has 1 MIG core(s).
+Processing Interface axi_dpe_0_m_axi_ila2_slot0
+Processing Interface axi_smc_M04_AXI_ila2_slot2
+Processing Interface axi_smc_M03_AXI_ila2_slot1
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe20} }
+set_property NAME.CUSTOM dpe_wr_ready_out [get_hw_probes andromeda_i/system_ila_0/inst/probe20] 
+INFO: [Labtools 27-3143] Calibration status change detected, refreshing MIG_1
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe24} {andromeda_i/system_ila_0/inst/probe25} {andromeda_i/system_ila_0/inst/probe26} {andromeda_i/system_ila_0/inst/probe27} {andromeda_i/system_ila_0/inst/probe28} {andromeda_i/system_ila_0/inst/probe29} {andromeda_i/system_ila_0/inst/probe30} {andromeda_i/system_ila_0/inst/probe21} {andromeda_i/system_ila_0/inst/probe23} {andromeda_i/system_ila_0/inst/probe10} {andromeda_i/system_ila_0/inst/probe14} {andromeda_i/system_ila_0/inst/probe31} {andromeda_i/system_ila_0/inst/probe32} {andromeda_i/system_ila_0/inst/probe33} {andromeda_i/system_ila_0/inst/probe34} {andromeda_i/system_ila_0/inst/probe35} {andromeda_i/system_ila_0/inst/probe36} {andromeda_i/system_ila_0/inst/probe37} {andromeda_i/system_ila_0/inst/probe41} {andromeda_i/system_ila_0/inst/probe19} }
+set_property NAME.CUSTOM sum_stage0_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe24] 
+set_property NAME.CUSTOM sum_stage1_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe25] 
+set_property NAME.CUSTOM sum_stage2_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe26] 
+set_property NAME.CUSTOM sum_stage3_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe27] 
+set_property NAME.CUSTOM sum_stage4_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe28] 
+set_property NAME.CUSTOM sum_stage5_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe29] 
+set_property NAME.CUSTOM sum_stage6_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe30] 
+set_property NAME.CUSTOM A_valid_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe21] 
+set_property NAME.CUSTOM prod_valid_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe23] 
+set_property NAME.CUSTOM read_data_valid_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe10] 
+set_property NAME.CUSTOM rvalid_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe14] 
+set_property NAME.CUSTOM valid_stage0_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe31] 
+set_property NAME.CUSTOM valid_stage1_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe32] 
+set_property NAME.CUSTOM valid_stage2_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe33] 
+set_property NAME.CUSTOM valid_stage3_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe34] 
+set_property NAME.CUSTOM valid_stage4_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe35] 
+set_property NAME.CUSTOM valid_stage5_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe36] 
+set_property NAME.CUSTOM valid_stage6_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe37] 
+set_property NAME.CUSTOM write_valid [get_hw_probes andromeda_i/system_ila_0/inst/probe41] 
+set_property NAME.CUSTOM wvalid_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe19] 
+open_bd_design {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe40} }
+set_property NAME.CUSTOM prod_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe40] 
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe21} {andromeda_i/system_ila_0/inst/probe39} }
+set_property NAME.CUSTOM A_valid_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe21] 
+set_property NAME.CUSTOM A_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe39] 
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe15} }
+set_property NAME.CUSTOM rx_data_out_ila [get_hw_probes andromeda_i/system_ila_0/inst/probe15] 
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes andromeda_i/system_ila_0/inst/probe14 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 11:05:44
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2025-Jun-12 11:11:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcku5p_0] -filter {CELL_NAME=~"andromeda_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2025-Jun-12 11:11:20
+Processed interface axi_dpe_0_m_axi_ila2_slot0
+Processing Interface axi_smc_M04_AXI_ila2_slot2
+Processed interface axi_smc_M03_AXI_ila2_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {andromeda_i/system_ila_0/inst/probe8} }
+set_property NAME.CUSTOM read_data_buffer_debug [get_hw_probes andromeda_i/system_ila_0/inst/probe8] 
+save_wave_config {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 12:48:20 2025...

@@ -1,6 +1,6 @@
 sdt: hw_artifacts/microblaze_0_baremetal.dts
 family: kintexuplus
-path: /home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp
+path: /home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp
 config: None
 os: standalone
 os_info:

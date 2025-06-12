@@ -373,7 +373,7 @@ input wire [0 : 0] probe16;
 input wire [0 : 0] probe17;
 input wire [2 : 0] probe18;
 input wire [0 : 0] probe19;
-input wire [0 : 0] probe20;
+input wire [255 : 0] probe20;
 input wire [0 : 0] probe21;
 input wire [0 : 0] probe22;
 input wire [0 : 0] probe23;

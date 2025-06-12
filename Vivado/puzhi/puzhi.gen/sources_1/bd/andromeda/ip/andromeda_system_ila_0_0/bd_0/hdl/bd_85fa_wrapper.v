@@ -228,7 +228,7 @@ module bd_85fa_wrapper
   input [2:0]probe18;
   input [0:0]probe19;
   input [0:0]probe2;
-  input [0:0]probe20;
+  input [255:0]probe20;
   input [0:0]probe21;
   input [0:0]probe22;
   input [0:0]probe23;
@@ -354,7 +354,7 @@ module bd_85fa_wrapper
   wire [2:0]probe18;
   wire [0:0]probe19;
   wire [0:0]probe2;
-  wire [0:0]probe20;
+  wire [255:0]probe20;
   wire [0:0]probe21;
   wire [0:0]probe22;
   wire [0:0]probe23;

@@ -191,7 +191,7 @@ input [0 : 0] probe16;
 input [0 : 0] probe17;
 input [2 : 0] probe18;
 input [0 : 0] probe19;
-input [0 : 0] probe20;
+input [255 : 0] probe20;
 input [0 : 0] probe21;
 input [0 : 0] probe22;
 input [0 : 0] probe23;

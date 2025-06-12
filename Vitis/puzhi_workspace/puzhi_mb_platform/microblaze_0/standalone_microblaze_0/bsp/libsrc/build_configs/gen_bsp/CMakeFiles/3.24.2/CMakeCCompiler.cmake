@@ -67,7 +67,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/home/malik/andromeda_ila/andromeda/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/include;/opt/tools/Xilinx/Vitis/2024.2/gnu/microblaze/lin/x86_64-oesdk-linux/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include;/opt/tools/Xilinx/Vitis/2024.2/gnu/microblaze/lin/x86_64-oesdk-linux/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include-fixed;/opt/tools/Xilinx/Vitis/2024.2/gnu/microblaze/lin/microblazeeb-xilinx-elf/usr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vitis/puzhi_workspace/puzhi_mb_platform/microblaze_0/standalone_microblaze_0/bsp/include;/opt/tools/Xilinx/Vitis/2024.2/gnu/microblaze/lin/x86_64-oesdk-linux/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include;/opt/tools/Xilinx/Vitis/2024.2/gnu/microblaze/lin/x86_64-oesdk-linux/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include-fixed;/opt/tools/Xilinx/Vitis/2024.2/gnu/microblaze/lin/microblazeeb-xilinx-elf/usr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

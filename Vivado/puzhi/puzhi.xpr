@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="68" Path="/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.xpr">
+<Project Product="Vivado" Version="7" Minor="68" Path="/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="1c10311280a24cad81462e55ddaa71f1"/>
@@ -524,13 +524,6 @@
         <Verilog_Define Name="PUZHI" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="andromeda_axi_dpe_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/andromeda_axi_dpe_0_0" RelGenDir="$PGENDIR/andromeda_axi_dpe_0_0">
-      <Config>
-        <Option Name="TopModule" Val="andromeda_axi_dpe_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-        <Verilog_Define Name="PUZHI" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="andromeda_mdm_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/andromeda_mdm_0_0" RelGenDir="$PGENDIR/andromeda_mdm_0_0">
       <Config>
         <Option Name="TopModule" Val="andromeda_mdm_0_0"/>
@@ -541,6 +534,13 @@
     <FileSet Name="andromeda_system_ila_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/andromeda_system_ila_0_0" RelGenDir="$PGENDIR/andromeda_system_ila_0_0">
       <Config>
         <Option Name="TopModule" Val="andromeda_system_ila_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+        <Verilog_Define Name="PUZHI" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="andromeda_axi_dpe_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/andromeda_axi_dpe_0_0" RelGenDir="$PGENDIR/andromeda_axi_dpe_0_0">
+      <Config>
+        <Option Name="TopModule" Val="andromeda_axi_dpe_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
         <Verilog_Define Name="PUZHI" Val="1"/>
       </Config>
@@ -630,9 +630,7 @@
     </Run>
     <Run Id="andromeda_ddr4_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_ddr4_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_ddr4_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_ddr4_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_ddr4_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_ddr4_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -642,9 +640,7 @@
     </Run>
     <Run Id="andromeda_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_ila_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_ila_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_ila_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_ila_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_ila_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -654,9 +650,7 @@
     </Run>
     <Run Id="andromeda_util_vector_logic_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_util_vector_logic_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_util_vector_logic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_util_vector_logic_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_util_vector_logic_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_util_vector_logic_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -666,9 +660,7 @@
     </Run>
     <Run Id="andromeda_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_microblaze_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_microblaze_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_microblaze_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_microblaze_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -678,9 +670,7 @@
     </Run>
     <Run Id="andromeda_axi_uartlite_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_axi_uartlite_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_axi_uartlite_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_axi_uartlite_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_axi_uartlite_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_axi_uartlite_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -690,9 +680,7 @@
     </Run>
     <Run Id="andromeda_sd_controller_wrapper_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_sd_controller_wrapper_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_sd_controller_wrapper_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_sd_controller_wrapper_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_sd_controller_wrapper_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_sd_controller_wrapper_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -702,9 +690,7 @@
     </Run>
     <Run Id="andromeda_axi_timer_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_axi_timer_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_axi_timer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_axi_timer_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_axi_timer_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_axi_timer_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -714,9 +700,7 @@
     </Run>
     <Run Id="andromeda_dlmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_dlmb_v10_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_dlmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_dlmb_v10_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_dlmb_v10_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_dlmb_v10_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -726,9 +710,7 @@
     </Run>
     <Run Id="andromeda_ilmb_v10_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_ilmb_v10_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_ilmb_v10_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_ilmb_v10_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_ilmb_v10_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_ilmb_v10_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -738,9 +720,7 @@
     </Run>
     <Run Id="andromeda_dlmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_dlmb_bram_if_cntlr_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_dlmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_dlmb_bram_if_cntlr_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_dlmb_bram_if_cntlr_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -750,9 +730,7 @@
     </Run>
     <Run Id="andromeda_ilmb_bram_if_cntlr_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_ilmb_bram_if_cntlr_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_ilmb_bram_if_cntlr_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_ilmb_bram_if_cntlr_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_ilmb_bram_if_cntlr_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -762,9 +740,7 @@
     </Run>
     <Run Id="andromeda_lmb_bram_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_lmb_bram_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_lmb_bram_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_lmb_bram_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_lmb_bram_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_lmb_bram_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -774,9 +750,7 @@
     </Run>
     <Run Id="andromeda_rst_ddr4_0_333M_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_rst_ddr4_0_333M_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_rst_ddr4_0_333M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_rst_ddr4_0_333M_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_rst_ddr4_0_333M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_rst_ddr4_0_333M_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -786,9 +760,7 @@
     </Run>
     <Run Id="andromeda_rst_ddr4_0_100M_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_rst_ddr4_0_100M_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_rst_ddr4_0_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_rst_ddr4_0_100M_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_rst_ddr4_0_100M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_rst_ddr4_0_100M_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -798,21 +770,7 @@
     </Run>
     <Run Id="andromeda_axi_smc_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_axi_smc_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_axi_smc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_axi_smc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_axi_smc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_axi_smc_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="andromeda_axi_dpe_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_axi_dpe_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_axi_dpe_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_axi_dpe_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_axi_dpe_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_axi_dpe_0_0_synth_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -822,9 +780,7 @@
     </Run>
     <Run Id="andromeda_mdm_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_mdm_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_mdm_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_mdm_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_mdm_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_mdm_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -833,6 +789,16 @@
       <RQSFiles/>
     </Run>
     <Run Id="andromeda_system_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_system_ila_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_system_ila_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_system_ila_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_system_ila_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_system_ila_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="andromeda_axi_dpe_0_0_synth_1" Type="Ft3:Synth" SrcSet="andromeda_axi_dpe_0_0" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_axi_dpe_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/andromeda_axi_dpe_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_axi_dpe_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_axi_dpe_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -951,9 +917,7 @@
     </Run>
     <Run Id="andromeda_ddr4_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_ddr4_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_ddr4_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_ddr4_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_ddr4_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -970,9 +934,7 @@
     </Run>
     <Run Id="andromeda_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_ila_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_ila_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_ila_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_ila_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -989,9 +951,7 @@
     </Run>
     <Run Id="andromeda_util_vector_logic_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_util_vector_logic_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_util_vector_logic_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_util_vector_logic_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_util_vector_logic_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1008,9 +968,7 @@
     </Run>
     <Run Id="andromeda_microblaze_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_microblaze_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_microblaze_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_microblaze_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_microblaze_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1027,9 +985,7 @@
     </Run>
     <Run Id="andromeda_axi_uartlite_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_axi_uartlite_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_axi_uartlite_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_axi_uartlite_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_axi_uartlite_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1046,9 +1002,7 @@
     </Run>
     <Run Id="andromeda_sd_controller_wrapper_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_sd_controller_wrapper_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_sd_controller_wrapper_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_sd_controller_wrapper_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_sd_controller_wrapper_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1065,9 +1019,7 @@
     </Run>
     <Run Id="andromeda_axi_timer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_axi_timer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_axi_timer_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_axi_timer_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_axi_timer_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1084,9 +1036,7 @@
     </Run>
     <Run Id="andromeda_dlmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_dlmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_dlmb_v10_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_dlmb_v10_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_dlmb_v10_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1103,9 +1053,7 @@
     </Run>
     <Run Id="andromeda_ilmb_v10_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_ilmb_v10_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_ilmb_v10_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_ilmb_v10_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_ilmb_v10_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1122,9 +1070,7 @@
     </Run>
     <Run Id="andromeda_dlmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_dlmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_dlmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_dlmb_bram_if_cntlr_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_dlmb_bram_if_cntlr_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1141,9 +1087,7 @@
     </Run>
     <Run Id="andromeda_ilmb_bram_if_cntlr_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_ilmb_bram_if_cntlr_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_ilmb_bram_if_cntlr_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_ilmb_bram_if_cntlr_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_ilmb_bram_if_cntlr_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1160,9 +1104,7 @@
     </Run>
     <Run Id="andromeda_lmb_bram_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_lmb_bram_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_lmb_bram_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_lmb_bram_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_lmb_bram_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1179,9 +1121,7 @@
     </Run>
     <Run Id="andromeda_rst_ddr4_0_333M_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_rst_ddr4_0_333M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_rst_ddr4_0_333M_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_rst_ddr4_0_333M_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_rst_ddr4_0_333M_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1198,9 +1138,7 @@
     </Run>
     <Run Id="andromeda_rst_ddr4_0_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_rst_ddr4_0_100M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_rst_ddr4_0_100M_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_rst_ddr4_0_100M_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_rst_ddr4_0_100M_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1217,28 +1155,7 @@
     </Run>
     <Run Id="andromeda_axi_smc_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_axi_smc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_axi_smc_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_axi_smc_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_axi_smc_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="andromeda_axi_dpe_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_axi_dpe_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_axi_dpe_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_axi_dpe_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_axi_dpe_0_0_impl_1" ParallelReportGen="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1255,9 +1172,7 @@
     </Run>
     <Run Id="andromeda_mdm_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_mdm_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_mdm_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_mdm_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_mdm_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -1273,6 +1188,23 @@
       <RQSFiles/>
     </Run>
     <Run Id="andromeda_system_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_system_ila_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_system_ila_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_system_ila_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_system_ila_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="andromeda_axi_dpe_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcku5p-ffvb676-2-i" ConstrsSet="andromeda_axi_dpe_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="andromeda_axi_dpe_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/andromeda_axi_dpe_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/andromeda_axi_dpe_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
           <Desc>Default settings for Implementation.</Desc>

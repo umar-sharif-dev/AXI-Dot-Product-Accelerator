@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1'
+HD_PWD='/home/ujaved/work_dir/axi_dpe_ila_v3.0/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -38,7 +38,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log andromeda_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source andromeda_wrapper.tcl -notrace
 
 
