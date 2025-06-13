@@ -14,8 +14,8 @@ module dot_product_engine #(
     output logic                  done,
     
     // Declare as debug signals
-    output logic  [DATA_WIDTH-1:0] A_fp32_debug,       //after conversion
-    output logic  [DATA_WIDTH-1:0] prod_fp32_debug,    //sfter multiplication
+    output logic  [DATA_WIDTH-1:0] A_debug,       //after conversion
+    output logic  [DATA_WIDTH-1:0] prod_debug,    //sfter multiplication
     output logic  [DATA_WIDTH-1:0] sum_stage0_debug,   //addition1
     output logic  [DATA_WIDTH-1:0] sum_stage1_debug,   //addition2
     output logic  [DATA_WIDTH-1:0] sum_stage2_debug,   //addition3
@@ -26,15 +26,15 @@ module dot_product_engine #(
 
 
     // Valid singals 
-    output logic  A_fp32_valid_debug,       //after conversion
-    output logic  prod_fp32_valid_debug,    //after conversion
-    output logic  sum_stage0_d_valid_debug, //after conversion
-    output logic  sum_stage1_valid_debug ,  //after conversion
-    output logic  sum_stage2_valid_debug ,  //after conversion
-    output logic  sum_stage3_valid_debug ,  //after conversion
-    output logic  sum_stage4_valid_debug ,  //after conversion
-    output logic  sum_stage5_valid_debug ,  //after conversion
-    output logic  sum_stage6_valid_debug    //after conversion 
+    output logic  A_valid_debug,        //after conversion
+    output logic  prod_valid_debug,     //after conversion
+    output logic  valid_stage0_debug,   //after conversion
+    output logic  valid_stage1_debug,   //after conversion
+    output logic  valid_stage2_debug,   //after conversion
+    output logic  valid_stage3_debug,   //after conversion
+    output logic  valid_stage4_debug,   //after conversion
+    output logic  valid_stage5_debug,   //after conversion
+    output logic  valid_stage6_debug    //after conversion 
 );
 
     logic [15:0] A_raw [0:MAX_N-1];
@@ -208,8 +208,8 @@ module dot_product_engine #(
     ); 
     
     // Debug Signals
-     assign  A_fp32_debug= A_fp32[0];
-     assign  prod_fp32_debug= prod_fp32[0];
+     assign  A_debug= A_fp32[0];
+     assign  prod_debug= prod_fp32[0];
      assign  sum_stage0_debug= sum_stage0[0];
      assign  sum_stage1_debug= sum_stage1[0];
      assign  sum_stage2_debug= sum_stage2[0];
@@ -220,15 +220,14 @@ module dot_product_engine #(
      
      
     //valid singals 
-    assign A_fp32_valid_debug=A_valid[0];
-    assign prod_fp32_valid_debug= prod_valid[0];
-    assign sum_stage0_d_valid_debug=valid_stage0[0];
-    assign sum_stage1_d_valid_debug=valid_stage1[0];
-    assign sum_stage2_d_valid_debug=valid_stage2[0];
-    assign sum_stage3_d_valid_debug=valid_stage3[0];
-    assign sum_stage4_d_valid_debug=valid_stage4[0];
-    assign sum_stage5_d_valid_debug=valid_stage5[0];
-    assign sum_stage6_d_valid_debug=valid_stage6[0];
+    assign A_valid_debug=A_valid[0];
+    assign prod_valid_debug= prod_valid[0];
+    assign valid_stage0_debug=valid_stage0[0];
+    assign valid_stage1_debug=valid_stage1[0];
+    assign valid_stage2_debug=valid_stage2[0];
+    assign valid_stage3_debug=valid_stage3[0];
+    assign valid_stage4_debug=valid_stage4[0];
+    assign valid_stage5_debug=valid_stage5[0];
+    assign valid_stage6_debug=valid_stage6[0];
 
 endmodule
-
