@@ -96,4 +96,3 @@ module top_dot_product_engine (
 
 
 endmodule
-
