@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/ip_1/rtl/map" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/rtl/ip_top" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/rtl/cal" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/f0b6/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/0127/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/ec67/hdl" --include "/opt/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../../puzhi.gen/sources_1/ip/floating_point_2/sim/floating_point_2.v" \
+"../../../../puzhi.gen/sources_1/ip/floating_point_1/sim/floating_point_1.v" \
+"../../../../puzhi.gen/sources_1/ip/floating_point_3/sim/floating_point_3.v" \
+"../../../../puzhi.gen/sources_1/ip/floating_point_0/sim/floating_point_0.v" \
+"../../../../puzhi.gen/sources_1/ip/sdp_w4096x2_r4096x2/sim/sdp_w4096x2_r4096x2.v" \
+"../../../../puzhi.srcs/sources_1/imports/hdl/axi_dpe.v" \
+
+sv xil_defaultlib  --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/ip_1/rtl/map" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/rtl/ip_top" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/rtl/cal" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/f0b6/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/0127/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/ec67/hdl" --include "/opt/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"../../../../puzhi.srcs/sources_1/imports/hdl/block_ram.sv" \
+"../../../../puzhi.srcs/sources_1/imports/hdl/dot_product_engine.sv" \
+"../../../../puzhi.srcs/sources_1/imports/hdl/intN_to_fp32_wrapper.sv" \
+"../../../../puzhi.srcs/sources_1/imports/hdl/top_dot_product_engine.sv" \
+"../../../../puzhi.srcs/sim_1/new/tb_top_axi_wrapper.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

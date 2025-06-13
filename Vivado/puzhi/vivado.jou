@@ -3,25 +3,249 @@
 # SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Jun 11 20:54:45 2025
-# Process ID         : 212153
-# Current directory  : /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi
+# Start of session at: Thu Jun 12 05:19:39 2025
+# Process ID         : 217683
+# Current directory  : /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi
 # Command line       : vivado puzhi.xpr
-# Log file           : /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.log
-# Journal file       : /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.jou
+# Log file           : /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.log
+# Journal file       : /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/vivado.jou
 # Running On         : dust2
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.2 LTS
 # Processor Detail   : Intel(R) Core(TM) Ultra 9 285K
-# CPU Frequency      : 5205.877 MHz
+# CPU Frequency      : 5312.594 MHz
 # CPU Physical cores : 24
 # CPU Logical cores  : 24
 # Host memory        : 100557 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 109147 MB
-# Available Virtual  : 102805 MB
+# Available Virtual  : 102717 MB
 #-----------------------------------------------------------
 start_gui
 open_project puzhi.xpr
 update_compile_order -fileset sources_1
-open_bd_design {/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+open_bd_design {/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+file mkdir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sim_1/new/tb_top_axi_wrapper.sv w ]
+add_files -fileset sim_1 /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sim_1/new/tb_top_axi_wrapper.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_axi_dpe [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+reset_target all [get_files  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+export_ip_user_files -of_objects  [get_files  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+open_bd_design {/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+generate_target all [get_files  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+export_ip_user_files -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+launch_runs andromeda_axi_dpe_0_0_synth_1 andromeda_axi_smc_0_synth_1 andromeda_axi_timer_0_0_synth_1 andromeda_axi_uartlite_0_0_synth_1 andromeda_ddr4_0_0_synth_1 andromeda_dlmb_bram_if_cntlr_0_synth_1 andromeda_dlmb_v10_0_synth_1 andromeda_ila_0_0_synth_1 andromeda_ilmb_bram_if_cntlr_0_synth_1 andromeda_ilmb_v10_0_synth_1 andromeda_lmb_bram_0_synth_1 andromeda_mdm_0_0_synth_1 andromeda_microblaze_0_0_synth_1 andromeda_rst_ddr4_0_100M_0_synth_1 andromeda_rst_ddr4_0_333M_0_synth_1 andromeda_sd_controller_wrapper_0_0_synth_1 andromeda_system_ila_0_0_synth_1 andromeda_util_vector_logic_0_0_synth_1 -jobs 24
+wait_on_run andromeda_axi_dpe_0_0_synth_1
+wait_on_run andromeda_axi_smc_0_synth_1
+wait_on_run andromeda_axi_timer_0_0_synth_1
+wait_on_run andromeda_axi_uartlite_0_0_synth_1
+wait_on_run andromeda_ddr4_0_0_synth_1
+wait_on_run andromeda_dlmb_bram_if_cntlr_0_synth_1
+wait_on_run andromeda_dlmb_v10_0_synth_1
+wait_on_run andromeda_ila_0_0_synth_1
+wait_on_run andromeda_ilmb_bram_if_cntlr_0_synth_1
+wait_on_run andromeda_ilmb_v10_0_synth_1
+wait_on_run andromeda_lmb_bram_0_synth_1
+wait_on_run andromeda_mdm_0_0_synth_1
+wait_on_run andromeda_microblaze_0_0_synth_1
+wait_on_run andromeda_rst_ddr4_0_100M_0_synth_1
+wait_on_run andromeda_rst_ddr4_0_333M_0_synth_1
+wait_on_run andromeda_sd_controller_wrapper_0_0_synth_1
+wait_on_run andromeda_system_ila_0_0_synth_1
+wait_on_run andromeda_util_vector_logic_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/modelsim} {questa=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/questa} {xcelium=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/xcelium} {vcs=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/vcs} {riviera=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/riviera}] -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -directory /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files/sim_scripts -ip_user_files_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files -ipstatic_source_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_2/floating_point_2.xci]
+generate_target Simulation [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_1/floating_point_1.xci]
+generate_target Simulation [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_3/floating_point_3.xci]
+generate_target Simulation [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_0/floating_point_0.xci]
+generate_target Simulation [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci]
+launch_simulation
+source tb_axi_dpe.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 1 ms
+current_wave_config {Untitled 1}
+add_wave {{/tb_axi_dpe/dut/dot_product_inst/data_type}} {{/tb_axi_dpe/dut/dot_product_inst/A_valid}} {{/tb_axi_dpe/dut/dot_product_inst/A_data}} {{/tb_axi_dpe/dut/dot_product_inst/x_vector}} {{/tb_axi_dpe/dut/dot_product_inst/y_out}} {{/tb_axi_dpe/dut/dot_product_inst/done}} {{/tb_axi_dpe/dut/dot_product_inst/A_debug}} {{/tb_axi_dpe/dut/dot_product_inst/A_valid_debug}} {{/tb_axi_dpe/dut/dot_product_inst/prod_debug}} {{/tb_axi_dpe/dut/dot_product_inst/prod_valid_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage0_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage0_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage1_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage1_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage2_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage2_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage3_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage3_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage4_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage4_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage5_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage5_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage6_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage6_debug}} {{/tb_axi_dpe/dut/dot_product_inst/x_vector_unpacked}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 1 ms
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+generate_target all [get_files  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+export_ip_user_files -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+launch_runs andromeda_axi_dpe_0_0_synth_1 andromeda_axi_smc_0_synth_1 andromeda_system_ila_0_0_synth_1 -jobs 24
+wait_on_run andromeda_axi_dpe_0_0_synth_1
+wait_on_run andromeda_axi_smc_0_synth_1
+wait_on_run andromeda_system_ila_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/modelsim} {questa=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/questa} {xcelium=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/xcelium} {vcs=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/vcs} {riviera=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/riviera}] -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -directory /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files/sim_scripts -ip_user_files_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files -ipstatic_source_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+close_sim
+generate_target Simulation [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_2/floating_point_2.xci]
+generate_target Simulation [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_1/floating_point_1.xci]
+generate_target Simulation [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_3/floating_point_3.xci]
+generate_target Simulation [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/floating_point_0/floating_point_0.xci]
+generate_target Simulation [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/ip/sdp_w4096x2_r4096x2/sdp_w4096x2_r4096x2.xci]
+launch_simulation
+source tb_axi_dpe.tcl
+relaunch_sim
+run 1 ms
+relaunch_sim
+run 1 ms
+run 1 ms
+relaunch_sim
+run 1 ms
+relaunch_sim
+run 1 ms
+relaunch_sim
+run 1 ms
+relaunch_sim
+run 1 ms
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+generate_target all [get_files  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+export_ip_user_files -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+launch_runs andromeda_axi_dpe_0_0_synth_1 andromeda_axi_smc_0_synth_1 andromeda_system_ila_0_0_synth_1 -jobs 24
+wait_on_run andromeda_axi_dpe_0_0_synth_1
+wait_on_run andromeda_axi_smc_0_synth_1
+wait_on_run andromeda_system_ila_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/modelsim} {questa=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/questa} {xcelium=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/xcelium} {vcs=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/vcs} {riviera=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/riviera}] -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -directory /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files/sim_scripts -ip_user_files_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files -ipstatic_source_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+relaunch_sim
+current_wave_config {Untitled 2}
+add_wave {{/tb_axi_dpe/dut/dot_product_inst/sum_stage0_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage0_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage1_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage1_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage2_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage2_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage3_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage3_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage4_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage4_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage5_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage5_debug}} {{/tb_axi_dpe/dut/dot_product_inst/sum_stage6_debug}} {{/tb_axi_dpe/dut/dot_product_inst/valid_stage6_debug}} 
+relaunch_sim
+run 1 ms
+run 1 ms
+relaunch_sim
+run 1 ms
+relaunch_sim
+run 1 ms
+current_wave_config {Untitled 2}
+add_wave {{/tb_axi_dpe/dut/dot_product_inst/A_valid}} {{/tb_axi_dpe/dut/dot_product_inst/A_data}} {{/tb_axi_dpe/dut/dot_product_inst/A_debug}} {{/tb_axi_dpe/dut/dot_product_inst/A_valid_debug}} {{/tb_axi_dpe/dut/dot_product_inst/prod_debug}} {{/tb_axi_dpe/dut/dot_product_inst/prod_valid_debug}} 
+relaunch_sim
+run 1 ms
+relaunch_sim
+run 1 us
+run 100 us
+relaunch_sim
+run 50 us
+save_wave_config {/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/tb_axi_dpe_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/tb_axi_dpe_behav.wcfg
+set_property xsim.view /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/tb_axi_dpe_behav.wcfg [get_filesets sim_1]
+open_bd_design {/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd}
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+generate_target all [get_files  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+export_ip_user_files -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+launch_runs andromeda_axi_dpe_0_0_synth_1 andromeda_axi_smc_0_synth_1 andromeda_system_ila_0_0_synth_1 -jobs 24
+wait_on_run andromeda_axi_dpe_0_0_synth_1
+wait_on_run andromeda_axi_smc_0_synth_1
+wait_on_run andromeda_system_ila_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/modelsim} {questa=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/questa} {xcelium=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/xcelium} {vcs=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/vcs} {riviera=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/riviera}] -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -directory /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files/sim_scripts -ip_user_files_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files -ipstatic_source_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+relaunch_sim
+run 50 us
+current_wave_config {tb_axi_dpe_behav.wcfg}
+add_wave {{/tb_axi_dpe/dut/dot_product_inst/dpe_inst/sum_stage0}} {{/tb_axi_dpe/dut/dot_product_inst/dpe_inst/sum_stage1}} {{/tb_axi_dpe/dut/dot_product_inst/dpe_inst/sum_stage2}} {{/tb_axi_dpe/dut/dot_product_inst/dpe_inst/sum_stage3}} 
+current_wave_config {tb_axi_dpe_behav.wcfg}
+add_wave {{/tb_axi_dpe/dut/dot_product_inst/dpe_inst/A_fp32}} {{/tb_axi_dpe/dut/dot_product_inst/dpe_inst/prod_fp32}} 
+relaunch_sim
+run 50 us
+relaunch_sim
+run 50 us
+current_wave_config {tb_axi_dpe_behav.wcfg}
+add_wave {{/tb_axi_dpe/dut/accum_buffer}} 
+current_wave_config {tb_axi_dpe_behav.wcfg}
+add_wave {{/tb_axi_dpe/dut/s_axi_wdata}} 
+relaunch_sim
+run 50 us
+relaunch_sim
+run 50 us
+relaunch_sim
+run 50 us
+current_wave_config {tb_axi_dpe_behav.wcfg}
+add_wave {{/tb_axi_dpe/dut/bram_din}} 
+relaunch_sim
+run 50 us
+current_wave_config {tb_axi_dpe_behav.wcfg}
+add_wave {{/tb_axi_dpe/dut/bram_dout}} 
+relaunch_sim
+run 50 us
+current_wave_config {tb_axi_dpe_behav.wcfg}
+add_wave {{/tb_axi_dpe/dut/read_data_valid_debug}} {{/tb_axi_dpe/dut/read_data_valid}} 
+current_wave_config {tb_axi_dpe_behav.wcfg}
+add_wave {{/tb_axi_dpe/dut/dpe_a_row_packed}} 
+relaunch_sim
+relaunch_sim
+run 50 us
+current_wave_config {tb_axi_dpe_behav.wcfg}
+add_wave {{/tb_axi_dpe/dut/dot_product_inst/dpe_inst/x_vector}} 
+relaunch_sim
+current_wave_config {tb_axi_dpe_behav.wcfg}
+add_wave {{/tb_axi_dpe/dut/dot_product_inst/x_vector}} {{/tb_axi_dpe/dut/dot_product_inst/x_vector_unpacked}} 
+relaunch_sim
+run 50 us
+relaunch_sim
+run 50 us
+relaunch_sim
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+generate_target all [get_files  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+export_ip_user_files -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+launch_runs andromeda_axi_dpe_0_0_synth_1 andromeda_axi_smc_0_synth_1 andromeda_system_ila_0_0_synth_1 -jobs 24
+wait_on_run andromeda_axi_dpe_0_0_synth_1
+wait_on_run andromeda_axi_smc_0_synth_1
+wait_on_run andromeda_system_ila_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/modelsim} {questa=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/questa} {xcelium=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/xcelium} {vcs=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/vcs} {riviera=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/riviera}] -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -directory /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files/sim_scripts -ip_user_files_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files -ipstatic_source_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+run 50 us
+relaunch_sim
+run 50 us
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+generate_target all [get_files  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+export_ip_user_files -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+launch_runs andromeda_axi_dpe_0_0_synth_1 andromeda_axi_smc_0_synth_1 andromeda_system_ila_0_0_synth_1 -jobs 24
+wait_on_run andromeda_axi_dpe_0_0_synth_1
+wait_on_run andromeda_axi_smc_0_synth_1
+wait_on_run andromeda_system_ila_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/modelsim} {questa=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/questa} {xcelium=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/xcelium} {vcs=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/vcs} {riviera=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/riviera}] -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -directory /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files/sim_scripts -ip_user_files_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files -ipstatic_source_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+generate_target all [get_files  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+export_ip_user_files -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+launch_runs andromeda_axi_dpe_0_0_synth_1 andromeda_axi_smc_0_synth_1 andromeda_system_ila_0_0_synth_1 -jobs 24
+wait_on_run andromeda_axi_dpe_0_0_synth_1
+wait_on_run andromeda_axi_smc_0_synth_1
+wait_on_run andromeda_system_ila_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/modelsim} {questa=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/questa} {xcelium=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/xcelium} {vcs=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/vcs} {riviera=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/riviera}] -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -directory /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files/sim_scripts -ip_user_files_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files -ipstatic_source_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+update_module_reference [get_ips  andromeda_axi_dpe_0_0]
+generate_target all [get_files  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+export_ip_user_files -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd]
+launch_runs andromeda_axi_dpe_0_0_synth_1 andromeda_axi_smc_0_synth_1 andromeda_system_ila_0_0_synth_1 -jobs 24
+wait_on_run andromeda_axi_dpe_0_0_synth_1
+wait_on_run andromeda_axi_smc_0_synth_1
+wait_on_run andromeda_system_ila_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/modelsim} {questa=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/questa} {xcelium=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/xcelium} {vcs=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/vcs} {riviera=/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.cache/compile_simlib/riviera}] -of_objects [get_files /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.srcs/sources_1/bd/andromeda/andromeda.bd] -directory /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files/sim_scripts -ip_user_files_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/andromeda.ip_user_files -ipstatic_source_dir /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet

@@ -1,0 +1,22 @@
+srcscan starts
+=============== Using precompiled files for SV std libs ===========
+INFO: The Verilog library search path for library "std" is now "/opt/tools/Xilinx/Vivado/2024.2/data/precomp_hsv/sv/std" (VERI-1509)
+INFO: The Verilog library search path for library "uvm" is now "/opt/tools/Xilinx/Vivado/2024.2/data/precomp_hsv/sv/uvm" (VERI-1509)
+INFO: analyzing module sd_controller (VERI-9002)
+INFO: analyzing module sd_controller_axi_writer (VERI-9002)
+INFO: analyzing module sd_controller_ping_pong_buffer (VERI-9002)
+INFO: analyzing module sd_controller_regfile (VERI-9002)
+INFO: analyzing module sd_reader (VERI-9002)
+INFO: analyzing module sdcmd_ctrl (VERI-9002)
+INFO: analyzing module sd_controller_wrapper (VERI-9002)
+INFO: analyzing module block_ram (VERI-9002)
+INFO: analyzing module dot_product_engine (VERI-9002)
+INFO: analyzing module intN_to_fp32_wrapper (VERI-9002)
+INFO: analyzing module top_dot_product_engine (VERI-9002)
+INFO: analyzing module axi_dpe (VERI-9002)
+/tmp/VivadoEditorAssist14669235313751473831.tmp(330): INFO: undeclared symbol 'read_data_valid', assumed default net type 'wire' (VERI-2561)
+/tmp/VivadoEditorAssist14669235313751473831.tmp(752): WARNING: 'read_data_valid' is already implicitly declared on line 330 (VERI-1362)
+INFO: analyzing module andromeda_wrapper (VERI-9002)
+INFO: analyzing module bram_8kx32_sp (VERI-9002)
+INFO: analyzing module sipo (VERI-9002)
+srcscan exits with return value 0

@@ -106,6 +106,7 @@ verilog xil_defaultlib --include "/opt/tools/Xilinx/Vivado/2024.2/data/xilinx_vi
 "../../../bd/andromeda/ip/andromeda_util_vector_logic_0_0/sim/andromeda_util_vector_logic_0_0.v" \
 "../../../bd/andromeda/ip/andromeda_sd_controller_wrapper_0_0/sim/andromeda_sd_controller_wrapper_0_0.v" \
 "../../../bd/andromeda/ip/andromeda_lmb_bram_0/sim/andromeda_lmb_bram_0.v" \
+"../../../bd/andromeda/ip/andromeda_axi_smc_0/bd_0/sim/bd_98e1.v" \
 "../../../bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_0/sim/bd_98e1_one_0.v" \
 
 sv xil_defaultlib --include "/opt/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/ip_1/rtl/map" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/rtl/ip_top" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/rtl/cal" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/814a/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/1017/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/52c0/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/2276/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/f0b6/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/0127/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/ec67/hdl" \
@@ -176,9 +177,9 @@ sv xil_defaultlib --include "/opt/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/inc
 "../../../bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_68/sim/bd_98e1_m04e_0.sv" \
 
 verilog xil_defaultlib --include "/opt/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/ip_1/rtl/map" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/rtl/ip_top" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/rtl/cal" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/814a/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/1017/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/52c0/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/2276/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/f0b6/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/0127/hdl/verilog" --include "../../../../puzhi.gen/sources_1/bd/andromeda/ipshared/ec67/hdl" \
-"../../../bd/andromeda/ip/andromeda_axi_smc_0/bd_0/sim/bd_98e1.v" \
 "../../../bd/andromeda/ip/andromeda_axi_smc_0/sim/andromeda_axi_smc_0.v" \
 "../../../bd/andromeda/ip/andromeda_axi_dpe_0_0/sim/andromeda_axi_dpe_0_0.v" \
+"../../../bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/sim/bd_85fa.v" \
 "../../../bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_0/sim/bd_85fa_ila_lib_0.v" \
 "../../../bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_1/bd_85fa_g_inst_0_gigantic_mux.v" \
 "../../../bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_1/sim/bd_85fa_g_inst_0.v" \
@@ -197,7 +198,6 @@ verilog xil_defaultlib --include "/opt/tools/Xilinx/Vivado/2024.2/data/xilinx_vi
 "../../../bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_14/sim/bd_85fa_slot_2_b_0.v" \
 "../../../bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_15/sim/bd_85fa_slot_2_ar_0.v" \
 "../../../bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/ip/ip_16/sim/bd_85fa_slot_2_r_0.v" \
-"../../../bd/andromeda/ip/andromeda_system_ila_0_0/bd_0/sim/bd_85fa.v" \
 "../../../bd/andromeda/ip/andromeda_system_ila_0_0/sim/andromeda_system_ila_0_0.v" \
 "../../../bd/andromeda/sim/andromeda.v" \
 

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_axi_dpe_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_axi_dpe" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5,443.667 ns"></ZoomStartTime>
+      <ZoomEndTime time="5,811.668 ns"></ZoomEndTime>
+      <Cursor1Time time="5,505.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="254"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="84" />
+   <wvobject type="logic" fp_name="/tb_axi_dpe/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/rstn">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/x_wr_addr">
+      <obj_property name="ElementShortName">x_wr_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">x_wr_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/x_wr_data">
+      <obj_property name="ElementShortName">x_wr_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x_wr_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/x_wr_en">
+      <obj_property name="ElementShortName">x_wr_en[127:0]</obj_property>
+      <obj_property name="ObjectShortName">x_wr_en[127:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/s_axi_awvalid">
+      <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/s_axi_awready">
+      <obj_property name="ElementShortName">s_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/s_axi_awaddr">
+      <obj_property name="ElementShortName">s_axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/s_axi_awprot">
+      <obj_property name="ElementShortName">s_axi_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/s_axi_wvalid">
+      <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/s_axi_wready">
+      <obj_property name="ElementShortName">s_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/s_axi_wdata">
+      <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/s_axi_wstrb">
+      <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/s_axi_bvalid">
+      <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/s_axi_bready">
+      <obj_property name="ElementShortName">s_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/s_axi_bresp">
+      <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/s_axi_arvalid">
+      <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/s_axi_arready">
+      <obj_property name="ElementShortName">s_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/s_axi_araddr">
+      <obj_property name="ElementShortName">s_axi_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/s_axi_arprot">
+      <obj_property name="ElementShortName">s_axi_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/s_axi_rvalid">
+      <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/s_axi_rready">
+      <obj_property name="ElementShortName">s_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/s_axi_rdata">
+      <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/s_axi_rresp">
+      <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_arvalid">
+      <obj_property name="ElementShortName">m_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_arready">
+      <obj_property name="ElementShortName">m_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_araddr">
+      <obj_property name="ElementShortName">m_axi_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_arlen">
+      <obj_property name="ElementShortName">m_axi_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_arsize">
+      <obj_property name="ElementShortName">m_axi_arsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_arburst">
+      <obj_property name="ElementShortName">m_axi_arburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_arprot">
+      <obj_property name="ElementShortName">m_axi_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_arcache">
+      <obj_property name="ElementShortName">m_axi_arcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_rvalid">
+      <obj_property name="ElementShortName">m_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_rready">
+      <obj_property name="ElementShortName">m_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_rdata">
+      <obj_property name="ElementShortName">m_axi_rdata[255:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rdata[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_rresp">
+      <obj_property name="ElementShortName">m_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_rlast">
+      <obj_property name="ElementShortName">m_axi_rlast</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_awvalid">
+      <obj_property name="ElementShortName">m_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_awready">
+      <obj_property name="ElementShortName">m_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_awaddr">
+      <obj_property name="ElementShortName">m_axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_awlen">
+      <obj_property name="ElementShortName">m_axi_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_awsize">
+      <obj_property name="ElementShortName">m_axi_awsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_awburst">
+      <obj_property name="ElementShortName">m_axi_awburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_awprot">
+      <obj_property name="ElementShortName">m_axi_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_awcache">
+      <obj_property name="ElementShortName">m_axi_awcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_wvalid">
+      <obj_property name="ElementShortName">m_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_wready">
+      <obj_property name="ElementShortName">m_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_wdata">
+      <obj_property name="ElementShortName">m_axi_wdata[255:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wdata[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_wstrb">
+      <obj_property name="ElementShortName">m_axi_wstrb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wstrb[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_wlast">
+      <obj_property name="ElementShortName">m_axi_wlast</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_bvalid">
+      <obj_property name="ElementShortName">m_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/m_axi_bready">
+      <obj_property name="ElementShortName">m_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_bresp">
+      <obj_property name="ElementShortName">m_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dpe_out">
+      <obj_property name="ElementShortName">dpe_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dpe_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dpe_done">
+      <obj_property name="ElementShortName">dpe_done</obj_property>
+      <obj_property name="ObjectShortName">dpe_done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dpe_data_type">
+      <obj_property name="ElementShortName">dpe_data_type[2:0]</obj_property>
+      <obj_property name="ObjectShortName">dpe_data_type[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/write_valid_o">
+      <obj_property name="ElementShortName">write_valid_o</obj_property>
+      <obj_property name="ObjectShortName">write_valid_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/m_axi_rdata_sequence">
+      <obj_property name="ElementShortName">m_axi_rdata_sequence[0:127][255:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rdata_sequence[0:127][255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/j">
+      <obj_property name="ElementShortName">j[6:0]</obj_property>
+      <obj_property name="ObjectShortName">j[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/S_AXI_ADDR_WIDTH">
+      <obj_property name="ElementShortName">S_AXI_ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/NUM_WORDS">
+      <obj_property name="ElementShortName">NUM_WORDS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_WORDS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/accum_buffer">
+      <obj_property name="ElementShortName">accum_buffer[4095:0]</obj_property>
+      <obj_property name="ObjectShortName">accum_buffer[4095:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/accum_word_count">
+      <obj_property name="ElementShortName">accum_word_count[6:0]</obj_property>
+      <obj_property name="ObjectShortName">accum_word_count[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/dot_product_inst/sum_stage0_debug">
+      <obj_property name="ElementShortName">sum_stage0_debug[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_stage0_debug[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dut/dot_product_inst/valid_stage0_debug">
+      <obj_property name="ElementShortName">valid_stage0_debug</obj_property>
+      <obj_property name="ObjectShortName">valid_stage0_debug</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/dot_product_inst/sum_stage1_debug">
+      <obj_property name="ElementShortName">sum_stage1_debug[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_stage1_debug[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dut/dot_product_inst/valid_stage1_debug">
+      <obj_property name="ElementShortName">valid_stage1_debug</obj_property>
+      <obj_property name="ObjectShortName">valid_stage1_debug</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/dot_product_inst/sum_stage2_debug">
+      <obj_property name="ElementShortName">sum_stage2_debug[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_stage2_debug[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dut/dot_product_inst/valid_stage2_debug">
+      <obj_property name="ElementShortName">valid_stage2_debug</obj_property>
+      <obj_property name="ObjectShortName">valid_stage2_debug</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/dot_product_inst/sum_stage3_debug">
+      <obj_property name="ElementShortName">sum_stage3_debug[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_stage3_debug[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dut/dot_product_inst/valid_stage3_debug">
+      <obj_property name="ElementShortName">valid_stage3_debug</obj_property>
+      <obj_property name="ObjectShortName">valid_stage3_debug</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/dot_product_inst/sum_stage4_debug">
+      <obj_property name="ElementShortName">sum_stage4_debug[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_stage4_debug[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dut/dot_product_inst/valid_stage4_debug">
+      <obj_property name="ElementShortName">valid_stage4_debug</obj_property>
+      <obj_property name="ObjectShortName">valid_stage4_debug</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/dot_product_inst/sum_stage5_debug">
+      <obj_property name="ElementShortName">sum_stage5_debug[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_stage5_debug[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dut/dot_product_inst/valid_stage5_debug">
+      <obj_property name="ElementShortName">valid_stage5_debug</obj_property>
+      <obj_property name="ObjectShortName">valid_stage5_debug</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/dot_product_inst/sum_stage6_debug">
+      <obj_property name="ElementShortName">sum_stage6_debug[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_stage6_debug[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dut/dot_product_inst/valid_stage6_debug">
+      <obj_property name="ElementShortName">valid_stage6_debug</obj_property>
+      <obj_property name="ObjectShortName">valid_stage6_debug</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dut/dot_product_inst/A_valid">
+      <obj_property name="ElementShortName">A_valid</obj_property>
+      <obj_property name="ObjectShortName">A_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/dot_product_inst/A_data">
+      <obj_property name="ElementShortName">A_data[255:0]</obj_property>
+      <obj_property name="ObjectShortName">A_data[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/dot_product_inst/A_debug">
+      <obj_property name="ElementShortName">A_debug[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_debug[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dut/dot_product_inst/A_valid_debug">
+      <obj_property name="ElementShortName">A_valid_debug</obj_property>
+      <obj_property name="ObjectShortName">A_valid_debug</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_dpe/dut/dot_product_inst/prod_debug">
+      <obj_property name="ElementShortName">prod_debug[31:0]</obj_property>
+      <obj_property name="ObjectShortName">prod_debug[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_dpe/dut/dot_product_inst/prod_valid_debug">
+      <obj_property name="ElementShortName">prod_valid_debug</obj_property>
+      <obj_property name="ObjectShortName">prod_valid_debug</obj_property>
+   </wvobject>
+</wave_config>

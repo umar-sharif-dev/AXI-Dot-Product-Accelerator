@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="andromeda_axi_dpe_0_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_dpe_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_axi_smc_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_axi_timer_0_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_axi_uartlite_0_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_ddr4_0_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_ddr4_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_dlmb_v10_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_ila_0_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_ilmb_v10_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_lmb_bram_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_mdm_0_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_mdm_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_microblaze_0_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_rst_ddr4_0_100M_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_rst_ddr4_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_rst_ddr4_0_333M_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_rst_ddr4_0_333M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_sd_controller_wrapper_0_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_sd_controller_wrapper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_system_ila_0_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_system_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="andromeda_util_vector_logic_0_0_synth_1" LaunchDir="/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.ignorePathLengthChecks" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

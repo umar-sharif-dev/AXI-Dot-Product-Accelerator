@@ -7,7 +7,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Wed Jun 11 19:48:50 2025
+  **** Start of session at: Fri Jun 13 10:51:55 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -19,62 +19,62 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 98396
+INFO: [Synth 8-7075] Helper process launched with PID 1562017
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2753.973 ; gain = 156.859 ; free physical = 47787 ; free virtual = 59190
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2753.891 ; gain = 156.859 ; free physical = 70038 ; free virtual = 81174
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:83]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:84]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:85]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:86]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:98]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:99]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:100]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:101]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:83]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:84]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:85]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:86]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:87]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:88]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:89]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:90]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:102]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:103]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:83]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:84]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:85]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:86]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:98]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:99]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:100]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:101]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:83]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:84]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:85]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:86]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:98]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:99]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:100]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:101]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:83]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:84]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:85]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:86]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:87]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:88]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:89]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:90]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:102]
-WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:103]
-INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_smc_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/synth/andromeda_axi_smc_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:10]
-INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1IV4UCH' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2872]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_one_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_0/synth/bd_98e1_one_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_one_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_0/synth/bd_98e1_one_0.v:53]
-INFO: [Synth 8-638] synthesizing module 'bd_98e1_psr0_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/synth/bd_98e1_psr0_0.vhd:74]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:85]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:86]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:98]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:99]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:100]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_4/synth/bd_98e1_arsw_0.sv:101]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:85]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:86]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:87]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:88]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:89]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:90]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:102]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_5/synth/bd_98e1_rsw_0.sv:103]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:85]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:86]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:98]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:99]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:100]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_6/synth/bd_98e1_awsw_0.sv:101]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:85]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:86]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:98]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:99]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:100]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_7/synth/bd_98e1_wsw_0.sv:101]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:83]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:84]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:85]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:86]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:87]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:88]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:89]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:90]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:102]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_8/synth/bd_98e1_bsw_0.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'andromeda_axi_smc_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/synth/andromeda_axi_smc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1IV4UCH' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2872]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_one_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_0/synth/bd_98e1_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_one_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_0/synth/bd_98e1_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_98e1_psr0_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/synth/bd_98e1_psr0_0.vhd:74]
 	Parameter C_FAMILY bound to: kintexuplus - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -84,49 +84,49 @@ INFO: [Synth 8-638] synthesizing module 'bd_98e1_psr0_0' [/home/malik/andromeda_
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/synth/bd_98e1_psr0_0.vhd:139]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/synth/bd_98e1_psr0_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
-INFO: [Synth 8-638] synthesizing module 'lpf' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
-INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029]
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149029]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
-INFO: [Synth 8-256] done synthesizing module 'bd_98e1_psr0_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/synth/bd_98e1_psr0_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_98e1_psr0_0' is unconnected for instance 'psr0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2944]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_98e1_psr0_0' is unconnected for instance 'psr0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2944]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_98e1_psr0_0' is unconnected for instance 'psr0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2944]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_98e1_psr0_0' is unconnected for instance 'psr0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2944]
-WARNING: [Synth 8-7023] instance 'psr0' of module 'bd_98e1_psr0_0' has 10 connections declared, but only 6 given [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2944]
-INFO: [Synth 8-638] synthesizing module 'bd_98e1_psr_aclk_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/synth/bd_98e1_psr_aclk_0.vhd:74]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'bd_98e1_psr0_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/synth/bd_98e1_psr0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_98e1_psr0_0' is unconnected for instance 'psr0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2944]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_98e1_psr0_0' is unconnected for instance 'psr0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2944]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_98e1_psr0_0' is unconnected for instance 'psr0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2944]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_98e1_psr0_0' is unconnected for instance 'psr0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2944]
+WARNING: [Synth 8-7023] instance 'psr0' of module 'bd_98e1_psr0_0' has 10 connections declared, but only 6 given [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2944]
+INFO: [Synth 8-638] synthesizing module 'bd_98e1_psr_aclk_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/synth/bd_98e1_psr_aclk_0.vhd:74]
 	Parameter C_FAMILY bound to: kintexuplus - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -136,14 +136,14 @@ INFO: [Synth 8-638] synthesizing module 'bd_98e1_psr_aclk_0' [/home/malik/androm
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/synth/bd_98e1_psr_aclk_0.vhd:139]
-INFO: [Synth 8-256] done synthesizing module 'bd_98e1_psr_aclk_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/synth/bd_98e1_psr_aclk_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_98e1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2951]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_98e1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2951]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_98e1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2951]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_98e1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2951]
-WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_98e1_psr_aclk_0' has 10 connections declared, but only 6 given [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2951]
-INFO: [Synth 8-638] synthesizing module 'bd_98e1_psr_aclk1_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/synth/bd_98e1_psr_aclk1_0.vhd:74]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/synth/bd_98e1_psr_aclk_0.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'bd_98e1_psr_aclk_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/synth/bd_98e1_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_98e1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2951]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_98e1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2951]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_98e1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2951]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_98e1_psr_aclk_0' is unconnected for instance 'psr_aclk' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2951]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_98e1_psr_aclk_0' has 10 connections declared, but only 6 given [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2951]
+INFO: [Synth 8-638] synthesizing module 'bd_98e1_psr_aclk1_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/synth/bd_98e1_psr_aclk1_0.vhd:74]
 	Parameter C_FAMILY bound to: kintexuplus - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -153,22 +153,22 @@ INFO: [Synth 8-638] synthesizing module 'bd_98e1_psr_aclk1_0' [/home/malik/andro
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/synth/bd_98e1_psr_aclk1_0.vhd:139]
-INFO: [Synth 8-256] done synthesizing module 'bd_98e1_psr_aclk1_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/synth/bd_98e1_psr_aclk1_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_98e1_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2958]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_98e1_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2958]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_98e1_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2958]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_98e1_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2958]
-WARNING: [Synth 8-7023] instance 'psr_aclk1' of module 'bd_98e1_psr_aclk1_0' has 10 connections declared, but only 6 given [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2958]
-INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1IV4UCH' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2872]
-INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_GY2T8A' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2967]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00e_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_40/synth/bd_98e1_m00e_0.sv:53]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/synth/bd_98e1_psr_aclk1_0.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'bd_98e1_psr_aclk1_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/synth/bd_98e1_psr_aclk1_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_98e1_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2958]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_98e1_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2958]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_98e1_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2958]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_98e1_psr_aclk1_0' is unconnected for instance 'psr_aclk1' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2958]
+WARNING: [Synth 8-7023] instance 'psr_aclk1' of module 'bd_98e1_psr_aclk1_0' has 10 connections declared, but only 6 given [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2958]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1IV4UCH' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2872]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_GY2T8A' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2967]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00e_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_40/synth/bd_98e1_m00e_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00e_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_40/synth/bd_98e1_m00e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_GY2T8A' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2967]
-INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_UAA7O6' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3209]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00arn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_35/synth/bd_98e1_m00arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00e_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_40/synth/bd_98e1_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_GY2T8A' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2967]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_UAA7O6' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3209]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00arn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_35/synth/bd_98e1_m00arn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
@@ -177,10 +177,10 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [/o
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00arn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_35/synth/bd_98e1_m00arn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00awn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_37/synth/bd_98e1_m00awn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00awn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_37/synth/bd_98e1_m00awn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00bn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_39/synth/bd_98e1_m00bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00arn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_35/synth/bd_98e1_m00arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00awn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_37/synth/bd_98e1_m00awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00awn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_37/synth/bd_98e1_m00awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00bn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_39/synth/bd_98e1_m00bn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
@@ -189,14 +189,14 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized2' [/o
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00bn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_39/synth/bd_98e1_m00bn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00rn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_36/synth/bd_98e1_m00rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00bn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_39/synth/bd_98e1_m00bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00rn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_36/synth/bd_98e1_m00rn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized3' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized3' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized3' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00rn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_36/synth/bd_98e1_m00rn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00wn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_38/synth/bd_98e1_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00rn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_36/synth/bd_98e1_m00rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00wn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_38/synth/bd_98e1_m00wn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized4' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized4' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized4' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
@@ -209,44 +209,44 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized6' [/o
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized6' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized6' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized6' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00wn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_38/synth/bd_98e1_m00wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_UAA7O6' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3209]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00s2a_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_34/synth/bd_98e1_m00s2a_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00s2a_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_34/synth/bd_98e1_m00s2a_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_BPUWU2' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3460]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01e_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_47/synth/bd_98e1_m01e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01e_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_47/synth/bd_98e1_m01e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_BPUWU2' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3460]
-INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_1UMWCO0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3702]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01arn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_42/synth/bd_98e1_m01arn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01arn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_42/synth/bd_98e1_m01arn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01awn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_44/synth/bd_98e1_m01awn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01awn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_44/synth/bd_98e1_m01awn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01bn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_46/synth/bd_98e1_m01bn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01bn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_46/synth/bd_98e1_m01bn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01rn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_43/synth/bd_98e1_m01rn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01rn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_43/synth/bd_98e1_m01rn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01wn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_45/synth/bd_98e1_m01wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01wn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_45/synth/bd_98e1_m01wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_1UMWCO0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3702]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01s2a_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_41/synth/bd_98e1_m01s2a_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01s2a_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_41/synth/bd_98e1_m01s2a_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'm02_exit_pipeline_imp_5CEZNE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3953]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02e_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_54/synth/bd_98e1_m02e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02e_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_54/synth/bd_98e1_m02e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm02_exit_pipeline_imp_5CEZNE' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3953]
-INFO: [Synth 8-6157] synthesizing module 'm02_nodes_imp_12X8B97' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4195]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02arn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_49/synth/bd_98e1_m02arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00wn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_38/synth/bd_98e1_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_UAA7O6' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3209]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m00s2a_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_34/synth/bd_98e1_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m00s2a_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_34/synth/bd_98e1_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'm01_exit_pipeline_imp_BPUWU2' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3460]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01e_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_47/synth/bd_98e1_m01e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01e_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_47/synth/bd_98e1_m01e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm01_exit_pipeline_imp_BPUWU2' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3460]
+INFO: [Synth 8-6157] synthesizing module 'm01_nodes_imp_1UMWCO0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3702]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01arn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_42/synth/bd_98e1_m01arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01arn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_42/synth/bd_98e1_m01arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01awn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_44/synth/bd_98e1_m01awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01awn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_44/synth/bd_98e1_m01awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01bn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_46/synth/bd_98e1_m01bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01bn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_46/synth/bd_98e1_m01bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01rn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_43/synth/bd_98e1_m01rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01rn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_43/synth/bd_98e1_m01rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01wn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_45/synth/bd_98e1_m01wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01wn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_45/synth/bd_98e1_m01wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm01_nodes_imp_1UMWCO0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3702]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m01s2a_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_41/synth/bd_98e1_m01s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m01s2a_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_41/synth/bd_98e1_m01s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'm02_exit_pipeline_imp_5CEZNE' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3953]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02e_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_54/synth/bd_98e1_m02e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02e_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_54/synth/bd_98e1_m02e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm02_exit_pipeline_imp_5CEZNE' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:3953]
+INFO: [Synth 8-6157] synthesizing module 'm02_nodes_imp_12X8B97' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4195]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02arn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_49/synth/bd_98e1_m02arn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized7' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized7' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized7' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized7' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02arn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_49/synth/bd_98e1_m02arn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02awn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_51/synth/bd_98e1_m02awn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02awn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_51/synth/bd_98e1_m02awn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02bn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_53/synth/bd_98e1_m02bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02arn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_49/synth/bd_98e1_m02arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02awn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_51/synth/bd_98e1_m02awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02awn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_51/synth/bd_98e1_m02awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02bn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_53/synth/bd_98e1_m02bn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized8' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized8' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized8' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
@@ -255,14 +255,14 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized9' [/o
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized9' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized9' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized9' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02bn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_53/synth/bd_98e1_m02bn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02rn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_50/synth/bd_98e1_m02rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02bn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_53/synth/bd_98e1_m02bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02rn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_50/synth/bd_98e1_m02rn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized10' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized10' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized10' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized10' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02rn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_50/synth/bd_98e1_m02rn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02wn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_52/synth/bd_98e1_m02wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02rn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_50/synth/bd_98e1_m02rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02wn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_52/synth/bd_98e1_m02wn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized11' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized11' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized11' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
@@ -271,61 +271,61 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized12' [/
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized12' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized12' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized12' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02wn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_52/synth/bd_98e1_m02wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm02_nodes_imp_12X8B97' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4195]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02s2a_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_48/synth/bd_98e1_m02s2a_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02s2a_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_48/synth/bd_98e1_m02s2a_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'm03_exit_pipeline_imp_184RAY' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4446]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03e_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_61/synth/bd_98e1_m03e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03e_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_61/synth/bd_98e1_m03e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm03_exit_pipeline_imp_184RAY' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4446]
-INFO: [Synth 8-6157] synthesizing module 'm03_nodes_imp_4SM2KT' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4688]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03arn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_56/synth/bd_98e1_m03arn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03arn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_56/synth/bd_98e1_m03arn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03awn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_58/synth/bd_98e1_m03awn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03awn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_58/synth/bd_98e1_m03awn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03bn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_60/synth/bd_98e1_m03bn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03bn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_60/synth/bd_98e1_m03bn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03rn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_57/synth/bd_98e1_m03rn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03rn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_57/synth/bd_98e1_m03rn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03wn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_59/synth/bd_98e1_m03wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03wn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_59/synth/bd_98e1_m03wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm03_nodes_imp_4SM2KT' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4688]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03s2a_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_55/synth/bd_98e1_m03s2a_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03s2a_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_55/synth/bd_98e1_m03s2a_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'm04_exit_pipeline_imp_R3UWZE' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4939]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04e_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_68/synth/bd_98e1_m04e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04e_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_68/synth/bd_98e1_m04e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm04_exit_pipeline_imp_R3UWZE' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4939]
-INFO: [Synth 8-6157] synthesizing module 'm04_nodes_imp_WC351P' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5237]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04arn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_63/synth/bd_98e1_m04arn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04arn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_63/synth/bd_98e1_m04arn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04awn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_65/synth/bd_98e1_m04awn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04awn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_65/synth/bd_98e1_m04awn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04bn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_67/synth/bd_98e1_m04bn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04bn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_67/synth/bd_98e1_m04bn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04rn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_64/synth/bd_98e1_m04rn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04rn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_64/synth/bd_98e1_m04rn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04wn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_66/synth/bd_98e1_m04wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04wn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_66/synth/bd_98e1_m04wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm04_nodes_imp_WC351P' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5237]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04s2a_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_62/synth/bd_98e1_m04s2a_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04s2a_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_62/synth/bd_98e1_m04s2a_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_s00a2s_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_12/synth/bd_98e1_s00a2s_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_s00a2s_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_12/synth/bd_98e1_s00a2s_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1GS4OS9' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5488]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_s00mmu_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_9/synth/bd_98e1_s00mmu_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_s00mmu_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_9/synth/bd_98e1_s00mmu_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_s00sic_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_11/synth/bd_98e1_s00sic_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_s00sic_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_11/synth/bd_98e1_s00sic_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_s00tr_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_10/synth/bd_98e1_s00tr_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_s00tr_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_10/synth/bd_98e1_s00tr_0.sv:53]
-WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_98e1_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5887]
-WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_98e1_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5887]
-WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_98e1_s00tr_0' has 82 connections declared, but only 80 given [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5887]
-INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1GS4OS9' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5488]
-INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1BL6NVN' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5970]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_sarn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_13/synth/bd_98e1_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02wn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_52/synth/bd_98e1_m02wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm02_nodes_imp_12X8B97' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4195]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m02s2a_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_48/synth/bd_98e1_m02s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m02s2a_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_48/synth/bd_98e1_m02s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'm03_exit_pipeline_imp_184RAY' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4446]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03e_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_61/synth/bd_98e1_m03e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03e_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_61/synth/bd_98e1_m03e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm03_exit_pipeline_imp_184RAY' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4446]
+INFO: [Synth 8-6157] synthesizing module 'm03_nodes_imp_4SM2KT' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4688]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03arn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_56/synth/bd_98e1_m03arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03arn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_56/synth/bd_98e1_m03arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03awn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_58/synth/bd_98e1_m03awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03awn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_58/synth/bd_98e1_m03awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03bn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_60/synth/bd_98e1_m03bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03bn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_60/synth/bd_98e1_m03bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03rn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_57/synth/bd_98e1_m03rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03rn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_57/synth/bd_98e1_m03rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03wn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_59/synth/bd_98e1_m03wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03wn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_59/synth/bd_98e1_m03wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm03_nodes_imp_4SM2KT' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4688]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m03s2a_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_55/synth/bd_98e1_m03s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m03s2a_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_55/synth/bd_98e1_m03s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'm04_exit_pipeline_imp_R3UWZE' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4939]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04e_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_68/synth/bd_98e1_m04e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04e_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_68/synth/bd_98e1_m04e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm04_exit_pipeline_imp_R3UWZE' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:4939]
+INFO: [Synth 8-6157] synthesizing module 'm04_nodes_imp_WC351P' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5237]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04arn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_63/synth/bd_98e1_m04arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04arn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_63/synth/bd_98e1_m04arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04awn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_65/synth/bd_98e1_m04awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04awn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_65/synth/bd_98e1_m04awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04bn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_67/synth/bd_98e1_m04bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04bn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_67/synth/bd_98e1_m04bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04rn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_64/synth/bd_98e1_m04rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04rn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_64/synth/bd_98e1_m04rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04wn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_66/synth/bd_98e1_m04wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04wn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_66/synth/bd_98e1_m04wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm04_nodes_imp_WC351P' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5237]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_m04s2a_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_62/synth/bd_98e1_m04s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_m04s2a_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_62/synth/bd_98e1_m04s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_s00a2s_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_12/synth/bd_98e1_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_s00a2s_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_12/synth/bd_98e1_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_1GS4OS9' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5488]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_s00mmu_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_9/synth/bd_98e1_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_s00mmu_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_9/synth/bd_98e1_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_s00sic_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_11/synth/bd_98e1_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_s00sic_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_11/synth/bd_98e1_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_s00tr_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_10/synth/bd_98e1_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_s00tr_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_10/synth/bd_98e1_s00tr_0.sv:53]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_98e1_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5887]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_98e1_s00tr_0' is unconnected for instance 's00_transaction_regulator' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5887]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_98e1_s00tr_0' has 82 connections declared, but only 80 given [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5887]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_1GS4OS9' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5488]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_1BL6NVN' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5970]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_sarn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_13/synth/bd_98e1_sarn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized13' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized13' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized13' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
@@ -334,35 +334,35 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized14' [/
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized14' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized14' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized14' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_sarn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_13/synth/bd_98e1_sarn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_sawn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_15/synth/bd_98e1_sawn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_sawn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_15/synth/bd_98e1_sawn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_sbn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_17/synth/bd_98e1_sbn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_sarn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_13/synth/bd_98e1_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_sawn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_15/synth/bd_98e1_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_sawn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_15/synth/bd_98e1_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_sbn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_17/synth/bd_98e1_sbn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized15' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized15' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized15' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized15' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_sbn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_17/synth/bd_98e1_sbn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_srn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_14/synth/bd_98e1_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_sbn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_17/synth/bd_98e1_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_srn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_14/synth/bd_98e1_srn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized16' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized16' [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized16' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized16' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_srn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_14/synth/bd_98e1_srn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_98e1_swn_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_16/synth/bd_98e1_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_srn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_14/synth/bd_98e1_srn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_98e1_swn_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_16/synth/bd_98e1_swn_0.sv:53]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized17' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized17' (0#1) [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
-INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_swn_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_16/synth/bd_98e1_swn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1BL6NVN' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5970]
+INFO: [Synth 8-6155] done synthesizing module 'bd_98e1_swn_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_16/synth/bd_98e1_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_1BL6NVN' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:5970]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-7071] port 'M02_SC_R_info' of module 'switchboards_imp_1HEDP4N' is unconnected for instance 'switchboards' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
-WARNING: [Synth 8-7071] port 'M02_SC_R_payld' of module 'switchboards_imp_1HEDP4N' is unconnected for instance 'switchboards' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
-WARNING: [Synth 8-7071] port 'M02_SC_R_req' of module 'switchboards_imp_1HEDP4N' is unconnected for instance 'switchboards' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
-WARNING: [Synth 8-7071] port 'M02_SC_R_send' of module 'switchboards_imp_1HEDP4N' is unconnected for instance 'switchboards' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
-WARNING: [Synth 8-7071] port 'S02_SC_AR_recv' of module 'switchboards_imp_1HEDP4N' is unconnected for instance 'switchboards' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
-WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_1HEDP4N' has 202 connections declared, but only 197 given [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
-WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1IV4UCH does not have driver. [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2914]
+WARNING: [Synth 8-7071] port 'M02_SC_R_info' of module 'switchboards_imp_1HEDP4N' is unconnected for instance 'switchboards' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
+WARNING: [Synth 8-7071] port 'M02_SC_R_payld' of module 'switchboards_imp_1HEDP4N' is unconnected for instance 'switchboards' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
+WARNING: [Synth 8-7071] port 'M02_SC_R_req' of module 'switchboards_imp_1HEDP4N' is unconnected for instance 'switchboards' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
+WARNING: [Synth 8-7071] port 'M02_SC_R_send' of module 'switchboards_imp_1HEDP4N' is unconnected for instance 'switchboards' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
+WARNING: [Synth 8-7071] port 'S02_SC_AR_recv' of module 'switchboards_imp_1HEDP4N' is unconnected for instance 'switchboards' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
+WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_1HEDP4N' has 202 connections declared, but only 197 given [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2672]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1IV4UCH does not have driver. [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/synth/bd_98e1.v:2914]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
@@ -477,50 +477,50 @@ WARNING: [Synth 8-7129] Port connectivity[11] in module sc_switchboard_v1_0_8_to
 WARNING: [Synth 8-7129] Port connectivity[10] in module sc_switchboard_v1_0_8_top__parameterized0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3172.621 ; gain = 575.508 ; free physical = 43892 ; free virtual = 55338
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3172.539 ; gain = 575.508 ; free physical = 68958 ; free virtual = 80108
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3172.621 ; gain = 575.508 ; free physical = 43813 ; free virtual = 55248
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3172.539 ; gain = 575.508 ; free physical = 68950 ; free virtual = 80100
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3172.621 ; gain = 575.508 ; free physical = 43813 ; free virtual = 55248
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3172.539 ; gain = 575.508 ; free physical = 68950 ; free virtual = 80100
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3835.426 ; gain = 0.000 ; free physical = 37574 ; free virtual = 49079
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3836.336 ; gain = 0.000 ; free physical = 67647 ; free virtual = 78805
 INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_axi_smc_0_propImpl.xdc].
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0_board.xdc] for cell 'inst/clk_map/psr0/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0.xdc] for cell 'inst/clk_map/psr0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_1/bd_98e1_psr0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_axi_smc_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/andromeda_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_axi_smc_0_propImpl.xdc].
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_2/bd_98e1_psr_aclk_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_axi_smc_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/andromeda_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_axi_smc_0_propImpl.xdc].
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0_board.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0.xdc] for cell 'inst/clk_map/psr_aclk1/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/bd_0/ip/ip_3/bd_98e1_psr_aclk1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_axi_smc_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/andromeda_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_axi_smc_0_propImpl.xdc].
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/smartconnect.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_axi_smc_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/andromeda_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_axi_smc_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/andromeda_axi_smc_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/opt/tools/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl:55]
@@ -529,16 +529,16 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/andromeda_ax
 INFO: [Project 1-1714] 216 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4536.613 ; gain = 0.000 ; free physical = 38525 ; free virtual = 49978
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4536.523 ; gain = 0.000 ; free physical = 64146 ; free virtual = 75310
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 39 instances were transformed.
   FDR => FDRE: 36 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.6 . Memory (MB): peak = 4536.613 ; gain = 0.000 ; free physical = 43082 ; free virtual = 54535
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.54 . Memory (MB): peak = 4536.523 ; gain = 0.000 ; free physical = 64140 ; free virtual = 75304
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 4536.613 ; gain = 1939.500 ; free physical = 58186 ; free virtual = 69654
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 4536.523 ; gain = 1939.492 ; free physical = 62882 ; free virtual = 74050
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -546,12 +546,12 @@ Start Loading Part and Timing Information
 Loading part: xcku5p-ffvb676-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 4544.617 ; gain = 1947.504 ; free physical = 58186 ; free virtual = 69654
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 4544.527 ; gain = 1947.496 ; free physical = 62882 ; free virtual = 74050
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1/dont_touch.xdc, line 339).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1/dont_touch.xdc, line 339).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
@@ -769,7 +769,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_b_node/inst/in
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s02_nodes/s02_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[1].inst_xpm_memory . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 4544.617 ; gain = 1947.504 ; free physical = 58098 ; free virtual = 69628
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 4544.527 ; gain = 1947.496 ; free physical = 62827 ; free virtual = 73995
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'w_state_reg' in module 'sc_exit_v1_0_16_axilite_conv'
 INFO: [Synth 8-802] inferred FSM for state register 'r_state_reg' in module 'sc_exit_v1_0_16_axilite_conv'
@@ -918,7 +918,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.w_state_reg' 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_endpoint.r_state_reg' using encoding 'sequential' in module 'sc_mmu_v1_0_14_top__parameterized1'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 4544.617 ; gain = 1947.504 ; free physical = 54414 ; free virtual = 65926
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 4544.527 ; gain = 1947.496 ; free physical = 63861 ; free virtual = 75042
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1325,7 +1325,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\clk_map/
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\clk_map/psr0/U0/EXT_LPF/EXT_LPF[1].exr_lpf_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\clk_map/psr0/U0/EXT_LPF/lpf_exr_reg )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:06 . Memory (MB): peak = 4572.551 ; gain = 1975.438 ; free physical = 49329 ; free virtual = 60853
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 4572.461 ; gain = 1975.430 ; free physical = 60975 ; free virtual = 72158
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1431,13 +1431,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:11 . Memory (MB): peak = 4647.539 ; gain = 2050.426 ; free physical = 46856 ; free virtual = 58428
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:07 . Memory (MB): peak = 4647.449 ; gain = 2050.418 ; free physical = 59043 ; free virtual = 70250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:16 . Memory (MB): peak = 4647.539 ; gain = 2050.426 ; free physical = 44331 ; free virtual = 55960
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:12 . Memory (MB): peak = 4647.449 ; gain = 2050.418 ; free physical = 59037 ; free virtual = 70275
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1534,7 +1534,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:23 . Memory (MB): peak = 4659.465 ; gain = 2062.352 ; free physical = 52036 ; free virtual = 63681
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:19 . Memory (MB): peak = 4659.375 ; gain = 2062.344 ; free physical = 60595 ; free virtual = 71921
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1554,37 +1554,37 @@ INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.r_state_reg
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:26 . Memory (MB): peak = 4659.465 ; gain = 2062.352 ; free physical = 61734 ; free virtual = 73380
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:22 . Memory (MB): peak = 4659.375 ; gain = 2062.344 ; free physical = 60622 ; free virtual = 71947
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:26 . Memory (MB): peak = 4659.465 ; gain = 2062.352 ; free physical = 61734 ; free virtual = 73380
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:22 . Memory (MB): peak = 4659.375 ; gain = 2062.344 ; free physical = 60622 ; free virtual = 71947
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:28 . Memory (MB): peak = 4659.465 ; gain = 2062.352 ; free physical = 64471 ; free virtual = 76140
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:24 . Memory (MB): peak = 4659.375 ; gain = 2062.344 ; free physical = 63420 ; free virtual = 74746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:01:28 . Memory (MB): peak = 4659.465 ; gain = 2062.352 ; free physical = 64477 ; free virtual = 76148
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:24 . Memory (MB): peak = 4659.375 ; gain = 2062.344 ; free physical = 63420 ; free virtual = 74746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:28 . Memory (MB): peak = 4659.465 ; gain = 2062.352 ; free physical = 64461 ; free virtual = 76137
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:24 . Memory (MB): peak = 4659.375 ; gain = 2062.344 ; free physical = 63428 ; free virtual = 74753
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:29 . Memory (MB): peak = 4659.465 ; gain = 2062.352 ; free physical = 64461 ; free virtual = 76137
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:24 . Memory (MB): peak = 4659.375 ; gain = 2062.344 ; free physical = 63428 ; free virtual = 74753
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1634,18 +1634,18 @@ Report Cell Usage:
 |17    |FDSE     |   529|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:29 . Memory (MB): peak = 4659.465 ; gain = 2062.352 ; free physical = 64461 ; free virtual = 76137
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:24 . Memory (MB): peak = 4659.375 ; gain = 2062.344 ; free physical = 63428 ; free virtual = 74753
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11857 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 4659.465 ; gain = 698.359 ; free physical = 73472 ; free virtual = 85127
-Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:32 . Memory (MB): peak = 4659.465 ; gain = 2062.352 ; free physical = 73535 ; free virtual = 85097
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:12 . Memory (MB): peak = 4659.375 ; gain = 698.359 ; free physical = 72368 ; free virtual = 83694
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 4659.375 ; gain = 2062.344 ; free physical = 72459 ; free virtual = 83692
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.35 . Memory (MB): peak = 4659.465 ; gain = 0.000 ; free physical = 73609 ; free virtual = 85170
+Netlist sorting complete. Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.35 . Memory (MB): peak = 4659.375 ; gain = 0.000 ; free physical = 72469 ; free virtual = 83702
 INFO: [Netlist 29-17] Analyzing 896 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4659.465 ; gain = 0.000 ; free physical = 73614 ; free virtual = 85196
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4659.375 ; gain = 0.000 ; free physical = 72468 ; free virtual = 83718
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 451 instances were transformed.
   FDR => FDRE: 20 instances
@@ -1658,11 +1658,11 @@ Synth Design complete | Checksum: 37ed5e46
 INFO: [Common 17-83] Releasing license: Synthesis
 595 Infos, 170 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:40 ; elapsed = 00:01:38 . Memory (MB): peak = 4659.465 ; gain = 3128.473 ; free physical = 73626 ; free virtual = 85215
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 9325.477; main = 3582.056; forked = 5835.497
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 16937.641; main = 4655.551; forked = 12369.008
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 4659.375 ; gain = 3128.496 ; free physical = 72469 ; free virtual = 83718
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 9402.247; main = 3732.158; forked = 5900.798
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 16936.109; main = 4655.457; forked = 12367.566
 INFO: [Coretcl 2-1174] Renamed 2016 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4659.465 ; gain = 0.000 ; free physical = 73621 ; free virtual = 85214
-INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1/andromeda_axi_smc_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4659.375 ; gain = 0.000 ; free physical = 72462 ; free virtual = 83714
+INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_smc_0_synth_1/andromeda_axi_smc_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file andromeda_axi_smc_0_utilization_synth.rpt -pb andromeda_axi_smc_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jun 11 19:50:37 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 13 10:53:38 2025...

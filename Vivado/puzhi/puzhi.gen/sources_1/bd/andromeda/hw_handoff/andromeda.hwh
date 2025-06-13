@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun 11 19:48:47 2025" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jun 13 10:51:53 2025" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="kintexuplus" DEVICE="xcku5p" NAME="andromeda" PACKAGE="ffvb676" SPEEDGRADE="-2"/>
 

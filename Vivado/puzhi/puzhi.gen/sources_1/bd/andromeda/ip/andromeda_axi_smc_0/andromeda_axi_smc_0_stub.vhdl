@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
--- Date        : Wed Jun 11 19:50:35 2025
+-- Date        : Fri Jun 13 10:53:36 2025
 -- Host        : dust2 running 64-bit Ubuntu 24.04.2 LTS
 -- Command     : write_vhdl -force -mode synth_stub
---               /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/andromeda_axi_smc_0_stub.vhdl
+--               /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_axi_smc_0/andromeda_axi_smc_0_stub.vhdl
 -- Design      : andromeda_axi_smc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xcku5p-ffvb676-2-i

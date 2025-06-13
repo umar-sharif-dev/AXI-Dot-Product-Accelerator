@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+// Vivado v2024.2 (64-bit)
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+// Created on Friday June 13, 2025 - 10:27:02 am, from:
+//
+//     Map file     - /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_ddr4_0_0/bd_0/bd_828f.bmm
+//     Data file(s) - /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'andromeda_microblaze_0.andromeda_microblaze_0_local_memory_lmb_bram_128K_4_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

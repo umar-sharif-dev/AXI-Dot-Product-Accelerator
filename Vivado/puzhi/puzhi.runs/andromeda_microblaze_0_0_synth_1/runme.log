@@ -7,7 +7,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Wed Jun 11 19:48:50 2025
+  **** Start of session at: Thu Jun 12 05:37:53 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -19,11 +19,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
 INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-i
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 98659
+INFO: [Synth 8-7075] Helper process launched with PID 223595
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2722.125 ; gain = 155.859 ; free physical = 46832 ; free virtual = 58237
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2722.199 ; gain = 155.859 ; free physical = 46439 ; free virtual = 59572
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'andromeda_microblaze_0_0' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/synth/andromeda_microblaze_0_0.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'andromeda_microblaze_0_0' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/synth/andromeda_microblaze_0_0.vhd:116]
 	Parameter C_SCO bound to: 0 - type: integer 
 	Parameter C_FREQ bound to: 333250000 - type: integer 
 	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
@@ -194,8 +194,8 @@ INFO: [Synth 8-638] synthesizing module 'andromeda_microblaze_0_0' [/home/malik/
 	Parameter C_M_AXI_DC_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_DC_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'MicroBlaze' declared at '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/a243/hdl/microblaze_v11_0_vh_rfs.vhd:164914' bound to instance 'U0' of component 'MicroBlaze' [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/synth/andromeda_microblaze_0_0.vhd:829]
-INFO: [Synth 8-256] done synthesizing module 'andromeda_microblaze_0_0' (0#1) [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/synth/andromeda_microblaze_0_0.vhd:116]
+INFO: [Synth 8-3491] module 'MicroBlaze' declared at '/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ipshared/a243/hdl/microblaze_v11_0_vh_rfs.vhd:164914' bound to instance 'U0' of component 'MicroBlaze' [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/synth/andromeda_microblaze_0_0.vhd:829]
+INFO: [Synth 8-256] done synthesizing module 'andromeda_microblaze_0_0' (0#1) [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/synth/andromeda_microblaze_0_0.vhd:116]
 WARNING: [Synth 8-7129] Port Clk in module MMU is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Reset in module MMU is either unconnected or has no load
 WARNING: [Synth 8-7129] Port IB_VMode in module MMU is either unconnected or has no load
@@ -298,37 +298,37 @@ WARNING: [Synth 8-7129] Port Snoop_TLB_PID[1] in module MMU is either unconnecte
 WARNING: [Synth 8-7129] Port Snoop_TLB_PID[2] in module MMU is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2970.633 ; gain = 404.367 ; free physical = 44865 ; free virtual = 56283
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2970.738 ; gain = 404.398 ; free physical = 44229 ; free virtual = 57375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2970.633 ; gain = 404.367 ; free physical = 44784 ; free virtual = 56202
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2970.738 ; gain = 404.398 ; free physical = 44190 ; free virtual = 57341
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2970.633 ; gain = 404.367 ; free physical = 44784 ; free virtual = 56202
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2970.738 ; gain = 404.398 ; free physical = 44190 ; free virtual = 57341
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2978.633 ; gain = 0.000 ; free physical = 44529 ; free virtual = 55955
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2978.738 ; gain = 0.000 ; free physical = 44055 ; free virtual = 57197
 INFO: [Netlist 29-17] Analyzing 579 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0_ooc_debug.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0_ooc_debug.xdc] for cell 'U0'
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_microblaze_0_0_propImpl.xdc].
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0_ooc_debug.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0_ooc_debug.xdc] for cell 'U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.gen/sources_1/bd/andromeda/ip/andromeda_microblaze_0_0/andromeda_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/andromeda_microblaze_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/andromeda_microblaze_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_microblaze_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_microblaze_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_microblaze_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_microblaze_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3060.602 ; gain = 0.000 ; free physical = 41578 ; free virtual = 53017
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3059.613 ; gain = 0.000 ; free physical = 41906 ; free virtual = 55057
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 377 instances were transformed.
   FDR => FDRE: 126 instances
@@ -338,10 +338,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   MUXCY_L => MUXCY: 137 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3060.602 ; gain = 0.000 ; free physical = 41526 ; free virtual = 52965
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3059.613 ; gain = 0.000 ; free physical = 41858 ; free virtual = 55009
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3060.602 ; gain = 494.336 ; free physical = 38578 ; free virtual = 50026
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3059.613 ; gain = 493.273 ; free physical = 38662 ; free virtual = 51922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -349,17 +349,17 @@ Start Loading Part and Timing Information
 Loading part: xcku5p-ffvb676-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.605 ; gain = 502.340 ; free physical = 38570 ; free virtual = 50020
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3067.617 ; gain = 501.277 ; free physical = 38654 ; free virtual = 51914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_microblaze_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_microblaze_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3068.605 ; gain = 502.340 ; free physical = 38554 ; free virtual = 50007
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3067.617 ; gain = 501.277 ; free physical = 38654 ; free virtual = 51915
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3068.605 ; gain = 502.340 ; free physical = 37918 ; free virtual = 49363
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3067.617 ; gain = 501.277 ; free physical = 38222 ; free virtual = 51394
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -423,25 +423,25 @@ INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data
 INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[31].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
 INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[31].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3068.605 ; gain = 502.340 ; free physical = 36570 ; free virtual = 48015
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3067.617 ; gain = 501.277 ; free physical = 37461 ; free virtual = 50636
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3475.641 ; gain = 909.375 ; free physical = 36722 ; free virtual = 48170
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3475.652 ; gain = 909.312 ; free physical = 36724 ; free virtual = 49900
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 3561.672 ; gain = 995.406 ; free physical = 38541 ; free virtual = 49994
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3553.684 ; gain = 987.344 ; free physical = 36190 ; free virtual = 49402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3561.672 ; gain = 995.406 ; free physical = 38722 ; free virtual = 50175
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3553.684 ; gain = 987.344 ; free physical = 36025 ; free virtual = 49220
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -459,37 +459,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3669.484 ; gain = 1103.219 ; free physical = 45086 ; free virtual = 56560
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3661.496 ; gain = 1095.156 ; free physical = 42708 ; free virtual = 55888
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3669.484 ; gain = 1103.219 ; free physical = 45095 ; free virtual = 56568
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3661.496 ; gain = 1095.156 ; free physical = 42708 ; free virtual = 55888
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3669.484 ; gain = 1103.219 ; free physical = 45072 ; free virtual = 56547
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3661.496 ; gain = 1095.156 ; free physical = 42645 ; free virtual = 55825
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3669.484 ; gain = 1103.219 ; free physical = 45072 ; free virtual = 56533
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3661.496 ; gain = 1095.156 ; free physical = 42645 ; free virtual = 55825
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3669.484 ; gain = 1103.219 ; free physical = 45174 ; free virtual = 56629
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3661.496 ; gain = 1095.156 ; free physical = 42637 ; free virtual = 55817
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3669.484 ; gain = 1103.219 ; free physical = 45475 ; free virtual = 56930
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3661.496 ; gain = 1095.156 ; free physical = 42637 ; free virtual = 55817
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -526,18 +526,18 @@ Report Cell Usage:
 |25    |FDSE     |    36|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 3669.484 ; gain = 1103.219 ; free physical = 45638 ; free virtual = 57093
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3661.496 ; gain = 1095.156 ; free physical = 42637 ; free virtual = 55817
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 10916 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3669.484 ; gain = 1013.250 ; free physical = 47442 ; free virtual = 58898
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3669.484 ; gain = 1103.219 ; free physical = 47442 ; free virtual = 58898
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 3661.496 ; gain = 1006.281 ; free physical = 42597 ; free virtual = 55778
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3661.496 ; gain = 1095.156 ; free physical = 42597 ; free virtual = 55778
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3669.484 ; gain = 0.000 ; free physical = 47626 ; free virtual = 59088
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3661.496 ; gain = 0.000 ; free physical = 43413 ; free virtual = 56594
 INFO: [Netlist 29-17] Analyzing 522 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3669.484 ; gain = 0.000 ; free physical = 57729 ; free virtual = 69300
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3661.496 ; gain = 0.000 ; free physical = 52152 ; free virtual = 65351
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 206 instances were transformed.
   (CARRY4) => CARRY8: 21 instances
@@ -551,11 +551,11 @@ Synth Design complete | Checksum: 6476b9a0
 INFO: [Common 17-83] Releasing license: Synthesis
 65 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 3669.484 ; gain = 2136.926 ; free physical = 57658 ; free virtual = 69250
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2572.930; main = 2572.930; forked = 174.115
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4055.914; main = 3646.605; forked = 908.395
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 3661.496 ; gain = 2128.863 ; free physical = 54354 ; free virtual = 67565
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2603.147; main = 2575.027; forked = 174.938
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4425.066; main = 3638.617; forked = 908.395
 INFO: [Coretcl 2-1174] Renamed 644 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3670.613 ; gain = 0.000 ; free physical = 57631 ; free virtual = 69232
-INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_microblaze_0_0_synth_1/andromeda_microblaze_0_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3662.625 ; gain = 0.000 ; free physical = 54315 ; free virtual = 67530
+INFO: [Common 17-1381] The checkpoint '/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_microblaze_0_0_synth_1/andromeda_microblaze_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file andromeda_microblaze_0_0_utilization_synth.rpt -pb andromeda_microblaze_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jun 11 19:49:29 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 12 05:38:29 2025...

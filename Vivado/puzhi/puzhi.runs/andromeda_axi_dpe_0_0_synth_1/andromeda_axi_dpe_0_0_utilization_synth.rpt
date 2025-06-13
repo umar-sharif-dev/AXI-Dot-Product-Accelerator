@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Wed Jun 11 19:50:24 2025
+| Date         : Fri Jun 13 10:53:07 2025
 | Host         : dust2 running 64-bit Ubuntu 24.04.2 LTS
 | Command      : report_utilization -file andromeda_axi_dpe_0_0_utilization_synth.rpt -pb andromeda_axi_dpe_0_0_utilization_synth.pb
 | Design       : andromeda_axi_dpe_0_0
@@ -32,17 +32,17 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 23031 |     0 |          0 |    216960 | 10.62 |
-|   LUT as Logic             | 17319 |     0 |          0 |    216960 |  7.98 |
-|   LUT as Memory            |  5712 |     0 |          0 |     99840 |  5.72 |
-|     LUT as Distributed RAM |  5712 |     0 |            |           |       |
+| CLB LUTs*                  | 16889 |     0 |          0 |    216960 |  7.78 |
+|   LUT as Logic             | 12665 |     0 |          0 |    216960 |  5.84 |
+|   LUT as Memory            |  4224 |     0 |          0 |     99840 |  4.23 |
+|     LUT as Distributed RAM |  4224 |     0 |            |           |       |
 |     LUT as Shift Register  |     0 |     0 |            |           |       |
-| CLB Registers              | 14065 |     0 |          0 |    433920 |  3.24 |
-|   Register as Flip Flop    | 14065 |     0 |          0 |    433920 |  3.24 |
+| CLB Registers              | 13461 |     0 |          0 |    433920 |  3.10 |
+|   Register as Flip Flop    | 13461 |     0 |          0 |    433920 |  3.10 |
 |   Register as Latch        |     0 |     0 |          0 |    433920 |  0.00 |
-| CARRY8                     |    40 |     0 |          0 |     27120 |  0.15 |
-| F7 Muxes                   |   696 |     0 |          0 |    108480 |  0.64 |
-| F8 Muxes                   |    12 |     0 |          0 |     54240 |  0.02 |
+| CARRY8                     |    30 |     0 |          0 |     27120 |  0.11 |
+| F7 Muxes                   |   207 |     0 |          0 |    108480 |  0.19 |
+| F8 Muxes                   |     0 |     0 |          0 |     54240 |  0.00 |
 | F9 Muxes                   |     0 |     0 |          0 |     27120 |  0.00 |
 +----------------------------+-------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -64,8 +64,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 37    |          Yes |         Set |            - |
-| 14028 |          Yes |       Reset |            - |
+| 4     |          Yes |         Set |            - |
+| 13457 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -157,19 +157,18 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+-------+---------------------+
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
-| FDRE     | 14028 |            Register |
-| LUT6     | 10056 |                 CLB |
-| LUT2     |  4633 |                 CLB |
-| LUT5     |  4231 |                 CLB |
+| FDRE     | 13457 |            Register |
+| LUT6     |  5670 |                 CLB |
+| LUT2     |  4549 |                 CLB |
+| LUT3     |  4163 |                 CLB |
 | RAMS32   |  4096 |                 CLB |
-| RAMD64E  |  1616 |                 CLB |
-| MUXF7    |   696 |                 CLB |
-| LUT4     |   430 |                 CLB |
-| LUT3     |   336 |                 CLB |
-| CARRY8   |    40 |                 CLB |
-| FDSE     |    37 |            Register |
-| MUXF8    |    12 |                 CLB |
-| LUT1     |     6 |                 CLB |
+| LUT5     |   339 |                 CLB |
+| MUXF7    |   207 |                 CLB |
+| LUT4     |   172 |                 CLB |
+| RAMD64E  |   128 |                 CLB |
+| CARRY8   |    30 |                 CLB |
+| LUT1     |     4 |                 CLB |
+| FDSE     |     4 |            Register |
 +----------+-------+---------------------+
 
 
@@ -183,11 +182,11 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | andromeda_axi_dpe_0_0_floating_point_1        |  127 |
 | andromeda_axi_dpe_0_0_floating_point_0        |  127 |
 | andromeda_axi_dpe_0_0_floating_point_2        |  126 |
-| floating_point_3_HD4680                       |    1 |
-| floating_point_0_HD4681                       |    1 |
+| floating_point_3_HD4383                       |    1 |
+| floating_point_0_HD4384                       |    1 |
 | andromeda_axi_dpe_0_0_sdp_w4096x2_r4096x2     |    1 |
-| andromeda_axi_dpe_0_0_floating_point_2_HD4679 |    1 |
-| andromeda_axi_dpe_0_0_floating_point_1_HD4678 |    1 |
+| andromeda_axi_dpe_0_0_floating_point_2_HD4382 |    1 |
+| andromeda_axi_dpe_0_0_floating_point_1_HD4381 |    1 |
 +-----------------------------------------------+------+
 
 

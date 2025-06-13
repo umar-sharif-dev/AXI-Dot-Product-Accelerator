@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/malik/andromeda_ila/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_uartlite_0_0_synth_1'
+HD_PWD='/home/malik/andromeda_ila/AXI-DPE-simulation/AXI-Dot-Product-Accelerator/Vivado/puzhi/puzhi.runs/andromeda_axi_uartlite_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

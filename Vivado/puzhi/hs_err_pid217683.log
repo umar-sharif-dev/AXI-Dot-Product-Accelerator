@@ -1,0 +1,12 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/opt/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12/lib//server/libjvm.so(+0xe4f55c) [0x74c93944f55c]
+/opt/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12/lib//server/libjvm.so(JVM_handle_linux_signal+0x23e) [0x74c93945002e]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330) [0x74c974845330]
+/lib/x86_64-linux-gnu/libc.so.6(+0x18b75d) [0x74c97498b75d]
+/opt/tools/Xilinx/Vivado/2024.2/lib/lnx64.o/libxv_filemgmt.so(+0x54c678) [0x74c945b4c678]
+/opt/tools/Xilinx/Vivado/2024.2/lib/lnx64.o/libxv_filemgmt.so(HADLEditorAssist::createParseInfoIter(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1e7) [0x74c945b4f487]
+/opt/tools/Xilinx/Vivado/2024.2/lib/lnx64.o/libxv_filemgmt.so(Java_ui_data_srcscan_srcscani_EditorAssist_1createParseInfoIter+0x162) [0x74c945a063e2]
+[0x74c929ac0980]
