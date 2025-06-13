@@ -45,7 +45,7 @@ module top_dot_product_engine (
                 .DATA_WIDTH(32)
             ) bram_inst (
                 .clk   (clk),
-                .addr  (x_wr_addr),
+                .addr  (0),
                 .wr_en (1'b1),  
                 .din   (x_vector[(i+1)*32-1 -: 32]),
                 .dout  (x_vector_unpacked[i])
